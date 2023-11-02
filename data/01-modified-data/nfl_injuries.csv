@@ -1,0 +1,1804 @@
+PlayerKey,BodyPart,RosterPosition,StadiumType,FieldType,Temperature,Weather
+39873,Knee,Linebacker,indoor,Synthetic,85,Mostly Cloudy
+39873,Knee,Linebacker,outdoor,Natural,82,Sunny
+39873,Knee,Linebacker,indoor,Synthetic,84,Cloudy
+39873,Knee,Linebacker,retractable roof,Synthetic,78,Partly Cloudy
+39873,Knee,Linebacker,outdoor,Natural,80,Cloudy
+39873,Knee,Linebacker,retractable roof,Synthetic,60,Partly clear
+39873,Knee,Linebacker,outdoor,Natural,62,Hazy
+39873,Knee,Linebacker,outdoor,Natural,56,Mostly Sunny
+39873,Knee,Linebacker,outdoor,Natural,33,Cloudy
+39873,Knee,Linebacker,retractable roof,Synthetic,33,Cloudy
+46074,Knee,Linebacker,outdoor,Synthetic,64,Sunny
+46074,Knee,Linebacker,outdoor,Natural,73,Cloudy
+46074,Knee,Linebacker,outdoor,Natural,88,30% Chance of Rain
+46074,Knee,Linebacker,retractable roof,Synthetic,72,Cloudy
+46074,Knee,Linebacker,outdoor,Natural,78,10% Chance of Rain
+46074,Knee,Linebacker,outdoor,Natural,76,Partly Cloudy
+46074,Knee,Linebacker,outdoor,Natural,70,Partly Cloudy
+46074,Knee,Linebacker,outdoor,Natural,54,Sunny
+46074,Knee,Linebacker,outdoor,Natural,52,Cloudy
+46074,Knee,Linebacker,outdoor,Natural,23,Clear
+46074,Knee,Linebacker,outdoor,Natural,97,Rain Chance 40%
+46074,Knee,Linebacker,outdoor,Natural,89,Heat Index 95
+46074,Knee,Linebacker,outdoor,Natural,86,Partly Cloudy
+46074,Knee,Linebacker,outdoor,Natural,58,Cloudy
+46074,Knee,Linebacker,outdoor,Natural,48,Partly Cloudy
+46074,Knee,Linebacker,retractable roof,Synthetic,38,Sunny
+46074,Knee,Linebacker,outdoor,Natural,73,Mostly Sunny Skies
+46074,Knee,Linebacker,outdoor,Synthetic,44,Cloudy
+46074,Knee,Linebacker,outdoor,Natural,44,Clear
+46074,Knee,Linebacker,retractable roof,Natural,64,Partly Cloudy
+46074,Knee,Linebacker,outdoor,Natural,73,Sunny
+46074,Knee,Linebacker,retractable roof,Synthetic,46,Rainy
+36557,Ankle,Safety,outdoor,Synthetic,63,Clear and warm
+36557,Ankle,Safety,outdoor,Synthetic,43,Cloudy
+46646,Ankle,Linebacker,outdoor,Natural,60,Mostly Cloudy
+46646,Ankle,Linebacker,outdoor,Natural,61,Cloudy
+46646,Ankle,Linebacker,outdoor,Natural,80,Cloudy
+46646,Ankle,Linebacker,outdoor,Natural,60,Sunny
+46646,Ankle,Linebacker,retractable roof,Synthetic,25,Cloudy
+46646,Ankle,Linebacker,outdoor,Natural,43,Cloudy
+46646,Ankle,Linebacker,outdoor,Natural,17,Cloudy
+46646,Ankle,Linebacker,outdoor,Natural,84,Sunny
+46646,Ankle,Linebacker,outdoor,Natural,92,Sunny
+46646,Ankle,Linebacker,outdoor,Natural,61,Light Rain
+46646,Ankle,Linebacker,outdoor,Natural,65,Cloudy
+46646,Ankle,Linebacker,outdoor,Synthetic,77,Cloudy
+46646,Ankle,Linebacker,outdoor,Natural,25,Mostly Cloudy
+46646,Ankle,Linebacker,retractable roof,Natural,82,Clear
+46646,Ankle,Linebacker,outdoor,Natural,56,Clear and Sunny
+46646,Ankle,Linebacker,outdoor,Natural,53,Cloudy
+46646,Ankle,Linebacker,outdoor,Natural,41,Mostly Sunny
+46646,Ankle,Linebacker,outdoor,Synthetic,63,Sunny
+46646,Ankle,Linebacker,outdoor,Natural,54,Overcast
+46646,Ankle,Linebacker,outdoor,Natural,46,Partly Cloudy
+46646,Ankle,Linebacker,outdoor,Natural,58,Rain
+46646,Ankle,Linebacker,outdoor,Natural,51,Mostly Cloudy
+43532,Ankle,Wide Receiver,outdoor,Synthetic,63,Clear and warm
+43532,Ankle,Wide Receiver,outdoor,Natural,68,Cloudy
+43532,Ankle,Wide Receiver,outdoor,Natural,82,Clear
+43532,Ankle,Wide Receiver,retractable roof,Synthetic,89,Partly Cloudy
+43532,Ankle,Wide Receiver,outdoor,Natural,80,Partly Cloudy
+43532,Ankle,Wide Receiver,outdoor,Natural,70,Clear and sunny
+43532,Ankle,Wide Receiver,outdoor,Natural,65,Cloudy
+43532,Ankle,Wide Receiver,outdoor,Natural,58,Cloudy
+43532,Ankle,Wide Receiver,outdoor,Synthetic,45,Cloudy
+43532,Ankle,Wide Receiver,outdoor,Natural,59,Clear
+43532,Ankle,Wide Receiver,outdoor,Natural,56,Clear and Sunny
+43532,Ankle,Wide Receiver,outdoor,Natural,53,Sunny
+43532,Ankle,Wide Receiver,outdoor,Natural,43,Sunny and clear
+43532,Ankle,Wide Receiver,outdoor,Natural,57,Sunny Skies
+43532,Ankle,Wide Receiver,outdoor,Natural,27,Sunny
+43532,Ankle,Wide Receiver,outdoor,Synthetic,43,Cloudy
+43532,Ankle,Wide Receiver,outdoor,Natural,45,Sunny
+41145,Knee,Safety,outdoor,Synthetic,69,Mostly Coudy
+41145,Knee,Safety,outdoor,Natural,89,Sunny
+41145,Knee,Safety,outdoor,Natural,63,Sunny
+41145,Knee,Safety,outdoor,Synthetic,63,Light Rain
+41145,Knee,Safety,outdoor,Natural,79,Sunny
+41145,Knee,Safety,outdoor,Synthetic,39,Cloudy
+41145,Knee,Safety,outdoor,Natural,78,10% Chance of Rain
+41145,Knee,Safety,outdoor,Natural,60,Mostly Cloudy
+41145,Knee,Safety,indoor,Synthetic,-999,N/A (Indoors)
+41145,Knee,Safety,outdoor,Synthetic,35,Mostly Cloudy
+41145,Knee,Safety,outdoor,Natural,19,Cloudy
+41145,Knee,Safety,retractable roof,Synthetic,59,Cloudy
+41145,Knee,Safety,outdoor,Synthetic,82,Clear
+41145,Knee,Safety,outdoor,Natural,80,Cloudy
+41145,Knee,Safety,outdoor,Synthetic,87,Mostly Sunny
+41145,Knee,Safety,outdoor,Synthetic,51,Mostly Cloudy
+41145,Knee,Safety,outdoor,Natural,59,Clear
+41145,Knee,Safety,outdoor,Synthetic,55,"Cloudy, 50% change of rain"
+41145,Knee,Safety,outdoor,Synthetic,39,Mostly Sunny
+41145,Knee,Safety,outdoor,Natural,48,Cloudy
+41145,Knee,Safety,outdoor,Synthetic,44,Cloudy
+41145,Knee,Safety,outdoor,Synthetic,63,Sunny
+41145,Knee,Safety,outdoor,Synthetic,43,Overcast
+41145,Knee,Safety,outdoor,Natural,37,Cloudy
+41145,Knee,Safety,outdoor,Natural,42,Partly Cloudy
+46014,Ankle,Running Back,retractable roof,Synthetic,80,Sunny
+46014,Ankle,Running Back,outdoor,Synthetic,69,Mostly Coudy
+46014,Ankle,Running Back,outdoor,Synthetic,84,Sunny
+46014,Ankle,Running Back,retractable roof,Synthetic,87,Sunny
+46014,Ankle,Running Back,retractable roof,Synthetic,89,Partly Cloudy
+46014,Ankle,Running Back,retractable roof,Synthetic,85,Partly Cloudy
+46014,Ankle,Running Back,outdoor,Synthetic,50,Cloudy
+46014,Ankle,Running Back,retractable roof,Synthetic,84,Mostly Cloudy
+46014,Ankle,Running Back,outdoor,Natural,68,Cloudy
+46014,Ankle,Running Back,retractable roof,Synthetic,60,Sunny
+46014,Ankle,Running Back,outdoor,Natural,44,Clear
+44860,Knee,Linebacker,outdoor,Natural,63,Sunny
+44860,Knee,Linebacker,outdoor,Natural,80,Mostly Cloudy
+44860,Knee,Linebacker,retractable roof,Synthetic,83,Sunny
+44860,Knee,Linebacker,outdoor,Natural,67,Cloudy
+44860,Knee,Linebacker,outdoor,Natural,56,Partly Cloudy
+44860,Knee,Linebacker,indoor,Synthetic,68,Controlled Climate
+44860,Knee,Linebacker,outdoor,Natural,38,Cold
+44860,Knee,Linebacker,outdoor,Synthetic,46,Partly Cloudy
+44860,Knee,Linebacker,outdoor,Natural,29,Cloudy
+44860,Knee,Linebacker,outdoor,Natural,36,Cloudy
+44860,Knee,Linebacker,outdoor,Natural,24,"Cloudy, light snow accumulating 1-3"""
+44860,Knee,Linebacker,outdoor,Natural,11,Snow
+44860,Knee,Linebacker,indoor,Synthetic,90,Clear
+44860,Knee,Linebacker,outdoor,Natural,83,Clear to Partly Cloudy
+44860,Knee,Linebacker,outdoor,Natural,51,Sunny
+44806,Knee,Linebacker,outdoor,Synthetic,68,Sunny
+44806,Knee,Linebacker,outdoor,Natural,80,Mostly Cloudy
+44806,Knee,Linebacker,outdoor,Natural,64,Sunny
+44806,Knee,Linebacker,outdoor,Natural,72,Sunny
+44806,Knee,Linebacker,outdoor,Natural,69,Partly Sunny
+44806,Knee,Linebacker,indoor,Synthetic,-999,Indoor
+44806,Knee,Linebacker,outdoor,Natural,56,Partly Cloudy
+44806,Knee,Linebacker,outdoor,Natural,75,Cloudy
+44806,Knee,Linebacker,outdoor,Natural,28,Sunny
+44806,Knee,Linebacker,outdoor,Natural,50,Fair
+44806,Knee,Linebacker,outdoor,Natural,53,Partly Sunny
+44806,Knee,Linebacker,outdoor,Natural,33,Cloudy
+44806,Knee,Linebacker,outdoor,Natural,36,Cloudy
+44806,Knee,Linebacker,outdoor,Natural,63,Cloudy
+44806,Knee,Linebacker,outdoor,Natural,19,Cloudy
+44806,Knee,Linebacker,outdoor,Natural,61,Rain
+44806,Knee,Linebacker,outdoor,Synthetic,82,Clear
+44806,Knee,Linebacker,outdoor,Natural,61,Light Rain
+44806,Knee,Linebacker,outdoor,Natural,69,Clear
+44806,Knee,Linebacker,outdoor,Natural,72,Cloudy
+44806,Knee,Linebacker,outdoor,Natural,66,Rain
+44806,Knee,Linebacker,outdoor,Natural,54,Partly Sunny
+44806,Knee,Linebacker,outdoor,Natural,61,Sunny
+44806,Knee,Linebacker,outdoor,Natural,55,"Sunny, Windy"
+44806,Knee,Linebacker,outdoor,Natural,48,Cloudy
+44806,Knee,Linebacker,outdoor,Natural,60,Partly Clouidy
+44806,Knee,Linebacker,retractable roof,Synthetic,67,Mostly cloudy
+44806,Knee,Linebacker,outdoor,Natural,27,Sunny
+44806,Knee,Linebacker,outdoor,Natural,43,"Cloudy, Rain"
+44806,Knee,Linebacker,outdoor,Natural,48,Partly Cloudy
+45962,Ankle,Wide Receiver,outdoor,Synthetic,65,Sun & clouds
+45962,Ankle,Wide Receiver,outdoor,Natural,83,Sunny
+45962,Ankle,Wide Receiver,outdoor,Synthetic,83,Sunny
+45962,Ankle,Wide Receiver,outdoor,Synthetic,63,Light Rain
+45962,Ankle,Wide Receiver,outdoor,Synthetic,74,Sunny
+45962,Ankle,Wide Receiver,outdoor,Synthetic,42,Rain
+45962,Ankle,Wide Receiver,outdoor,Synthetic,68,Clear
+45962,Ankle,Wide Receiver,outdoor,Natural,62,Partly Cloudy
+45962,Ankle,Wide Receiver,outdoor,Synthetic,48,Mostly cloudy
+45962,Ankle,Wide Receiver,outdoor,Synthetic,32,Heavy lake effect snow
+45962,Ankle,Wide Receiver,outdoor,Synthetic,22,Mostly cloudy
+45962,Ankle,Wide Receiver,outdoor,Synthetic,35,Cloudy
+45962,Ankle,Wide Receiver,outdoor,Natural,71,Clear
+45962,Ankle,Wide Receiver,outdoor,Natural,61,Rain
+45962,Ankle,Wide Receiver,outdoor,Synthetic,83,Fair
+45962,Ankle,Wide Receiver,indoor,Synthetic,-999,N/A (Indoors)
+45962,Ankle,Wide Receiver,outdoor,Natural,49,Cloudy
+45962,Ankle,Wide Receiver,outdoor,Synthetic,62,Cloudy
+45962,Ankle,Wide Receiver,retractable roof,Synthetic,87,Mostly Cloudy
+45962,Ankle,Wide Receiver,retractable roof,Synthetic,44,Sunny
+45962,Ankle,Wide Receiver,outdoor,Synthetic,46,Partly cloudy
+45962,Ankle,Wide Receiver,outdoor,Synthetic,49,Mostly sunny
+45962,Ankle,Wide Receiver,outdoor,Synthetic,46,Sunny
+45962,Ankle,Wide Receiver,outdoor,Synthetic,44,Cloudy
+45962,Ankle,Wide Receiver,outdoor,Natural,86,Partly Cloudy
+45962,Ankle,Wide Receiver,outdoor,Synthetic,31,Fair
+45962,Ankle,Wide Receiver,outdoor,Synthetic,39,Rain shower
+45962,Ankle,Wide Receiver,outdoor,Synthetic,40,Clear and cold
+45962,Ankle,Wide Receiver,outdoor,Synthetic,33,Cloudy
+46331,Ankle,Safety,outdoor,Natural,87,Clear
+46331,Ankle,Safety,outdoor,Natural,83,Sunny
+46331,Ankle,Safety,outdoor,Natural,82,Sunny
+46331,Ankle,Safety,outdoor,Synthetic,61,Sunny
+36621,Foot,Offensive Lineman,indoor,Synthetic,68,Controlled Climate
+36621,Foot,Offensive Lineman,retractable roof,Synthetic,78,Partly sunny
+36621,Foot,Offensive Lineman,retractable roof,Natural,-999,Indoor
+36621,Foot,Offensive Lineman,retractable roof,Natural,-999,Indoors
+36621,Foot,Offensive Lineman,outdoor,Natural,77,Showers
+36621,Foot,Offensive Lineman,outdoor,Natural,54,Rain
+36621,Foot,Offensive Lineman,outdoor,Natural,61,Sunny
+36621,Foot,Offensive Lineman,retractable roof,Synthetic,60,Sunny
+36621,Foot,Offensive Lineman,outdoor,Natural,84,Sunny
+36621,Foot,Offensive Lineman,outdoor,Natural,92,Sunny
+36621,Foot,Offensive Lineman,outdoor,Natural,61,Light Rain
+36621,Foot,Offensive Lineman,outdoor,Natural,65,Cloudy
+36621,Foot,Offensive Lineman,outdoor,Natural,53,Cloudy
+36621,Foot,Offensive Lineman,outdoor,Natural,41,Mostly Sunny
+36621,Foot,Offensive Lineman,outdoor,Synthetic,63,Sunny
+36621,Foot,Offensive Lineman,outdoor,Natural,54,Overcast
+36621,Foot,Offensive Lineman,outdoor,Natural,46,Partly Cloudy
+36621,Foot,Offensive Lineman,outdoor,Natural,58,Rain
+36621,Foot,Offensive Lineman,outdoor,Natural,51,Mostly Cloudy
+44492,Ankle,Running Back,outdoor,Natural,71,Mostly Sunny
+44492,Ankle,Running Back,outdoor,Synthetic,65,Mostly Cloudy
+44492,Ankle,Running Back,outdoor,Natural,88,Sunny
+44492,Ankle,Running Back,outdoor,Natural,84,Sunny
+44492,Ankle,Running Back,outdoor,Natural,79,Clear
+44492,Ankle,Running Back,retractable roof,Natural,-999,N/A Indoor
+44492,Ankle,Running Back,outdoor,Natural,75,Sunny
+43505,Foot,Offensive Lineman,outdoor,Synthetic,63,Clear and warm
+43505,Foot,Offensive Lineman,outdoor,Natural,68,Cloudy
+43505,Foot,Offensive Lineman,outdoor,Natural,44,Clear
+43505,Foot,Offensive Lineman,outdoor,Natural,62,Partly Cloudy
+43505,Foot,Offensive Lineman,outdoor,Synthetic,48,Cloudy
+43505,Foot,Offensive Lineman,outdoor,Natural,80,Partly Cloudy
+43505,Foot,Offensive Lineman,outdoor,Natural,70,Clear and sunny
+43505,Foot,Offensive Lineman,outdoor,Natural,65,Cloudy
+43505,Foot,Offensive Lineman,outdoor,Natural,58,Cloudy
+43505,Foot,Offensive Lineman,outdoor,Synthetic,45,Cloudy
+43505,Foot,Offensive Lineman,outdoor,Natural,57,Sunny Skies
+43505,Foot,Offensive Lineman,outdoor,Natural,27,Sunny
+43505,Foot,Offensive Lineman,outdoor,Synthetic,43,Cloudy
+43505,Foot,Offensive Lineman,outdoor,Natural,45,Sunny
+41094,Knee,Safety,outdoor,Natural,72,Sunny
+41094,Knee,Safety,outdoor,Natural,75,Cloudy
+41094,Knee,Safety,outdoor,Natural,53,Cloudy
+41094,Knee,Safety,outdoor,Natural,40,Cloudy
+41094,Knee,Safety,retractable roof,Synthetic,47,Sunny
+41094,Knee,Safety,outdoor,Natural,60,Sunny
+41094,Knee,Safety,outdoor,Natural,65,Sunny
+41094,Knee,Safety,outdoor,Natural,39,Cloudy
+41094,Knee,Safety,outdoor,Natural,23,Clear
+40474,Knee,Linebacker,indoor,Synthetic,70,Indoor
+40474,Knee,Linebacker,outdoor,Natural,78,Sunny
+40474,Knee,Linebacker,indoor,Synthetic,-999,Indoor
+40474,Knee,Linebacker,outdoor,Natural,70,Partly cloudy
+40474,Knee,Linebacker,outdoor,Natural,56,Partly Cloudy
+40474,Knee,Linebacker,outdoor,Natural,44,Cloudy
+40474,Knee,Linebacker,indoor,Synthetic,-999,N/A (Indoors)
+40474,Knee,Linebacker,indoor,Synthetic,68,Controlled Climate
+40474,Knee,Linebacker,outdoor,Natural,41,Sunny
+40474,Knee,Linebacker,outdoor,Natural,10,Clear
+40474,Knee,Linebacker,indoor,Synthetic,-999,N/A (Indoors)
+40474,Knee,Linebacker,outdoor,Natural,69,Clear
+40474,Knee,Linebacker,outdoor,Natural,92,Sunny
+40474,Knee,Linebacker,outdoor,Natural,90,Partly Cloudy
+40474,Knee,Linebacker,outdoor,Natural,71,Partly Cloudy
+40474,Knee,Linebacker,outdoor,Natural,52,Cloudy
+40474,Knee,Linebacker,outdoor,Natural,82,Clear
+40474,Knee,Linebacker,outdoor,Natural,55,Partly Cloudy
+40474,Knee,Linebacker,outdoor,Synthetic,43,Overcast
+40474,Knee,Linebacker,outdoor,Synthetic,33,Sunny and cold
+39656,Knee,Wide Receiver,outdoor,Natural,70,Partly cloudy
+39656,Knee,Wide Receiver,indoor,Synthetic,-999,Indoor
+39656,Knee,Wide Receiver,outdoor,Natural,56,Partly Cloudy
+39656,Knee,Wide Receiver,outdoor,Natural,44,Cloudy
+39656,Knee,Wide Receiver,indoor,Synthetic,-999,N/A (Indoors)
+39656,Knee,Wide Receiver,indoor,Synthetic,68,Controlled Climate
+39656,Knee,Wide Receiver,outdoor,Natural,41,Sunny
+39656,Knee,Wide Receiver,outdoor,Natural,10,Clear
+39656,Knee,Wide Receiver,indoor,Synthetic,-999,N/A (Indoors)
+39656,Knee,Wide Receiver,indoor,Synthetic,84,Partly Cloudy
+39656,Knee,Wide Receiver,outdoor,Natural,52,Cloudy
+39656,Knee,Wide Receiver,outdoor,Natural,52,Sunny
+39656,Knee,Wide Receiver,outdoor,Natural,55,Sunny
+39656,Knee,Wide Receiver,outdoor,Natural,82,Clear
+39656,Knee,Wide Receiver,outdoor,Natural,48,Cloudy
+39656,Knee,Wide Receiver,outdoor,Natural,36,Cloudy
+39656,Knee,Wide Receiver,outdoor,Natural,33,Cloudy
+39656,Knee,Wide Receiver,retractable roof,Natural,64,Partly Cloudy
+39656,Knee,Wide Receiver,outdoor,Natural,51,Sunny
+39656,Knee,Wide Receiver,outdoor,Natural,46,Sunny
+46587,Knee,Wide Receiver,outdoor,Synthetic,61,Clear
+46587,Knee,Wide Receiver,retractable roof,Synthetic,68,Cloudy
+46119,Knee,Linebacker,outdoor,Synthetic,68,Sunny
+46119,Knee,Linebacker,outdoor,Synthetic,69,Mostly Coudy
+46119,Knee,Linebacker,outdoor,Natural,89,Sunny
+46119,Knee,Linebacker,outdoor,Synthetic,63,Light Rain
+46119,Knee,Linebacker,outdoor,Natural,79,Sunny
+46119,Knee,Linebacker,outdoor,Synthetic,39,Cloudy
+46119,Knee,Linebacker,outdoor,Natural,78,10% Chance of Rain
+46119,Knee,Linebacker,outdoor,Natural,53,Cloudy
+46119,Knee,Linebacker,outdoor,Natural,60,Mostly Cloudy
+46119,Knee,Linebacker,outdoor,Synthetic,46,Partly Cloudy
+46119,Knee,Linebacker,outdoor,Synthetic,61,"Cloudy, chance of rain"
+46119,Knee,Linebacker,outdoor,Synthetic,31,Partly Cloudy
+46119,Knee,Linebacker,indoor,Synthetic,-999,N/A (Indoors)
+46119,Knee,Linebacker,outdoor,Synthetic,35,Mostly Cloudy
+46119,Knee,Linebacker,outdoor,Natural,19,Cloudy
+46119,Knee,Linebacker,retractable roof,Synthetic,59,Cloudy
+46119,Knee,Linebacker,outdoor,Synthetic,82,Clear
+46119,Knee,Linebacker,outdoor,Natural,80,Cloudy
+46119,Knee,Linebacker,outdoor,Synthetic,87,Mostly Sunny
+46119,Knee,Linebacker,outdoor,Synthetic,51,Mostly Cloudy
+46119,Knee,Linebacker,outdoor,Natural,59,Clear
+46119,Knee,Linebacker,outdoor,Synthetic,55,"Cloudy, 50% change of rain"
+46119,Knee,Linebacker,outdoor,Synthetic,39,Mostly Sunny
+46119,Knee,Linebacker,outdoor,Natural,48,Cloudy
+46119,Knee,Linebacker,outdoor,Synthetic,44,Cloudy
+46119,Knee,Linebacker,outdoor,Synthetic,63,Sunny
+46119,Knee,Linebacker,outdoor,Synthetic,43,Overcast
+38364,Foot,Wide Receiver,outdoor,Natural,89,Sunny
+38364,Foot,Wide Receiver,outdoor,Natural,91,Cloudy
+38364,Foot,Wide Receiver,outdoor,Natural,69,Clear
+38364,Foot,Wide Receiver,outdoor,Natural,90,Partly Cloudy
+38364,Foot,Wide Receiver,outdoor,Natural,71,Partly Cloudy
+38364,Foot,Wide Receiver,outdoor,Natural,52,Cloudy
+38364,Foot,Wide Receiver,outdoor,Natural,69,Sunny
+38364,Foot,Wide Receiver,outdoor,Natural,82,Clear
+38364,Foot,Wide Receiver,outdoor,Natural,69,Hazy
+38364,Foot,Wide Receiver,retractable roof,Natural,72,Sunny
+38364,Foot,Wide Receiver,outdoor,Natural,60,Partly Clouidy
+38364,Foot,Wide Receiver,outdoor,Natural,57,Sunny Skies
+38364,Foot,Wide Receiver,outdoor,Natural,55,Partly Cloudy
+38364,Foot,Wide Receiver,outdoor,Synthetic,43,Overcast
+38364,Foot,Wide Receiver,outdoor,Natural,58,Rain
+38364,Foot,Wide Receiver,outdoor,Natural,45,Sunny
+45966,Knee,Running Back,indoor,Synthetic,70,Indoor
+45966,Knee,Running Back,outdoor,Natural,78,Sunny
+45966,Knee,Running Back,indoor,Synthetic,-999,Indoor
+45966,Knee,Running Back,indoor,Synthetic,-999,N/A (Indoors)
+45966,Knee,Running Back,outdoor,Natural,80,Partly Cloudy
+45966,Knee,Running Back,outdoor,Natural,75,Clear
+45966,Knee,Running Back,outdoor,Natural,33,Partly Cloudy
+45966,Knee,Running Back,outdoor,Synthetic,53,Cloudy
+45966,Knee,Running Back,outdoor,Synthetic,48,Cloudy
+45966,Knee,Running Back,indoor,Synthetic,68,Controlled Climate
+35611,Ankle,Safety,outdoor,Natural,63,Sunny
+35611,Ankle,Safety,outdoor,Natural,78,Sunny
+35611,Ankle,Safety,outdoor,Natural,89,"Sunny, highs to upper 80s"
+35611,Ankle,Safety,outdoor,Natural,73,Cloudy
+35611,Ankle,Safety,outdoor,Natural,60,Sunny
+35611,Ankle,Safety,outdoor,Natural,79,Sunny
+35611,Ankle,Safety,indoor,Synthetic,68,Controlled Climate
+35611,Ankle,Safety,retractable roof,Synthetic,42,Cloudy
+35611,Ankle,Safety,outdoor,Natural,38,Clear
+35611,Ankle,Safety,outdoor,Natural,33,Cloudy
+35611,Ankle,Safety,outdoor,Natural,42,Mostly Cloudy
+35611,Ankle,Safety,retractable roof,Synthetic,51,Mostly Cloudy
+35611,Ankle,Safety,outdoor,Natural,11,Snow
+35611,Ankle,Safety,outdoor,Synthetic,60,Cloudy
+35611,Ankle,Safety,retractable roof,Synthetic,44,Sunny
+35611,Ankle,Safety,outdoor,Natural,69,Sunny
+35611,Ankle,Safety,retractable roof,Synthetic,42,Cloudy
+35611,Ankle,Safety,retractable roof,Synthetic,57,Mostly cloudy
+35611,Ankle,Safety,outdoor,Natural,78,Cloudy
+35611,Ankle,Safety,retractable roof,Synthetic,33,Cloudy
+35611,Ankle,Safety,outdoor,Natural,53,Clear
+44434,Foot,Defensive Lineman,outdoor,Natural,63,Sunny
+44434,Foot,Defensive Lineman,outdoor,Natural,80,Mostly Cloudy
+44434,Foot,Defensive Lineman,retractable roof,Synthetic,83,Sunny
+44434,Foot,Defensive Lineman,outdoor,Natural,67,Cloudy
+44434,Foot,Defensive Lineman,retractable roof,Synthetic,85,Partly Cloudy
+44434,Foot,Defensive Lineman,outdoor,Natural,74,Sunny
+44434,Foot,Defensive Lineman,outdoor,Natural,56,Partly Cloudy
+44434,Foot,Defensive Lineman,indoor,Synthetic,68,Controlled Climate
+44434,Foot,Defensive Lineman,outdoor,Natural,38,Cold
+44434,Foot,Defensive Lineman,outdoor,Natural,58,Rain
+44434,Foot,Defensive Lineman,outdoor,Natural,71,Partly Cloudy
+44434,Foot,Defensive Lineman,outdoor,Natural,72,Cloudy
+44434,Foot,Defensive Lineman,outdoor,Natural,51,Sunny
+44434,Foot,Defensive Lineman,outdoor,Natural,79,Clear
+44434,Foot,Defensive Lineman,outdoor,Natural,47,Cloudy
+44434,Foot,Defensive Lineman,outdoor,Natural,53,Sunny
+44434,Foot,Defensive Lineman,outdoor,Natural,36,Sunny
+44434,Foot,Defensive Lineman,outdoor,Synthetic,44,Cloudy
+44434,Foot,Defensive Lineman,retractable roof,Synthetic,72,Sunny
+44434,Foot,Defensive Lineman,outdoor,Natural,28,Sunny
+44434,Foot,Defensive Lineman,outdoor,Natural,46,Partly Cloudy
+44434,Foot,Defensive Lineman,outdoor,Natural,37,Cloudy
+44434,Foot,Defensive Lineman,outdoor,Natural,48,Partly Cloudy
+44489,Ankle,Linebacker,outdoor,Synthetic,68,Sunny
+44489,Ankle,Linebacker,outdoor,Synthetic,69,Mostly Coudy
+44489,Ankle,Linebacker,outdoor,Natural,89,Sunny
+44489,Ankle,Linebacker,outdoor,Natural,63,Sunny
+44489,Ankle,Linebacker,outdoor,Synthetic,63,Light Rain
+44489,Ankle,Linebacker,outdoor,Natural,79,Sunny
+44489,Ankle,Linebacker,outdoor,Synthetic,39,Cloudy
+44489,Ankle,Linebacker,outdoor,Natural,78,10% Chance of Rain
+44489,Ankle,Linebacker,outdoor,Natural,53,Cloudy
+44489,Ankle,Linebacker,outdoor,Natural,60,Mostly Cloudy
+44489,Ankle,Linebacker,outdoor,Synthetic,46,Partly Cloudy
+44489,Ankle,Linebacker,retractable roof,Synthetic,59,Cloudy
+44489,Ankle,Linebacker,outdoor,Synthetic,82,Clear
+44489,Ankle,Linebacker,outdoor,Natural,80,Cloudy
+44489,Ankle,Linebacker,outdoor,Synthetic,87,Mostly Sunny
+44489,Ankle,Linebacker,outdoor,Synthetic,51,Mostly Cloudy
+44489,Ankle,Linebacker,outdoor,Synthetic,63,Sunny
+44489,Ankle,Linebacker,outdoor,Synthetic,43,Overcast
+44489,Ankle,Linebacker,outdoor,Natural,37,Cloudy
+44489,Ankle,Linebacker,outdoor,Natural,42,Partly Cloudy
+44511,Ankle,Linebacker,outdoor,Natural,91,Cloudy
+44511,Ankle,Linebacker,outdoor,Natural,61,Clear
+44511,Ankle,Linebacker,outdoor,Natural,58,Sunny
+44511,Ankle,Linebacker,retractable roof,Synthetic,78,Partly Cloudy
+44511,Ankle,Linebacker,outdoor,Natural,80,Cloudy
+44511,Ankle,Linebacker,retractable roof,Synthetic,60,Partly clear
+44511,Ankle,Linebacker,outdoor,Natural,62,Hazy
+44511,Ankle,Linebacker,outdoor,Natural,56,Mostly Sunny
+44511,Ankle,Linebacker,outdoor,Natural,33,Cloudy
+44511,Ankle,Linebacker,retractable roof,Synthetic,33,Cloudy
+43826,Knee,Running Back,outdoor,Natural,64,Sunny
+43826,Knee,Running Back,retractable roof,Synthetic,78,Clear
+43826,Knee,Running Back,retractable roof,Synthetic,-999,Indoors
+43826,Knee,Running Back,outdoor,Synthetic,56,"Cloudy, fog started developing in 2nd quarter"
+43826,Knee,Running Back,outdoor,Synthetic,63,Rain
+43826,Knee,Running Back,outdoor,Natural,61,Coudy
+43826,Knee,Running Back,outdoor,Synthetic,45,Cloudy
+43826,Knee,Running Back,retractable roof,Synthetic,-999,Cloudy
+43826,Knee,Running Back,outdoor,Natural,71,Clear
+43826,Knee,Running Back,indoor,Synthetic,56,Sunny
+43518,Ankle,Cornerback,outdoor,Natural,71,Mostly Sunny
+43518,Ankle,Cornerback,retractable roof,Synthetic,78,Clear
+43518,Ankle,Cornerback,outdoor,Natural,89,Sunny
+43518,Ankle,Cornerback,outdoor,Natural,65,Cloudy
+43518,Ankle,Cornerback,indoor,Synthetic,-999,Indoor
+34347,Knee,Wide Receiver,outdoor,Natural,76,Clear
+34347,Knee,Wide Receiver,outdoor,Synthetic,73,Cloudy
+34347,Knee,Wide Receiver,outdoor,Synthetic,56,"Cloudy, fog started developing in 2nd quarter"
+34347,Knee,Wide Receiver,outdoor,Synthetic,62,Rain
+34347,Knee,Wide Receiver,outdoor,Natural,48,Partly Cloudy
+34347,Knee,Wide Receiver,outdoor,Natural,55,Clear
+34347,Knee,Wide Receiver,outdoor,Natural,42,Mostly Cloudy
+34347,Knee,Wide Receiver,outdoor,Synthetic,35,Cloudy
+34347,Knee,Wide Receiver,outdoor,Synthetic,13,Cloudy and cold
+34347,Knee,Wide Receiver,outdoor,Synthetic,62,Cloudy and Cool
+34347,Knee,Wide Receiver,outdoor,Natural,97,Rain Chance 40%
+34347,Knee,Wide Receiver,indoor,Synthetic,68,Controlled Climate
+34347,Knee,Wide Receiver,outdoor,Synthetic,65,Sunny and warm
+34347,Knee,Wide Receiver,outdoor,Synthetic,66,Mostly Cloudy
+34347,Knee,Wide Receiver,outdoor,Synthetic,45,Cloudy
+34347,Knee,Wide Receiver,outdoor,Natural,44,Sunny
+34347,Knee,Wide Receiver,outdoor,Synthetic,46,Partly cloudy
+34347,Knee,Wide Receiver,outdoor,Synthetic,40,Clear and Cool
+34347,Knee,Wide Receiver,outdoor,Natural,46,Sunny
+34347,Knee,Wide Receiver,outdoor,Synthetic,54,Partly Cloudy
+34347,Knee,Wide Receiver,outdoor,Synthetic,53,Cloudy
+34347,Knee,Wide Receiver,outdoor,Natural,82,Mostly Cloudy
+34347,Knee,Wide Receiver,outdoor,Natural,42,Cloudy
+34347,Knee,Wide Receiver,outdoor,Synthetic,40,Clear and cold
+34347,Knee,Wide Receiver,outdoor,Synthetic,33,Sunny and cold
+41943,Ankle,Linebacker,outdoor,Natural,70,Sunny
+41943,Ankle,Linebacker,outdoor,Natural,67,Cloudy
+41943,Ankle,Linebacker,outdoor,Synthetic,63,Rain
+41943,Ankle,Linebacker,outdoor,Synthetic,68,Clear
+41943,Ankle,Linebacker,outdoor,Natural,79,Cloudy
+41209,Ankle,Linebacker,indoor,Synthetic,70,Indoor
+41209,Ankle,Linebacker,indoor,Synthetic,85,Mostly Cloudy
+41209,Ankle,Linebacker,outdoor,Natural,82,Sunny
+41209,Ankle,Linebacker,indoor,Synthetic,84,Cloudy
+41209,Ankle,Linebacker,outdoor,Natural,52,Rain
+41209,Ankle,Linebacker,indoor,Synthetic,54,Sunny
+41209,Ankle,Linebacker,indoor,Synthetic,79,Partly Cloudy
+41209,Ankle,Linebacker,outdoor,Synthetic,42,Cloudy
+41209,Ankle,Linebacker,outdoor,Natural,72,Sunny
+41209,Ankle,Linebacker,indoor,Synthetic,69,Sunny
+41209,Ankle,Linebacker,retractable roof,Synthetic,-999,Cloudy
+41209,Ankle,Linebacker,indoor,Synthetic,86,Partly Cloudy
+41209,Ankle,Linebacker,indoor,Synthetic,90,Clear
+41209,Ankle,Linebacker,indoor,Synthetic,84,Partly Cloudy
+41209,Ankle,Linebacker,outdoor,Natural,54,Partly Sunny
+41209,Ankle,Linebacker,indoor,Synthetic,-999,N/A (Indoors)
+41209,Ankle,Linebacker,indoor,Synthetic,77,Cloudy
+41209,Ankle,Linebacker,outdoor,Synthetic,39,Mostly Sunny
+41209,Ankle,Linebacker,retractable roof,Synthetic,68,Indoors
+41209,Ankle,Linebacker,retractable roof,Synthetic,53,Indoors
+41209,Ankle,Linebacker,indoor,Synthetic,70,Clear Skies
+41209,Ankle,Linebacker,outdoor,Natural,71,Cloudy
+41209,Ankle,Linebacker,outdoor,Natural,48,Clear Skies
+41209,Ankle,Linebacker,retractable roof,Synthetic,68,Indoors
+41209,Ankle,Linebacker,retractable roof,Synthetic,64,Indoors
+44900,Knee,Defensive Lineman,outdoor,Natural,64,Sunny
+44900,Knee,Defensive Lineman,outdoor,Natural,88,Clear
+44900,Knee,Defensive Lineman,outdoor,Natural,89,"Sunny, highs to upper 80s"
+44900,Knee,Defensive Lineman,outdoor,Natural,65,Cloudy
+44900,Knee,Defensive Lineman,outdoor,Natural,70,Partly cloudy
+44900,Knee,Defensive Lineman,outdoor,Natural,69,Partly Sunny
+44900,Knee,Defensive Lineman,outdoor,Natural,70,"Cloudy with periods of rain, thunder possible. Winds shifting to WNW, 10-20 mph."
+44900,Knee,Defensive Lineman,outdoor,Natural,33,Partly Cloudy
+44900,Knee,Defensive Lineman,outdoor,Natural,54,Sunny
+44900,Knee,Defensive Lineman,outdoor,Synthetic,31,Partly Cloudy
+44900,Knee,Defensive Lineman,indoor,Synthetic,68,Controlled Climate
+44900,Knee,Defensive Lineman,outdoor,Natural,24,"Cloudy, light snow accumulating 1-3"""
+44900,Knee,Defensive Lineman,indoor,Synthetic,-999,N/A (Indoors)
+44900,Knee,Defensive Lineman,outdoor,Natural,62,Clear
+44900,Knee,Defensive Lineman,outdoor,Natural,79,Clear
+44900,Knee,Defensive Lineman,retractable roof,Natural,-999,N/A Indoor
+44900,Knee,Defensive Lineman,outdoor,Natural,66,Cloudy
+44900,Knee,Defensive Lineman,outdoor,Natural,89,Partly Cloudy
+44900,Knee,Defensive Lineman,outdoor,Natural,44,Sunny
+44900,Knee,Defensive Lineman,outdoor,Natural,48,cloudy
+44900,Knee,Defensive Lineman,outdoor,Synthetic,49,Mostly sunny
+44900,Knee,Defensive Lineman,outdoor,Natural,37,Mostly Cloudy
+44900,Knee,Defensive Lineman,outdoor,Natural,29,Cloudy
+44900,Knee,Defensive Lineman,outdoor,Natural,45,Fair
+44900,Knee,Defensive Lineman,outdoor,Natural,50,Partly Cloudy
+31070,Knee,Running Back,outdoor,Natural,67,Sunny
+31070,Knee,Running Back,outdoor,Natural,68,Cloudy
+31070,Knee,Running Back,outdoor,Natural,89,Sunny
+31070,Knee,Running Back,outdoor,Natural,81,Cloudy
+31070,Knee,Running Back,outdoor,Natural,36,Cloudy
+31070,Knee,Running Back,outdoor,Natural,60,Cloudy
+31070,Knee,Running Back,outdoor,Natural,44,Clear
+31070,Knee,Running Back,outdoor,Natural,46,Sunny
+38228,Ankle,Linebacker,outdoor,Synthetic,65,Sun & clouds
+38228,Ankle,Linebacker,outdoor,Synthetic,88,Sunny
+38228,Ankle,Linebacker,outdoor,Synthetic,64,Sunny
+38228,Ankle,Linebacker,outdoor,Natural,67,Cloudy
+38228,Ankle,Linebacker,outdoor,Synthetic,73,Cloudy
+38228,Ankle,Linebacker,outdoor,Natural,86,Partly Cloudy
+38228,Ankle,Linebacker,outdoor,Synthetic,63,Rain
+38228,Ankle,Linebacker,outdoor,Synthetic,68,Clear
+38228,Ankle,Linebacker,outdoor,Natural,79,Cloudy
+38228,Ankle,Linebacker,outdoor,Synthetic,47,Sunny
+38228,Ankle,Linebacker,outdoor,Synthetic,48,Cloudy
+38228,Ankle,Linebacker,outdoor,Synthetic,13,Cloudy and cold
+38228,Ankle,Linebacker,outdoor,Natural,83,Sunny
+38228,Ankle,Linebacker,retractable roof,Synthetic,-999,Clear
+38228,Ankle,Linebacker,retractable roof,Synthetic,60,Partly clear
+38228,Ankle,Linebacker,outdoor,Natural,55,Sunny
+38228,Ankle,Linebacker,outdoor,Natural,36,Sunny
+38228,Ankle,Linebacker,retractable roof,Synthetic,59,Sunny
+38228,Ankle,Linebacker,retractable roof,Synthetic,53,Indoors
+38228,Ankle,Linebacker,retractable roof,Synthetic,67,Mostly cloudy
+38228,Ankle,Linebacker,outdoor,Natural,52,Sunny
+39956,Knee,Safety,outdoor,Natural,67,Sunny
+39956,Knee,Safety,outdoor,Natural,68,Cloudy
+39956,Knee,Safety,outdoor,Natural,77,Showers
+39956,Knee,Safety,outdoor,Natural,72,Cloudy
+39956,Knee,Safety,outdoor,Natural,70,Cloudy
+39956,Knee,Safety,outdoor,Natural,67,Rain
+39956,Knee,Safety,outdoor,Natural,61,Cloudy
+39956,Knee,Safety,outdoor,Synthetic,54,Clear skies
+39956,Knee,Safety,outdoor,Natural,49,Sunny
+39956,Knee,Safety,outdoor,Synthetic,44,Cloudy
+39956,Knee,Safety,outdoor,Natural,83,Cloudy
+39956,Knee,Safety,outdoor,Natural,29,Partly Cloudy
+39956,Knee,Safety,outdoor,Natural,81,Cloudy
+39956,Knee,Safety,outdoor,Natural,91,Cloudy
+39956,Knee,Safety,outdoor,Natural,61,Rain
+45950,Ankle,Safety,outdoor,Natural,63,Sunny
+45950,Ankle,Safety,outdoor,Natural,80,Mostly Cloudy
+45950,Ankle,Safety,retractable roof,Synthetic,83,Sunny
+45950,Ankle,Safety,outdoor,Natural,67,Cloudy
+45950,Ankle,Safety,retractable roof,Synthetic,85,Partly Cloudy
+45950,Ankle,Safety,indoor,Synthetic,68,Controlled Climate
+45950,Ankle,Safety,outdoor,Natural,38,Cold
+45950,Ankle,Safety,outdoor,Synthetic,46,Partly Cloudy
+45950,Ankle,Safety,outdoor,Natural,36,Cloudy
+45950,Ankle,Safety,outdoor,Natural,24,"Cloudy, light snow accumulating 1-3"""
+45950,Ankle,Safety,outdoor,Natural,11,Snow
+45950,Ankle,Safety,outdoor,Natural,58,Rain
+45950,Ankle,Safety,indoor,Synthetic,90,Clear
+45950,Ankle,Safety,outdoor,Natural,83,Clear to Partly Cloudy
+45950,Ankle,Safety,outdoor,Natural,71,Partly Cloudy
+45950,Ankle,Safety,outdoor,Natural,72,Cloudy
+45950,Ankle,Safety,outdoor,Natural,51,Sunny
+45950,Ankle,Safety,outdoor,Natural,79,Clear
+45950,Ankle,Safety,outdoor,Natural,47,Cloudy
+45950,Ankle,Safety,outdoor,Natural,53,Sunny
+45950,Ankle,Safety,outdoor,Natural,36,Sunny
+45950,Ankle,Safety,outdoor,Synthetic,44,Cloudy
+45950,Ankle,Safety,retractable roof,Synthetic,72,Sunny
+45950,Ankle,Safety,outdoor,Natural,28,Sunny
+45950,Ankle,Safety,outdoor,Natural,46,Partly Cloudy
+45950,Ankle,Safety,outdoor,Natural,37,Cloudy
+45950,Ankle,Safety,outdoor,Natural,48,Partly Cloudy
+45950,Toes,Safety,outdoor,Natural,63,Sunny
+45950,Toes,Safety,outdoor,Natural,80,Mostly Cloudy
+45950,Toes,Safety,retractable roof,Synthetic,83,Sunny
+45950,Toes,Safety,outdoor,Natural,67,Cloudy
+45950,Toes,Safety,retractable roof,Synthetic,85,Partly Cloudy
+45950,Toes,Safety,indoor,Synthetic,68,Controlled Climate
+45950,Toes,Safety,outdoor,Natural,38,Cold
+45950,Toes,Safety,outdoor,Synthetic,46,Partly Cloudy
+45950,Toes,Safety,outdoor,Natural,36,Cloudy
+45950,Toes,Safety,outdoor,Natural,24,"Cloudy, light snow accumulating 1-3"""
+45950,Toes,Safety,outdoor,Natural,11,Snow
+45950,Toes,Safety,outdoor,Natural,58,Rain
+45950,Toes,Safety,indoor,Synthetic,90,Clear
+45950,Toes,Safety,outdoor,Natural,83,Clear to Partly Cloudy
+45950,Toes,Safety,outdoor,Natural,71,Partly Cloudy
+45950,Toes,Safety,outdoor,Natural,72,Cloudy
+45950,Toes,Safety,outdoor,Natural,51,Sunny
+45950,Toes,Safety,outdoor,Natural,79,Clear
+45950,Toes,Safety,outdoor,Natural,47,Cloudy
+45950,Toes,Safety,outdoor,Natural,53,Sunny
+45950,Toes,Safety,outdoor,Natural,36,Sunny
+45950,Toes,Safety,outdoor,Synthetic,44,Cloudy
+45950,Toes,Safety,retractable roof,Synthetic,72,Sunny
+45950,Toes,Safety,outdoor,Natural,28,Sunny
+45950,Toes,Safety,outdoor,Natural,46,Partly Cloudy
+45950,Toes,Safety,outdoor,Natural,37,Cloudy
+45950,Toes,Safety,outdoor,Natural,48,Partly Cloudy
+43540,Ankle,Linebacker,outdoor,Natural,67,Sunny
+43540,Ankle,Linebacker,outdoor,Natural,68,Cloudy
+43540,Ankle,Linebacker,outdoor,Natural,89,Sunny
+43540,Ankle,Linebacker,outdoor,Natural,77,Showers
+43540,Ankle,Linebacker,outdoor,Natural,72,Cloudy
+43540,Ankle,Linebacker,outdoor,Natural,70,Cloudy
+43540,Ankle,Linebacker,outdoor,Natural,81,Cloudy
+43540,Ankle,Linebacker,outdoor,Natural,91,Cloudy
+43540,Ankle,Linebacker,outdoor,Natural,61,Rain
+43540,Ankle,Linebacker,outdoor,Natural,80,Sunny
+43540,Ankle,Linebacker,outdoor,Natural,79,Partly Cloudy
+43540,Ankle,Linebacker,outdoor,Natural,49,Partly Sunny
+43540,Ankle,Linebacker,outdoor,Natural,48,Partly Cloudy
+43540,Ankle,Linebacker,outdoor,Natural,38,Clear
+43540,Ankle,Linebacker,retractable roof,Synthetic,68,Indoors
+43540,Ankle,Linebacker,outdoor,Natural,44,Clear
+43540,Ankle,Linebacker,outdoor,Natural,46,Sunny
+44440,Ankle,Cornerback,outdoor,Natural,81,Sunny
+44440,Ankle,Cornerback,outdoor,Synthetic,88,Sunny
+44440,Ankle,Cornerback,outdoor,Natural,89,Partly Cloudy
+44440,Ankle,Cornerback,retractable roof,Synthetic,-999,Indoors
+44440,Ankle,Cornerback,outdoor,Natural,86,Partly Cloudy
+44440,Ankle,Cornerback,outdoor,Natural,56,Partly Cloudy
+44440,Ankle,Cornerback,outdoor,Natural,49,Clear
+44440,Ankle,Cornerback,outdoor,Synthetic,47,Partly Cloudy
+44440,Ankle,Cornerback,outdoor,Natural,80,Cloudy
+44440,Ankle,Cornerback,outdoor,Natural,55,Clear
+44440,Ankle,Cornerback,outdoor,Synthetic,22,Mostly cloudy
+44440,Ankle,Cornerback,outdoor,Natural,23,Cloudy
+44440,Ankle,Cornerback,outdoor,Natural,71,Clear
+44440,Ankle,Cornerback,outdoor,Natural,89,Scattered Showers
+44440,Ankle,Cornerback,outdoor,Synthetic,80,Sunny
+44440,Ankle,Cornerback,outdoor,Natural,90,Partly Cloudy
+44440,Ankle,Cornerback,outdoor,Synthetic,65,Sunny and warm
+44440,Ankle,Cornerback,outdoor,Synthetic,87,Mostly Sunny
+44440,Ankle,Cornerback,retractable roof,Synthetic,66,Cloudy
+44440,Ankle,Cornerback,outdoor,Natural,87,Partly Sunny
+44440,Ankle,Cornerback,outdoor,Natural,33,Cloudy
+44440,Ankle,Cornerback,retractable roof,Synthetic,57,Mostly cloudy
+44449,Knee,Wide Receiver,indoor,Synthetic,70,Indoor
+44449,Knee,Wide Receiver,indoor,Synthetic,85,Mostly Cloudy
+44449,Knee,Wide Receiver,outdoor,Natural,82,Sunny
+44449,Knee,Wide Receiver,indoor,Synthetic,84,Cloudy
+44449,Knee,Wide Receiver,outdoor,Natural,52,Rain
+44449,Knee,Wide Receiver,indoor,Synthetic,54,Sunny
+44449,Knee,Wide Receiver,indoor,Synthetic,79,Partly Cloudy
+44449,Knee,Wide Receiver,outdoor,Synthetic,42,Cloudy
+44449,Knee,Wide Receiver,indoor,Synthetic,57,Sunny
+44449,Knee,Wide Receiver,outdoor,Natural,72,Sunny
+44449,Knee,Wide Receiver,indoor,Synthetic,69,Sunny
+44449,Knee,Wide Receiver,retractable roof,Synthetic,-999,Cloudy
+44449,Knee,Wide Receiver,indoor,Synthetic,56,Sunny
+44449,Knee,Wide Receiver,outdoor,Natural,71,Clear
+44449,Knee,Wide Receiver,indoor,Synthetic,86,Partly Cloudy
+44449,Knee,Wide Receiver,indoor,Synthetic,90,Clear
+44449,Knee,Wide Receiver,indoor,Synthetic,84,Partly Cloudy
+44449,Knee,Wide Receiver,outdoor,Natural,54,Partly Sunny
+44449,Knee,Wide Receiver,indoor,Synthetic,-999,N/A (Indoors)
+44449,Knee,Wide Receiver,indoor,Synthetic,77,Cloudy
+44449,Knee,Wide Receiver,outdoor,Synthetic,39,Mostly Sunny
+44449,Knee,Wide Receiver,retractable roof,Synthetic,68,Indoors
+44449,Knee,Wide Receiver,retractable roof,Synthetic,53,Indoors
+44449,Knee,Wide Receiver,indoor,Synthetic,70,Clear Skies
+44449,Knee,Wide Receiver,outdoor,Natural,71,Cloudy
+44449,Knee,Wide Receiver,outdoor,Natural,48,Clear Skies
+44449,Knee,Wide Receiver,retractable roof,Synthetic,68,Indoors
+44449,Knee,Wide Receiver,retractable roof,Synthetic,64,Indoors
+44449,Ankle,Wide Receiver,indoor,Synthetic,70,Indoor
+44449,Ankle,Wide Receiver,indoor,Synthetic,85,Mostly Cloudy
+44449,Ankle,Wide Receiver,outdoor,Natural,82,Sunny
+44449,Ankle,Wide Receiver,indoor,Synthetic,84,Cloudy
+44449,Ankle,Wide Receiver,outdoor,Natural,52,Rain
+44449,Ankle,Wide Receiver,indoor,Synthetic,54,Sunny
+44449,Ankle,Wide Receiver,indoor,Synthetic,79,Partly Cloudy
+44449,Ankle,Wide Receiver,outdoor,Synthetic,42,Cloudy
+44449,Ankle,Wide Receiver,indoor,Synthetic,57,Sunny
+44449,Ankle,Wide Receiver,outdoor,Natural,72,Sunny
+44449,Ankle,Wide Receiver,indoor,Synthetic,69,Sunny
+44449,Ankle,Wide Receiver,retractable roof,Synthetic,-999,Cloudy
+44449,Ankle,Wide Receiver,indoor,Synthetic,56,Sunny
+44449,Ankle,Wide Receiver,outdoor,Natural,71,Clear
+44449,Ankle,Wide Receiver,indoor,Synthetic,86,Partly Cloudy
+44449,Ankle,Wide Receiver,indoor,Synthetic,90,Clear
+44449,Ankle,Wide Receiver,indoor,Synthetic,84,Partly Cloudy
+44449,Ankle,Wide Receiver,outdoor,Natural,54,Partly Sunny
+44449,Ankle,Wide Receiver,indoor,Synthetic,-999,N/A (Indoors)
+44449,Ankle,Wide Receiver,indoor,Synthetic,77,Cloudy
+44449,Ankle,Wide Receiver,outdoor,Synthetic,39,Mostly Sunny
+44449,Ankle,Wide Receiver,retractable roof,Synthetic,68,Indoors
+44449,Ankle,Wide Receiver,retractable roof,Synthetic,53,Indoors
+44449,Ankle,Wide Receiver,indoor,Synthetic,70,Clear Skies
+44449,Ankle,Wide Receiver,outdoor,Natural,71,Cloudy
+44449,Ankle,Wide Receiver,outdoor,Natural,48,Clear Skies
+44449,Ankle,Wide Receiver,retractable roof,Synthetic,68,Indoors
+44449,Ankle,Wide Receiver,retractable roof,Synthetic,64,Indoors
+42406,Ankle,Offensive Lineman,outdoor,Natural,71,Mostly Sunny
+42406,Ankle,Offensive Lineman,outdoor,Synthetic,65,Mostly Cloudy
+42406,Ankle,Offensive Lineman,outdoor,Natural,88,Sunny
+42406,Ankle,Offensive Lineman,outdoor,Synthetic,61,Clear
+42406,Ankle,Offensive Lineman,outdoor,Natural,78,Sunny
+42406,Ankle,Offensive Lineman,outdoor,Synthetic,50,Cloudy
+42406,Ankle,Offensive Lineman,outdoor,Synthetic,36,Rain
+42406,Ankle,Offensive Lineman,outdoor,Synthetic,45,Cloudy
+42406,Ankle,Offensive Lineman,outdoor,Natural,66,cloudy
+42406,Ankle,Offensive Lineman,outdoor,Synthetic,44,Cloudy
+42406,Ankle,Offensive Lineman,outdoor,Natural,54,Sunny
+42406,Ankle,Offensive Lineman,outdoor,Synthetic,47,Cloudy
+42406,Ankle,Offensive Lineman,outdoor,Synthetic,40,Sunny
+42406,Ankle,Offensive Lineman,outdoor,Natural,84,Sunny
+42406,Ankle,Offensive Lineman,outdoor,Natural,79,Clear
+42406,Ankle,Offensive Lineman,outdoor,Synthetic,61,Sunny
+42406,Ankle,Offensive Lineman,retractable roof,Natural,-999,N/A Indoor
+42406,Ankle,Offensive Lineman,outdoor,Synthetic,53,Rain
+42406,Ankle,Offensive Lineman,outdoor,Natural,52,Cloudy
+42406,Ankle,Offensive Lineman,outdoor,Synthetic,56,Sunny
+42406,Ankle,Offensive Lineman,outdoor,Natural,75,Sunny
+42406,Ankle,Offensive Lineman,outdoor,Synthetic,54,Partly Cloudy
+42406,Ankle,Offensive Lineman,outdoor,Natural,57,Partly Cloudy
+42406,Ankle,Offensive Lineman,outdoor,Synthetic,48,Cloudy
+42406,Ankle,Offensive Lineman,outdoor,Natural,61,Cloudy
+42406,Ankle,Offensive Lineman,outdoor,Synthetic,43,Cloudy
+42637,Knee,Linebacker,outdoor,Natural,68,Sunny
+42637,Knee,Linebacker,outdoor,Natural,33,Clear
+46430,Knee,Linebacker,retractable roof,Synthetic,80,Sunny
+46430,Knee,Linebacker,outdoor,Natural,84,Partly Cloudy
+46430,Knee,Linebacker,outdoor,Natural,73,Cloudy
+46430,Knee,Linebacker,retractable roof,Synthetic,72,Cloudy
+46430,Knee,Linebacker,outdoor,Natural,78,10% Chance of Rain
+46430,Knee,Linebacker,outdoor,Natural,76,Partly Cloudy
+46430,Knee,Linebacker,outdoor,Natural,38,Cold
+46430,Knee,Linebacker,outdoor,Natural,70,Partly Cloudy
+46430,Knee,Linebacker,outdoor,Natural,54,Sunny
+46430,Knee,Linebacker,outdoor,Natural,52,Cloudy
+46430,Knee,Linebacker,outdoor,Natural,23,Clear
+46430,Knee,Linebacker,outdoor,Natural,97,Rain Chance 40%
+46430,Knee,Linebacker,outdoor,Natural,89,Heat Index 95
+46430,Knee,Linebacker,outdoor,Natural,86,Partly Cloudy
+46430,Knee,Linebacker,outdoor,Natural,58,Cloudy
+46430,Knee,Linebacker,retractable roof,Synthetic,46,Rainy
+38192,Ankle,Wide Receiver,outdoor,Natural,64,Sunny
+38192,Ankle,Wide Receiver,retractable roof,Synthetic,78,Clear
+38192,Ankle,Wide Receiver,indoor,Synthetic,68,Controlled Climate
+38192,Ankle,Wide Receiver,retractable roof,Synthetic,-999,Indoors
+38192,Ankle,Wide Receiver,outdoor,Synthetic,56,"Cloudy, fog started developing in 2nd quarter"
+38192,Ankle,Wide Receiver,outdoor,Synthetic,63,Rain
+38192,Ankle,Wide Receiver,outdoor,Natural,61,Coudy
+38192,Ankle,Wide Receiver,outdoor,Synthetic,45,Cloudy
+38192,Ankle,Wide Receiver,retractable roof,Synthetic,-999,Cloudy
+38192,Ankle,Wide Receiver,outdoor,Natural,71,Clear
+38192,Ankle,Wide Receiver,indoor,Synthetic,56,Sunny
+38192,Ankle,Wide Receiver,outdoor,Natural,81,Cloudy
+38192,Ankle,Wide Receiver,outdoor,Natural,83,Sunny
+38192,Ankle,Wide Receiver,retractable roof,Synthetic,-999,Clear
+38192,Ankle,Wide Receiver,retractable roof,Synthetic,60,Partly clear
+38192,Ankle,Wide Receiver,outdoor,Natural,55,Sunny
+38192,Ankle,Wide Receiver,outdoor,Natural,36,Sunny
+38192,Ankle,Wide Receiver,retractable roof,Synthetic,59,Sunny
+38192,Ankle,Wide Receiver,retractable roof,Synthetic,53,Indoors
+38192,Ankle,Wide Receiver,retractable roof,Synthetic,67,Mostly cloudy
+38192,Ankle,Wide Receiver,outdoor,Natural,25,Cloudy
+38192,Ankle,Wide Receiver,outdoor,Natural,52,Sunny
+38192,Ankle,Wide Receiver,outdoor,Natural,80,Cloudy
+39678,Ankle,Defensive Lineman,outdoor,Natural,64,Sunny
+39678,Ankle,Defensive Lineman,retractable roof,Synthetic,78,Clear
+39678,Ankle,Defensive Lineman,outdoor,Synthetic,56,"Cloudy, fog started developing in 2nd quarter"
+39678,Ankle,Defensive Lineman,outdoor,Synthetic,63,Rain
+39678,Ankle,Defensive Lineman,outdoor,Natural,61,Coudy
+39678,Ankle,Defensive Lineman,outdoor,Synthetic,45,Cloudy
+39678,Ankle,Defensive Lineman,retractable roof,Synthetic,-999,Cloudy
+39678,Ankle,Defensive Lineman,outdoor,Natural,71,Clear
+39678,Ankle,Defensive Lineman,indoor,Synthetic,56,Sunny
+39850,Knee,Safety,outdoor,Synthetic,84,Sunny
+39850,Knee,Safety,outdoor,Synthetic,61,Sunny
+39850,Knee,Safety,outdoor,Natural,76,Clear
+39850,Knee,Safety,outdoor,Synthetic,73,Cloudy
+39850,Knee,Safety,outdoor,Synthetic,56,"Cloudy, fog started developing in 2nd quarter"
+39850,Knee,Safety,outdoor,Synthetic,62,Rain
+39850,Knee,Safety,outdoor,Natural,48,Partly Cloudy
+39850,Knee,Safety,outdoor,Natural,66,Sunny
+39850,Knee,Safety,outdoor,Synthetic,47,Partly Cloudy
+39850,Knee,Safety,outdoor,Synthetic,62,Cloudy and Cool
+39850,Knee,Safety,outdoor,Natural,97,Rain Chance 40%
+39850,Knee,Safety,indoor,Synthetic,68,Controlled Climate
+39850,Knee,Safety,outdoor,Synthetic,65,Sunny and warm
+39850,Knee,Safety,outdoor,Synthetic,66,Mostly Cloudy
+39850,Knee,Safety,outdoor,Synthetic,45,Cloudy
+39850,Knee,Safety,outdoor,Natural,44,Sunny
+39850,Knee,Safety,outdoor,Synthetic,46,Partly cloudy
+39850,Knee,Safety,outdoor,Synthetic,40,Clear and Cool
+39850,Knee,Safety,outdoor,Natural,46,Sunny
+39850,Knee,Safety,outdoor,Synthetic,53,Cloudy
+39850,Knee,Safety,outdoor,Natural,82,Mostly Cloudy
+39850,Knee,Safety,outdoor,Natural,42,Cloudy
+39850,Knee,Safety,outdoor,Synthetic,40,Clear and cold
+39850,Knee,Safety,outdoor,Synthetic,33,Sunny and cold
+42600,Knee,Linebacker,outdoor,Natural,71,Mostly Sunny
+42600,Knee,Linebacker,outdoor,Synthetic,65,Mostly Cloudy
+42600,Knee,Linebacker,outdoor,Natural,88,Sunny
+33337,Foot,Tight End,outdoor,Natural,87,Clear
+33337,Foot,Tight End,outdoor,Natural,83,Sunny
+33337,Foot,Tight End,outdoor,Synthetic,47,Sunny
+33337,Foot,Tight End,outdoor,Natural,41,Sunny
+33337,Foot,Tight End,outdoor,Natural,51,Party Cloudy
+33337,Foot,Tight End,outdoor,Natural,55,Cloudy
+33337,Foot,Tight End,outdoor,Natural,81,Partly Cloudy
+33337,Foot,Tight End,outdoor,Natural,52,Cloudy
+33337,Foot,Tight End,outdoor,Natural,49,Partly Sunny
+33337,Foot,Tight End,outdoor,Natural,61,Sunny
+33337,Foot,Tight End,outdoor,Natural,62,Sunny
+33337,Foot,Tight End,outdoor,Natural,40,Clear
+33337,Foot,Tight End,outdoor,Natural,57,Partly Cloudy
+33337,Foot,Tight End,outdoor,Natural,81,Cloudy
+45099,Knee,Cornerback,outdoor,Natural,72,Sunny
+45099,Knee,Cornerback,outdoor,Natural,70,Sunny
+45099,Knee,Cornerback,outdoor,Natural,76,Clear
+45099,Knee,Cornerback,outdoor,Natural,72,Mostly Cloudy
+45099,Knee,Cornerback,outdoor,Natural,72,Sunny
+45099,Knee,Cornerback,outdoor,Natural,57,Clear
+45099,Knee,Cornerback,outdoor,Natural,29,Partly Cloudy
+45099,Knee,Cornerback,retractable roof,Synthetic,78,Partly Cloudy
+45099,Knee,Cornerback,outdoor,Natural,80,Cloudy
+45099,Knee,Cornerback,retractable roof,Synthetic,60,Partly clear
+45099,Knee,Cornerback,outdoor,Natural,62,Hazy
+45099,Knee,Cornerback,outdoor,Natural,56,Mostly Sunny
+45099,Knee,Cornerback,outdoor,Natural,33,Cloudy
+36591,Knee,Wide Receiver,retractable roof,Synthetic,80,Sunny
+36591,Knee,Wide Receiver,outdoor,Natural,84,Partly Cloudy
+36591,Knee,Wide Receiver,outdoor,Synthetic,64,Sunny
+36591,Knee,Wide Receiver,outdoor,Natural,73,Cloudy
+36591,Knee,Wide Receiver,outdoor,Natural,88,30% Chance of Rain
+36591,Knee,Wide Receiver,retractable roof,Synthetic,72,Cloudy
+36591,Knee,Wide Receiver,outdoor,Natural,78,10% Chance of Rain
+36591,Knee,Wide Receiver,outdoor,Natural,76,Partly Cloudy
+39653,Ankle,Cornerback,outdoor,Synthetic,63,Clear and warm
+39653,Ankle,Cornerback,indoor,Synthetic,85,Mostly Cloudy
+39653,Ankle,Cornerback,outdoor,Synthetic,84,Sunny
+39653,Ankle,Cornerback,outdoor,Synthetic,61,Sunny
+39653,Ankle,Cornerback,outdoor,Natural,76,Clear
+39653,Ankle,Cornerback,outdoor,Natural,48,Partly Cloudy
+39653,Ankle,Cornerback,outdoor,Natural,66,Sunny
+39653,Ankle,Cornerback,outdoor,Synthetic,47,Partly Cloudy
+39653,Ankle,Cornerback,outdoor,Synthetic,48,Mostly cloudy
+39653,Ankle,Cornerback,outdoor,Natural,55,Clear
+39653,Ankle,Cornerback,outdoor,Natural,42,Mostly Cloudy
+39653,Ankle,Cornerback,outdoor,Synthetic,35,Cloudy
+39653,Ankle,Cornerback,outdoor,Synthetic,13,Cloudy and cold
+39653,Ankle,Cornerback,outdoor,Synthetic,62,Cloudy and Cool
+39653,Ankle,Cornerback,outdoor,Natural,97,Rain Chance 40%
+39653,Ankle,Cornerback,indoor,Synthetic,68,Controlled Climate
+39653,Ankle,Cornerback,outdoor,Synthetic,65,Sunny and warm
+39653,Ankle,Cornerback,outdoor,Synthetic,66,Mostly Cloudy
+39653,Ankle,Cornerback,outdoor,Synthetic,45,Cloudy
+39653,Ankle,Cornerback,outdoor,Natural,44,Sunny
+39653,Ankle,Cornerback,outdoor,Synthetic,46,Partly cloudy
+39653,Ankle,Cornerback,outdoor,Synthetic,40,Clear and Cool
+39653,Ankle,Cornerback,outdoor,Natural,46,Sunny
+39653,Ankle,Cornerback,outdoor,Synthetic,54,Partly Cloudy
+39653,Ankle,Cornerback,outdoor,Synthetic,53,Cloudy
+39653,Ankle,Cornerback,outdoor,Natural,82,Mostly Cloudy
+39653,Ankle,Cornerback,outdoor,Natural,42,Cloudy
+39653,Ankle,Cornerback,outdoor,Synthetic,40,Clear and cold
+39653,Ankle,Cornerback,outdoor,Synthetic,33,Sunny and cold
+38253,Toes,Defensive Lineman,outdoor,Natural,67,Sunny
+38253,Toes,Defensive Lineman,outdoor,Natural,76,Cloudy
+38253,Toes,Defensive Lineman,outdoor,Natural,76,Clear
+38253,Toes,Defensive Lineman,outdoor,Natural,82,Clear
+38253,Toes,Defensive Lineman,outdoor,Natural,68,Cloudy
+38253,Toes,Defensive Lineman,outdoor,Natural,70,Cloudy
+38253,Toes,Defensive Lineman,outdoor,Natural,60,Rain
+38253,Toes,Defensive Lineman,outdoor,Synthetic,36,Rain
+38253,Toes,Defensive Lineman,outdoor,Natural,44,Cloudy
+38253,Toes,Defensive Lineman,indoor,Synthetic,57,Sunny
+38253,Toes,Defensive Lineman,outdoor,Natural,43,Cloudy
+38253,Toes,Defensive Lineman,outdoor,Natural,81,Cloudy
+38253,Toes,Defensive Lineman,outdoor,Natural,83,Sunny
+38253,Toes,Defensive Lineman,retractable roof,Synthetic,-999,Clear
+38253,Toes,Defensive Lineman,retractable roof,Synthetic,60,Partly clear
+38253,Toes,Defensive Lineman,outdoor,Natural,55,Sunny
+38253,Toes,Defensive Lineman,outdoor,Natural,36,Sunny
+38253,Toes,Defensive Lineman,retractable roof,Synthetic,59,Sunny
+38253,Toes,Defensive Lineman,retractable roof,Synthetic,53,Indoors
+38253,Toes,Defensive Lineman,retractable roof,Synthetic,67,Mostly cloudy
+38253,Toes,Defensive Lineman,outdoor,Natural,25,Cloudy
+38214,Toes,Running Back,indoor,Synthetic,70,Indoor
+38214,Toes,Running Back,indoor,Synthetic,85,Mostly Cloudy
+38214,Toes,Running Back,outdoor,Natural,82,Sunny
+38214,Toes,Running Back,indoor,Synthetic,84,Cloudy
+38214,Toes,Running Back,outdoor,Natural,52,Rain
+38214,Toes,Running Back,indoor,Synthetic,54,Sunny
+38214,Toes,Running Back,indoor,Synthetic,79,Partly Cloudy
+38214,Toes,Running Back,outdoor,Synthetic,42,Cloudy
+38214,Toes,Running Back,indoor,Synthetic,57,Sunny
+38214,Toes,Running Back,outdoor,Natural,72,Sunny
+38214,Toes,Running Back,indoor,Synthetic,69,Sunny
+38214,Toes,Running Back,retractable roof,Synthetic,-999,Cloudy
+38214,Toes,Running Back,indoor,Synthetic,56,Sunny
+38214,Toes,Running Back,outdoor,Natural,71,Clear
+38214,Toes,Running Back,indoor,Synthetic,84,Partly Cloudy
+38214,Toes,Running Back,outdoor,Natural,54,Partly Sunny
+38214,Toes,Running Back,indoor,Synthetic,-999,N/A (Indoors)
+38214,Toes,Running Back,indoor,Synthetic,77,Cloudy
+38214,Toes,Running Back,outdoor,Synthetic,39,Mostly Sunny
+38214,Toes,Running Back,retractable roof,Synthetic,68,Indoors
+38214,Toes,Running Back,retractable roof,Synthetic,53,Indoors
+38214,Toes,Running Back,indoor,Synthetic,70,Clear Skies
+38214,Toes,Running Back,outdoor,Natural,71,Cloudy
+38214,Toes,Running Back,outdoor,Natural,48,Clear Skies
+38214,Toes,Running Back,retractable roof,Synthetic,68,Indoors
+38214,Toes,Running Back,retractable roof,Synthetic,64,Indoors
+43119,Ankle,Cornerback,outdoor,Synthetic,63,Clear and warm
+43119,Ankle,Cornerback,indoor,Synthetic,85,Mostly Cloudy
+43119,Ankle,Cornerback,outdoor,Synthetic,84,Sunny
+43119,Ankle,Cornerback,outdoor,Synthetic,61,Sunny
+43119,Ankle,Cornerback,outdoor,Natural,76,Clear
+43119,Ankle,Cornerback,outdoor,Synthetic,73,Cloudy
+43119,Ankle,Cornerback,outdoor,Synthetic,56,"Cloudy, fog started developing in 2nd quarter"
+43119,Ankle,Cornerback,outdoor,Synthetic,62,Rain
+43119,Ankle,Cornerback,outdoor,Natural,48,Partly Cloudy
+43119,Ankle,Cornerback,outdoor,Natural,66,Sunny
+43119,Ankle,Cornerback,outdoor,Synthetic,47,Partly Cloudy
+43119,Ankle,Cornerback,outdoor,Synthetic,48,Mostly cloudy
+43119,Ankle,Cornerback,outdoor,Natural,55,Clear
+43119,Ankle,Cornerback,outdoor,Natural,42,Mostly Cloudy
+43119,Ankle,Cornerback,outdoor,Synthetic,35,Cloudy
+43119,Ankle,Cornerback,outdoor,Synthetic,13,Cloudy and cold
+43119,Ankle,Cornerback,outdoor,Natural,89,Scattered Showers
+43119,Ankle,Cornerback,outdoor,Natural,81,Cloudy
+43119,Ankle,Cornerback,outdoor,Natural,89,Heat Index 95
+43119,Ankle,Cornerback,outdoor,Natural,80,Sunny
+43119,Ankle,Cornerback,outdoor,Synthetic,62,Cloudy
+43119,Ankle,Cornerback,outdoor,Natural,66,Rain
+43119,Ankle,Cornerback,outdoor,Natural,66,Sunny
+43119,Ankle,Cornerback,indoor,Synthetic,74,Clear skies
+43119,Ankle,Cornerback,outdoor,Natural,46,Sunny
+43119,Ankle,Cornerback,retractable roof,Synthetic,42,Cloudy
+43119,Ankle,Cornerback,retractable roof,Synthetic,51,Clear
+43119,Ankle,Cornerback,outdoor,Natural,70,Sunny
+43119,Ankle,Cornerback,outdoor,Natural,44,Clear
+43119,Ankle,Cornerback,outdoor,Natural,51,Sunny
+43119,Ankle,Cornerback,outdoor,Natural,53,Clear
+35648,Ankle,Wide Receiver,outdoor,Synthetic,68,Sunny
+35648,Ankle,Wide Receiver,outdoor,Natural,80,Mostly Cloudy
+35648,Ankle,Wide Receiver,outdoor,Natural,64,Sunny
+35648,Ankle,Wide Receiver,outdoor,Natural,72,Sunny
+35648,Ankle,Wide Receiver,outdoor,Natural,69,Partly Sunny
+35648,Ankle,Wide Receiver,indoor,Synthetic,-999,Indoor
+35648,Ankle,Wide Receiver,outdoor,Natural,75,Cloudy
+35648,Ankle,Wide Receiver,outdoor,Natural,28,Sunny
+35648,Ankle,Wide Receiver,outdoor,Natural,50,Fair
+35648,Ankle,Wide Receiver,outdoor,Natural,53,Partly Sunny
+35648,Ankle,Wide Receiver,outdoor,Natural,33,Cloudy
+35648,Ankle,Wide Receiver,outdoor,Natural,36,Cloudy
+35648,Ankle,Wide Receiver,outdoor,Natural,63,Cloudy
+35648,Ankle,Wide Receiver,outdoor,Natural,19,Cloudy
+35648,Ankle,Wide Receiver,outdoor,Natural,81,Cloudy
+35648,Ankle,Wide Receiver,outdoor,Natural,91,Cloudy
+40051,Ankle,Tight End,outdoor,Natural,72,Sunny
+40051,Ankle,Tight End,outdoor,Natural,84,Partly Cloudy
+40051,Ankle,Tight End,outdoor,Natural,88,Sunny
+40051,Ankle,Tight End,retractable roof,Synthetic,87,Sunny
+40051,Ankle,Tight End,outdoor,Natural,89,Partly Cloudy
+40051,Ankle,Tight End,outdoor,Natural,57,Clear
+40051,Ankle,Tight End,outdoor,Natural,74,Sunny
+40051,Ankle,Tight End,outdoor,Natural,75,Cloudy
+40051,Ankle,Tight End,outdoor,Natural,53,Cloudy
+40051,Ankle,Tight End,outdoor,Natural,40,Cloudy
+40051,Ankle,Tight End,retractable roof,Synthetic,47,Sunny
+40051,Ankle,Tight End,outdoor,Natural,60,Sunny
+40051,Ankle,Tight End,outdoor,Natural,65,Sunny
+40051,Ankle,Tight End,outdoor,Natural,39,Cloudy
+40051,Ankle,Tight End,outdoor,Natural,23,Clear
+39671,Ankle,Linebacker,outdoor,Natural,71,Mostly Sunny
+39671,Ankle,Linebacker,retractable roof,Synthetic,78,Clear
+39671,Ankle,Linebacker,outdoor,Natural,65,Cloudy
+39671,Ankle,Linebacker,indoor,Synthetic,-999,Indoor
+39671,Ankle,Linebacker,outdoor,Natural,52,Rain
+39671,Ankle,Linebacker,outdoor,Natural,35,Cloudy
+39671,Ankle,Linebacker,outdoor,Natural,39,"Rain likely, temps in low 40s."
+39671,Ankle,Linebacker,outdoor,Natural,28,Sunny
+39671,Ankle,Linebacker,outdoor,Natural,38,Clear
+39671,Ankle,Linebacker,outdoor,Natural,42,Cloudy
+39671,Ankle,Linebacker,outdoor,Natural,51,Party Cloudy
+39671,Ankle,Linebacker,outdoor,Natural,62,Clear
+39671,Ankle,Linebacker,outdoor,Natural,80,Partly Cloudy
+39671,Ankle,Linebacker,outdoor,Natural,62,Rain
+39671,Ankle,Linebacker,outdoor,Natural,49,Cloudy
+39671,Ankle,Linebacker,indoor,Synthetic,68,Controlled Climate
+39671,Ankle,Linebacker,outdoor,Natural,37,Clear
+39671,Ankle,Linebacker,outdoor,Natural,82,Cloudy
+39671,Ankle,Linebacker,outdoor,Synthetic,40,Clear and Cool
+39671,Ankle,Linebacker,outdoor,Natural,33,Cloudy
+43229,Ankle,Safety,outdoor,Natural,73,Mostly Cloudy
+43229,Ankle,Safety,outdoor,Natural,76,Sunny
+43229,Ankle,Safety,outdoor,Synthetic,62,Rain
+43229,Ankle,Safety,outdoor,Natural,76,Partly Cloudy
+43229,Ankle,Safety,outdoor,Natural,53,Cloudy
+43229,Ankle,Safety,outdoor,Synthetic,83,Fair
+43229,Ankle,Safety,outdoor,Natural,80,Sunny
+43229,Ankle,Safety,outdoor,Natural,51,Sunny
+43229,Ankle,Safety,outdoor,Natural,66,Sunny
+43229,Ankle,Safety,outdoor,Synthetic,56,Sunny
+43229,Ankle,Safety,outdoor,Natural,69,Hazy
+43229,Ankle,Safety,outdoor,Natural,57,Clear
+43229,Ankle,Safety,outdoor,Natural,51,Mostly Cloudy
+46021,Knee,Wide Receiver,indoor,Synthetic,68,Controlled Climate
+46021,Knee,Wide Receiver,outdoor,Natural,33,Partly Cloudy
+46021,Knee,Wide Receiver,outdoor,Natural,53,Partly Sunny
+46021,Knee,Wide Receiver,outdoor,Natural,55,Clear
+46021,Knee,Wide Receiver,outdoor,Synthetic,35,Mostly Cloudy
+46021,Knee,Wide Receiver,outdoor,Natural,73,Clear
+46021,Knee,Wide Receiver,outdoor,Natural,89,Partly Cloudy
+46021,Knee,Wide Receiver,indoor,Synthetic,-999,N/A (Indoors)
+46021,Knee,Wide Receiver,outdoor,Natural,37,Mostly Cloudy
+46021,Knee,Wide Receiver,retractable roof,Natural,70,Sunny
+46021,Knee,Wide Receiver,outdoor,Synthetic,39,Rain shower
+38259,Knee,Running Back,outdoor,Natural,72,Sunny
+38259,Knee,Running Back,outdoor,Natural,84,Partly Cloudy
+38259,Knee,Running Back,outdoor,Natural,88,Sunny
+38259,Knee,Running Back,retractable roof,Synthetic,87,Sunny
+38259,Knee,Running Back,outdoor,Natural,89,Partly Cloudy
+38259,Knee,Running Back,outdoor,Natural,57,Clear
+38259,Knee,Running Back,outdoor,Natural,74,Sunny
+38259,Knee,Running Back,outdoor,Natural,75,Cloudy
+38259,Knee,Running Back,outdoor,Natural,53,Cloudy
+38259,Knee,Running Back,outdoor,Natural,40,Cloudy
+38259,Knee,Running Back,retractable roof,Synthetic,47,Sunny
+38259,Knee,Running Back,outdoor,Natural,60,Sunny
+38259,Knee,Running Back,outdoor,Natural,65,Sunny
+38259,Knee,Running Back,outdoor,Natural,39,Cloudy
+45158,Knee,Running Back,outdoor,Natural,72,Sunny
+45158,Knee,Running Back,outdoor,Natural,70,Sunny
+45158,Knee,Running Back,outdoor,Natural,76,Clear
+45158,Knee,Running Back,outdoor,Natural,72,Mostly Cloudy
+45158,Knee,Running Back,outdoor,Natural,72,Sunny
+45158,Knee,Running Back,outdoor,Natural,76,Sunny
+45158,Knee,Running Back,outdoor,Natural,62,Cloudy
+45158,Knee,Running Back,outdoor,Synthetic,42,Rain
+45158,Knee,Running Back,outdoor,Natural,66,Sunny
+45158,Knee,Running Back,outdoor,Natural,61,Cloudy
+45158,Knee,Running Back,outdoor,Natural,58,Sunny
+45158,Knee,Running Back,outdoor,Natural,46,Sunny
+45158,Knee,Running Back,outdoor,Natural,57,Clear
+45158,Knee,Running Back,outdoor,Natural,29,Partly Cloudy
+45158,Knee,Running Back,outdoor,Natural,69,Clear
+45158,Knee,Running Back,outdoor,Natural,92,Sunny
+45158,Knee,Running Back,outdoor,Natural,90,Partly Cloudy
+45158,Knee,Running Back,outdoor,Natural,71,Partly Cloudy
+45158,Knee,Running Back,outdoor,Natural,52,Cloudy
+45158,Knee,Running Back,outdoor,Natural,69,Sunny
+45158,Knee,Running Back,outdoor,Natural,82,Clear
+45158,Knee,Running Back,outdoor,Natural,69,Hazy
+45158,Knee,Running Back,retractable roof,Natural,72,Sunny
+45158,Knee,Running Back,outdoor,Natural,60,Partly Clouidy
+45158,Knee,Running Back,outdoor,Natural,57,Sunny Skies
+45158,Knee,Running Back,outdoor,Natural,55,Partly Cloudy
+45158,Knee,Running Back,outdoor,Synthetic,43,Overcast
+45158,Knee,Running Back,outdoor,Natural,58,Rain
+45158,Knee,Running Back,outdoor,Natural,45,Sunny
+36572,Knee,Cornerback,retractable roof,Synthetic,80,Sunny
+36572,Knee,Cornerback,outdoor,Synthetic,69,Mostly Coudy
+36572,Knee,Cornerback,outdoor,Synthetic,84,Sunny
+36572,Knee,Cornerback,retractable roof,Synthetic,87,Sunny
+36572,Knee,Cornerback,retractable roof,Synthetic,89,Partly Cloudy
+36572,Knee,Cornerback,retractable roof,Synthetic,85,Partly Cloudy
+36572,Knee,Cornerback,outdoor,Synthetic,50,Cloudy
+36572,Knee,Cornerback,retractable roof,Synthetic,84,Mostly Cloudy
+36572,Knee,Cornerback,outdoor,Natural,68,Cloudy
+36572,Knee,Cornerback,retractable roof,Synthetic,60,Sunny
+36572,Knee,Cornerback,outdoor,Natural,50,Fair
+36572,Knee,Cornerback,outdoor,Natural,60,Sunny
+36572,Knee,Cornerback,retractable roof,Synthetic,-999,Sunny
+36572,Knee,Cornerback,retractable roof,Synthetic,51,Mostly Cloudy
+36572,Knee,Cornerback,retractable roof,Synthetic,9,Partly sunny
+36572,Knee,Cornerback,outdoor,Synthetic,62,Cloudy and Cool
+36572,Knee,Cornerback,outdoor,Natural,81,Cloudy
+36572,Knee,Cornerback,retractable roof,Synthetic,78,Partly Cloudy
+36572,Knee,Cornerback,retractable roof,Synthetic,73,Mostly sunny
+36572,Knee,Cornerback,retractable roof,Synthetic,83,Partly Cloudy
+36572,Knee,Cornerback,retractable roof,Synthetic,87,Mostly Cloudy
+36572,Knee,Cornerback,retractable roof,Synthetic,66,Cloudy
+36572,Knee,Cornerback,outdoor,Natural,53,Cloudy
+36572,Knee,Cornerback,outdoor,Natural,48,Cloudy
+36572,Knee,Cornerback,retractable roof,Synthetic,51,Clear
+36572,Knee,Cornerback,retractable roof,Synthetic,72,Sunny
+36572,Knee,Cornerback,retractable roof,Synthetic,46,Cloudy
+36572,Knee,Cornerback,outdoor,Synthetic,51,Cloudy
+36572,Knee,Cornerback,outdoor,Natural,44,Clear
+36572,Knee,Cornerback,retractable roof,Synthetic,46,Rainy
+43490,Knee,Offensive Lineman,outdoor,Natural,81,Sunny
+43490,Knee,Offensive Lineman,outdoor,Natural,88,Clear
+43490,Knee,Offensive Lineman,indoor,Synthetic,-999,Indoor
+43490,Knee,Offensive Lineman,outdoor,Natural,91,Cloudy
+43490,Knee,Offensive Lineman,outdoor,Natural,76,Clear
+43490,Knee,Offensive Lineman,outdoor,Synthetic,74,Sunny
+43490,Knee,Offensive Lineman,outdoor,Natural,63,Cloudy
+43490,Knee,Offensive Lineman,indoor,Synthetic,79,Partly Cloudy
+43490,Knee,Offensive Lineman,outdoor,Natural,79,Cloudy
+43490,Knee,Offensive Lineman,outdoor,Natural,42,Cloudy
+43490,Knee,Offensive Lineman,outdoor,Natural,55,Clear
+43490,Knee,Offensive Lineman,outdoor,Natural,71,Clear
+43490,Knee,Offensive Lineman,outdoor,Natural,55,Cloudy
+43490,Knee,Offensive Lineman,indoor,Synthetic,86,Partly Cloudy
+43490,Knee,Offensive Lineman,outdoor,Natural,77,Cloudy
+43490,Knee,Offensive Lineman,outdoor,Natural,66,Cloudy
+43490,Knee,Offensive Lineman,retractable roof,Synthetic,-999,Clear
+43490,Knee,Offensive Lineman,outdoor,Natural,79,Clear
+43490,Knee,Offensive Lineman,outdoor,Synthetic,55,"Cloudy, 50% change of rain"
+43490,Knee,Offensive Lineman,outdoor,Natural,62,Sunny
+43490,Knee,Offensive Lineman,outdoor,Natural,82,Clear
+43490,Knee,Offensive Lineman,outdoor,Natural,81,Cloudy
+43490,Knee,Offensive Lineman,outdoor,Natural,71,Cloudy
+43490,Knee,Offensive Lineman,outdoor,Natural,43,"Cloudy, Rain"
+43490,Knee,Offensive Lineman,outdoor,Natural,80,Cloudy
+36573,Ankle,Tight End,indoor,Synthetic,68,Controlled Climate
+36573,Ankle,Tight End,retractable roof,Natural,-999,Indoor
+36573,Ankle,Tight End,retractable roof,Natural,-999,Indoors
+36573,Ankle,Tight End,outdoor,Natural,77,Showers
+36573,Ankle,Tight End,outdoor,Natural,54,Rain
+36573,Ankle,Tight End,outdoor,Natural,61,Sunny
+36573,Ankle,Tight End,retractable roof,Synthetic,60,Sunny
+36573,Ankle,Tight End,retractable roof,Natural,71,Clear
+36573,Ankle,Tight End,outdoor,Synthetic,40,Sunny
+36573,Ankle,Tight End,retractable roof,Natural,-999,N/A Indoor
+36573,Ankle,Tight End,outdoor,Natural,79,Clear
+36573,Ankle,Tight End,indoor,Synthetic,-999,N/A (Indoors)
+36573,Ankle,Tight End,retractable roof,Natural,82,Clear
+36573,Ankle,Tight End,outdoor,Natural,43,Sunny and clear
+36573,Ankle,Tight End,retractable roof,Natural,72,Sunny
+36573,Ankle,Tight End,outdoor,Natural,34,Snow
+36573,Ankle,Tight End,retractable roof,Natural,70,Sunny
+42456,Ankle,Cornerback,retractable roof,Synthetic,80,Sunny
+42456,Ankle,Cornerback,outdoor,Natural,84,Partly Cloudy
+42456,Ankle,Cornerback,outdoor,Synthetic,64,Sunny
+42456,Ankle,Cornerback,outdoor,Natural,73,Cloudy
+42456,Ankle,Cornerback,outdoor,Natural,88,30% Chance of Rain
+42456,Ankle,Cornerback,retractable roof,Synthetic,72,Cloudy
+42456,Ankle,Cornerback,outdoor,Natural,78,10% Chance of Rain
+42456,Ankle,Cornerback,outdoor,Natural,76,Partly Cloudy
+42456,Ankle,Cornerback,outdoor,Natural,38,Cold
+42456,Ankle,Cornerback,outdoor,Natural,70,Partly Cloudy
+42456,Ankle,Cornerback,outdoor,Natural,54,Sunny
+42456,Ankle,Cornerback,outdoor,Natural,52,Cloudy
+42456,Ankle,Cornerback,outdoor,Natural,23,Clear
+42456,Ankle,Cornerback,outdoor,Synthetic,62,Cloudy and Cool
+42456,Ankle,Cornerback,outdoor,Natural,81,Cloudy
+42456,Ankle,Cornerback,retractable roof,Synthetic,78,Partly Cloudy
+42456,Ankle,Cornerback,retractable roof,Synthetic,73,Mostly sunny
+42456,Ankle,Cornerback,retractable roof,Synthetic,51,Clear
+42456,Ankle,Cornerback,retractable roof,Synthetic,72,Sunny
+42456,Ankle,Cornerback,retractable roof,Synthetic,46,Cloudy
+42456,Ankle,Cornerback,outdoor,Synthetic,51,Cloudy
+42456,Ankle,Cornerback,outdoor,Natural,44,Clear
+42456,Ankle,Cornerback,retractable roof,Synthetic,46,Rainy
+46038,Ankle,Safety,outdoor,Natural,64,Sunny
+46038,Ankle,Safety,outdoor,Natural,88,Clear
+46038,Ankle,Safety,outdoor,Natural,89,"Sunny, highs to upper 80s"
+46038,Ankle,Safety,outdoor,Natural,65,Cloudy
+46038,Ankle,Safety,outdoor,Natural,70,Partly cloudy
+46038,Ankle,Safety,outdoor,Natural,69,Partly Sunny
+46038,Ankle,Safety,outdoor,Natural,70,"Cloudy with periods of rain, thunder possible. Winds shifting to WNW, 10-20 mph."
+46038,Ankle,Safety,indoor,Synthetic,54,Sunny
+46038,Ankle,Safety,outdoor,Natural,39,"Rain likely, temps in low 40s."
+46038,Ankle,Safety,outdoor,Natural,33,Partly Cloudy
+46038,Ankle,Safety,outdoor,Natural,49,Sunny
+46038,Ankle,Safety,outdoor,Natural,54,Sunny
+46038,Ankle,Safety,outdoor,Synthetic,31,Partly Cloudy
+46038,Ankle,Safety,indoor,Synthetic,68,Controlled Climate
+46038,Ankle,Safety,outdoor,Natural,24,"Cloudy, light snow accumulating 1-3"""
+46038,Ankle,Safety,indoor,Synthetic,-999,N/A (Indoors)
+46038,Ankle,Safety,outdoor,Natural,62,Clear
+46038,Ankle,Safety,outdoor,Natural,79,Clear
+46038,Ankle,Safety,retractable roof,Natural,-999,N/A Indoor
+46038,Ankle,Safety,outdoor,Natural,66,Cloudy
+46038,Ankle,Safety,outdoor,Natural,89,Partly Cloudy
+46038,Ankle,Safety,outdoor,Natural,44,Sunny
+46038,Ankle,Safety,outdoor,Natural,48,cloudy
+46038,Ankle,Safety,outdoor,Synthetic,49,Mostly sunny
+46038,Ankle,Safety,outdoor,Natural,37,Mostly Cloudy
+46038,Ankle,Safety,outdoor,Natural,29,Cloudy
+46038,Ankle,Safety,outdoor,Natural,45,Fair
+41113,Ankle,Linebacker,outdoor,Natural,63,Sunny
+41113,Ankle,Linebacker,outdoor,Natural,80,Mostly Cloudy
+41113,Ankle,Linebacker,retractable roof,Synthetic,85,Partly Cloudy
+41113,Ankle,Linebacker,outdoor,Natural,74,Sunny
+41113,Ankle,Linebacker,outdoor,Natural,56,Partly Cloudy
+41113,Ankle,Linebacker,indoor,Synthetic,68,Controlled Climate
+41113,Ankle,Linebacker,outdoor,Natural,58,Rain
+41113,Ankle,Linebacker,indoor,Synthetic,90,Clear
+41113,Ankle,Linebacker,outdoor,Natural,83,Clear to Partly Cloudy
+41113,Ankle,Linebacker,outdoor,Natural,71,Partly Cloudy
+41113,Ankle,Linebacker,outdoor,Natural,72,Cloudy
+41113,Ankle,Linebacker,outdoor,Natural,51,Sunny
+41113,Ankle,Linebacker,outdoor,Natural,79,Clear
+41113,Ankle,Linebacker,outdoor,Natural,47,Cloudy
+41113,Ankle,Linebacker,outdoor,Natural,53,Sunny
+41113,Ankle,Linebacker,outdoor,Natural,36,Sunny
+41113,Ankle,Linebacker,outdoor,Synthetic,44,Cloudy
+41113,Ankle,Linebacker,retractable roof,Synthetic,72,Sunny
+41113,Ankle,Linebacker,outdoor,Natural,28,Sunny
+41113,Ankle,Linebacker,outdoor,Natural,46,Partly Cloudy
+41113,Ankle,Linebacker,outdoor,Natural,37,Cloudy
+41113,Ankle,Linebacker,outdoor,Natural,48,Partly Cloudy
+47235,Foot,Cornerback,indoor,Synthetic,86,Partly Cloudy
+47235,Foot,Cornerback,outdoor,Natural,91,Cloudy
+47235,Foot,Cornerback,outdoor,Natural,77,Cloudy
+47235,Foot,Cornerback,outdoor,Natural,66,Cloudy
+47235,Foot,Cornerback,retractable roof,Synthetic,-999,Clear
+47235,Foot,Cornerback,outdoor,Natural,79,Clear
+47235,Foot,Cornerback,outdoor,Synthetic,55,"Cloudy, 50% change of rain"
+47235,Foot,Cornerback,outdoor,Natural,71,Cloudy
+47235,Foot,Cornerback,outdoor,Natural,43,"Cloudy, Rain"
+47235,Foot,Cornerback,outdoor,Natural,80,Cloudy
+47382,Ankle,Linebacker,outdoor,Natural,81,Cloudy
+47382,Ankle,Linebacker,outdoor,Natural,83,Sunny
+47382,Ankle,Linebacker,retractable roof,Synthetic,-999,Clear
+47382,Ankle,Linebacker,retractable roof,Synthetic,60,Partly clear
+47382,Ankle,Linebacker,outdoor,Natural,55,Sunny
+47382,Ankle,Linebacker,outdoor,Natural,36,Sunny
+47382,Ankle,Linebacker,retractable roof,Synthetic,59,Sunny
+47382,Ankle,Linebacker,retractable roof,Synthetic,53,Indoors
+47382,Ankle,Linebacker,retractable roof,Synthetic,67,Mostly cloudy
+47382,Ankle,Linebacker,outdoor,Natural,25,Cloudy
+47382,Ankle,Linebacker,outdoor,Natural,52,Sunny
+47382,Ankle,Linebacker,outdoor,Natural,80,Cloudy
+44421,Knee,Defensive Lineman,outdoor,Synthetic,65,Sun & clouds
+44421,Knee,Defensive Lineman,outdoor,Natural,83,Sunny
+44421,Knee,Defensive Lineman,outdoor,Synthetic,83,Sunny
+44421,Knee,Defensive Lineman,outdoor,Synthetic,63,Light Rain
+44421,Knee,Defensive Lineman,outdoor,Synthetic,74,Sunny
+44421,Knee,Defensive Lineman,outdoor,Synthetic,42,Rain
+44421,Knee,Defensive Lineman,outdoor,Synthetic,68,Clear
+44421,Knee,Defensive Lineman,outdoor,Synthetic,42,Cloudy
+44421,Knee,Defensive Lineman,outdoor,Natural,62,Partly Cloudy
+44421,Knee,Defensive Lineman,outdoor,Synthetic,48,Mostly cloudy
+44421,Knee,Defensive Lineman,outdoor,Natural,61,Rain
+44421,Knee,Defensive Lineman,outdoor,Natural,49,Cloudy
+44421,Knee,Defensive Lineman,outdoor,Synthetic,62,Cloudy
+44421,Knee,Defensive Lineman,retractable roof,Synthetic,87,Mostly Cloudy
+44421,Knee,Defensive Lineman,retractable roof,Synthetic,44,Sunny
+44421,Knee,Defensive Lineman,outdoor,Synthetic,46,Partly cloudy
+44421,Knee,Defensive Lineman,outdoor,Synthetic,49,Mostly sunny
+44421,Knee,Defensive Lineman,outdoor,Synthetic,46,Sunny
+44421,Knee,Defensive Lineman,outdoor,Synthetic,44,Cloudy
+44421,Knee,Defensive Lineman,outdoor,Natural,86,Partly Cloudy
+44421,Knee,Defensive Lineman,outdoor,Synthetic,31,Fair
+44421,Knee,Defensive Lineman,outdoor,Synthetic,39,Rain shower
+44421,Knee,Defensive Lineman,outdoor,Synthetic,40,Clear and cold
+44421,Knee,Defensive Lineman,outdoor,Synthetic,33,Cloudy
+42348,Knee,Linebacker,indoor,Synthetic,70,Indoor
+42348,Knee,Linebacker,outdoor,Natural,78,Sunny
+42348,Knee,Linebacker,indoor,Synthetic,-999,Indoor
+42348,Knee,Linebacker,outdoor,Natural,70,Partly cloudy
+42348,Knee,Linebacker,outdoor,Natural,56,Partly Cloudy
+42348,Knee,Linebacker,outdoor,Natural,44,Cloudy
+42348,Knee,Linebacker,indoor,Synthetic,-999,N/A (Indoors)
+42348,Knee,Linebacker,indoor,Synthetic,68,Controlled Climate
+42348,Knee,Linebacker,outdoor,Natural,41,Sunny
+42348,Knee,Linebacker,outdoor,Natural,10,Clear
+42348,Knee,Linebacker,indoor,Synthetic,-999,N/A (Indoors)
+42348,Knee,Linebacker,outdoor,Natural,80,Partly Cloudy
+42348,Knee,Linebacker,outdoor,Natural,75,Clear
+42348,Knee,Linebacker,outdoor,Natural,79,Partly Cloudy
+42348,Knee,Linebacker,outdoor,Synthetic,46,Cloudy
+42348,Knee,Linebacker,outdoor,Synthetic,53,Cloudy
+42348,Knee,Linebacker,outdoor,Synthetic,48,Cloudy
+42398,Knee,Wide Receiver,outdoor,Natural,73,Mostly Cloudy
+42398,Knee,Wide Receiver,outdoor,Natural,72,Partly Cloudy
+42398,Knee,Wide Receiver,outdoor,Synthetic,83,Sunny
+42398,Knee,Wide Receiver,outdoor,Natural,44,Clear
+42398,Knee,Wide Receiver,outdoor,Natural,61,Cloudy
+42398,Knee,Wide Receiver,outdoor,Natural,48,Partly Cloudy
+42398,Knee,Wide Receiver,outdoor,Natural,60,Mostly Cloudy
+42398,Knee,Wide Receiver,outdoor,Natural,80,Cloudy
+42398,Knee,Wide Receiver,outdoor,Natural,60,Sunny
+42398,Knee,Wide Receiver,retractable roof,Synthetic,25,Cloudy
+42398,Knee,Wide Receiver,retractable roof,Synthetic,78,Partly Cloudy
+42398,Knee,Wide Receiver,retractable roof,Synthetic,33,Cloudy
+36559,Knee,Cornerback,outdoor,Natural,63,Sunny
+36559,Knee,Cornerback,outdoor,Natural,78,Sunny
+36559,Knee,Cornerback,outdoor,Natural,89,"Sunny, highs to upper 80s"
+36559,Knee,Cornerback,outdoor,Natural,64,Sunny
+36559,Knee,Cornerback,outdoor,Natural,73,Cloudy
+36559,Knee,Cornerback,outdoor,Natural,60,Sunny
+36559,Knee,Cornerback,outdoor,Natural,79,Sunny
+36559,Knee,Cornerback,indoor,Synthetic,68,Controlled Climate
+36559,Knee,Cornerback,retractable roof,Synthetic,42,Cloudy
+36559,Knee,Cornerback,retractable roof,Synthetic,51,Mostly Cloudy
+36559,Knee,Cornerback,outdoor,Natural,11,Snow
+36559,Knee,Cornerback,outdoor,Natural,58,Rain
+36559,Knee,Cornerback,outdoor,Natural,77,Cloudy
+36559,Knee,Cornerback,outdoor,Natural,69,Clear
+36559,Knee,Cornerback,outdoor,Natural,83,Sunny
+36559,Knee,Cornerback,outdoor,Synthetic,51,Mostly Cloudy
+36559,Knee,Cornerback,outdoor,Natural,47,Cloudy
+36559,Knee,Cornerback,outdoor,Natural,55,"Sunny, Windy"
+36559,Knee,Cornerback,outdoor,Natural,40,Clear
+36559,Knee,Cornerback,outdoor,Natural,73,Mostly Sunny Skies
+36559,Knee,Cornerback,outdoor,Natural,41,Mostly Sunny
+36559,Knee,Cornerback,outdoor,Natural,57,Clear
+36559,Knee,Cornerback,outdoor,Natural,55,Partly Cloudy
+36559,Knee,Cornerback,outdoor,Natural,42,Cloudy
+36559,Knee,Cornerback,retractable roof,Synthetic,68,Indoors
+36559,Knee,Cornerback,outdoor,Natural,42,Partly Cloudy
+47220,Knee,Running Back,outdoor,Natural,66,Cloudy
+47220,Knee,Running Back,retractable roof,Synthetic,-999,Clear
+47220,Knee,Running Back,outdoor,Natural,79,Clear
+47220,Knee,Running Back,outdoor,Synthetic,55,"Cloudy, 50% change of rain"
+47220,Knee,Running Back,outdoor,Natural,81,Cloudy
+47220,Knee,Running Back,outdoor,Natural,71,Cloudy
+47220,Knee,Running Back,outdoor,Natural,43,"Cloudy, Rain"
+47220,Knee,Running Back,outdoor,Natural,80,Cloudy
+47813,Ankle,Cornerback,outdoor,Natural,97,Rain Chance 40%
+47813,Ankle,Cornerback,outdoor,Natural,89,Heat Index 95
+47813,Ankle,Cornerback,outdoor,Natural,86,Partly Cloudy
+47813,Ankle,Cornerback,outdoor,Natural,48,Partly Cloudy
+47813,Ankle,Cornerback,retractable roof,Synthetic,38,Sunny
+47813,Ankle,Cornerback,outdoor,Natural,73,Mostly Sunny Skies
+47813,Ankle,Cornerback,outdoor,Synthetic,44,Cloudy
+47813,Ankle,Cornerback,retractable roof,Natural,64,Partly Cloudy
+47813,Ankle,Cornerback,outdoor,Natural,73,Sunny
+47813,Ankle,Cornerback,retractable roof,Synthetic,46,Rainy
+35570,Knee,Offensive Lineman,outdoor,Synthetic,69,Mostly Coudy
+35570,Knee,Offensive Lineman,outdoor,Natural,89,Sunny
+35570,Knee,Offensive Lineman,outdoor,Natural,63,Sunny
+35570,Knee,Offensive Lineman,outdoor,Synthetic,63,Light Rain
+35570,Knee,Offensive Lineman,outdoor,Natural,79,Sunny
+35570,Knee,Offensive Lineman,outdoor,Synthetic,39,Cloudy
+35570,Knee,Offensive Lineman,outdoor,Natural,78,10% Chance of Rain
+35570,Knee,Offensive Lineman,outdoor,Natural,53,Cloudy
+35570,Knee,Offensive Lineman,outdoor,Natural,60,Mostly Cloudy
+35570,Knee,Offensive Lineman,outdoor,Synthetic,46,Partly Cloudy
+35570,Knee,Offensive Lineman,outdoor,Synthetic,61,"Cloudy, chance of rain"
+35570,Knee,Offensive Lineman,outdoor,Synthetic,31,Partly Cloudy
+35570,Knee,Offensive Lineman,indoor,Synthetic,-999,N/A (Indoors)
+35570,Knee,Offensive Lineman,retractable roof,Natural,-999,N/A Indoor
+35570,Knee,Offensive Lineman,outdoor,Natural,79,Clear
+35570,Knee,Offensive Lineman,indoor,Synthetic,-999,N/A (Indoors)
+35570,Knee,Offensive Lineman,retractable roof,Natural,82,Clear
+35570,Knee,Offensive Lineman,outdoor,Natural,43,Sunny and clear
+35570,Knee,Offensive Lineman,retractable roof,Natural,72,Sunny
+35570,Knee,Offensive Lineman,outdoor,Natural,37,Cloudy
+35570,Knee,Offensive Lineman,outdoor,Natural,42,Partly Cloudy
+44482,Knee,Defensive Lineman,outdoor,Synthetic,65,Sun & clouds
+44482,Knee,Defensive Lineman,outdoor,Natural,83,Sunny
+44482,Knee,Defensive Lineman,outdoor,Synthetic,83,Sunny
+44482,Knee,Defensive Lineman,outdoor,Synthetic,63,Light Rain
+44482,Knee,Defensive Lineman,outdoor,Synthetic,74,Sunny
+44482,Knee,Defensive Lineman,outdoor,Synthetic,42,Rain
+44482,Knee,Defensive Lineman,outdoor,Synthetic,68,Clear
+44482,Knee,Defensive Lineman,outdoor,Synthetic,42,Cloudy
+44482,Knee,Defensive Lineman,outdoor,Natural,62,Partly Cloudy
+44482,Knee,Defensive Lineman,outdoor,Synthetic,48,Mostly cloudy
+44482,Knee,Defensive Lineman,outdoor,Synthetic,32,Heavy lake effect snow
+44482,Knee,Defensive Lineman,outdoor,Synthetic,22,Mostly cloudy
+44482,Knee,Defensive Lineman,outdoor,Synthetic,35,Cloudy
+44482,Knee,Defensive Lineman,outdoor,Natural,71,Clear
+44482,Knee,Defensive Lineman,outdoor,Natural,61,Rain
+44482,Knee,Defensive Lineman,outdoor,Synthetic,87,Mostly Sunny
+44482,Knee,Defensive Lineman,outdoor,Natural,59,Clear
+44482,Knee,Defensive Lineman,outdoor,Synthetic,55,"Cloudy, 50% change of rain"
+44482,Knee,Defensive Lineman,outdoor,Synthetic,39,Mostly Sunny
+38876,Ankle,Wide Receiver,outdoor,Synthetic,65,Sun & clouds
+38876,Ankle,Wide Receiver,outdoor,Natural,83,Sunny
+38876,Ankle,Wide Receiver,outdoor,Synthetic,83,Sunny
+38876,Ankle,Wide Receiver,outdoor,Synthetic,63,Light Rain
+38876,Ankle,Wide Receiver,outdoor,Synthetic,74,Sunny
+38876,Ankle,Wide Receiver,outdoor,Synthetic,42,Rain
+38876,Ankle,Wide Receiver,outdoor,Synthetic,68,Clear
+38876,Ankle,Wide Receiver,outdoor,Synthetic,42,Cloudy
+38876,Ankle,Wide Receiver,outdoor,Natural,62,Partly Cloudy
+38876,Ankle,Wide Receiver,outdoor,Synthetic,48,Mostly cloudy
+38876,Ankle,Wide Receiver,outdoor,Synthetic,32,Heavy lake effect snow
+38876,Ankle,Wide Receiver,outdoor,Synthetic,22,Mostly cloudy
+38876,Ankle,Wide Receiver,outdoor,Natural,61,Rain
+38876,Ankle,Wide Receiver,outdoor,Synthetic,83,Fair
+38876,Ankle,Wide Receiver,indoor,Synthetic,-999,N/A (Indoors)
+38876,Ankle,Wide Receiver,outdoor,Natural,49,Cloudy
+38876,Ankle,Wide Receiver,outdoor,Synthetic,62,Cloudy
+38876,Ankle,Wide Receiver,retractable roof,Synthetic,87,Mostly Cloudy
+38876,Ankle,Wide Receiver,retractable roof,Synthetic,44,Sunny
+38876,Ankle,Wide Receiver,outdoor,Synthetic,46,Partly cloudy
+38876,Ankle,Wide Receiver,outdoor,Synthetic,49,Mostly sunny
+38876,Ankle,Wide Receiver,outdoor,Synthetic,46,Sunny
+38876,Ankle,Wide Receiver,outdoor,Synthetic,44,Cloudy
+38876,Ankle,Wide Receiver,outdoor,Natural,86,Partly Cloudy
+38876,Ankle,Wide Receiver,outdoor,Natural,54,Overcast
+38876,Ankle,Wide Receiver,outdoor,Natural,46,Partly Cloudy
+38876,Ankle,Wide Receiver,outdoor,Natural,58,Rain
+46098,Ankle,Wide Receiver,outdoor,Natural,73,Mostly Cloudy
+46098,Ankle,Wide Receiver,outdoor,Natural,72,Partly Cloudy
+46098,Ankle,Wide Receiver,outdoor,Synthetic,83,Sunny
+46098,Ankle,Wide Receiver,outdoor,Natural,72,Mostly Cloudy
+46098,Ankle,Wide Receiver,outdoor,Natural,61,Clear
+46098,Ankle,Wide Receiver,outdoor,Natural,44,Clear
+46098,Ankle,Wide Receiver,outdoor,Natural,61,Cloudy
+46098,Ankle,Wide Receiver,outdoor,Natural,48,Partly Cloudy
+46098,Ankle,Wide Receiver,outdoor,Natural,80,Cloudy
+46098,Ankle,Wide Receiver,outdoor,Natural,43,Cloudy
+46098,Ankle,Wide Receiver,outdoor,Natural,17,Cloudy
+46098,Ankle,Wide Receiver,outdoor,Natural,56,Clear and Sunny
+46098,Ankle,Wide Receiver,outdoor,Synthetic,46,Sunny
+46098,Ankle,Wide Receiver,outdoor,Synthetic,44,Cloudy
+46098,Ankle,Wide Receiver,outdoor,Natural,86,Partly Cloudy
+46098,Ankle,Wide Receiver,outdoor,Synthetic,31,Fair
+46098,Ankle,Wide Receiver,outdoor,Synthetic,39,Rain shower
+46098,Ankle,Wide Receiver,outdoor,Synthetic,40,Clear and cold
+46098,Ankle,Wide Receiver,outdoor,Synthetic,33,Cloudy
+36607,Knee,Linebacker,outdoor,Natural,72,Partly Cloudy
+36607,Knee,Linebacker,retractable roof,Natural,-999,Indoor
+36607,Knee,Linebacker,outdoor,Natural,68,Sunny
+36607,Knee,Linebacker,outdoor,Natural,60,Rain
+36607,Knee,Linebacker,outdoor,Natural,57,Clear
+36607,Knee,Linebacker,outdoor,Natural,19,Sunny
+36607,Knee,Linebacker,outdoor,Natural,81,Partly Cloudy
+36607,Knee,Linebacker,outdoor,Synthetic,61,Sunny
+36607,Knee,Linebacker,outdoor,Natural,52,Sunny
+36607,Knee,Linebacker,indoor,Synthetic,74,Clear skies
+36607,Knee,Linebacker,retractable roof,Synthetic,46,Sunny
+44542,Ankle,Wide Receiver,outdoor,Natural,89,Scattered Showers
+44542,Ankle,Wide Receiver,outdoor,Natural,81,Cloudy
+44542,Ankle,Wide Receiver,outdoor,Natural,89,Heat Index 95
+44542,Ankle,Wide Receiver,outdoor,Natural,80,Sunny
+44542,Ankle,Wide Receiver,outdoor,Synthetic,62,Cloudy
+44542,Ankle,Wide Receiver,outdoor,Natural,66,Rain
+44542,Ankle,Wide Receiver,outdoor,Natural,66,Sunny
+44542,Ankle,Wide Receiver,indoor,Synthetic,74,Clear skies
+44542,Ankle,Wide Receiver,outdoor,Natural,46,Sunny
+44542,Ankle,Wide Receiver,retractable roof,Synthetic,42,Cloudy
+44542,Ankle,Wide Receiver,retractable roof,Synthetic,51,Clear
+44542,Ankle,Wide Receiver,outdoor,Natural,70,Sunny
+44542,Ankle,Wide Receiver,outdoor,Natural,44,Clear
+44542,Ankle,Wide Receiver,outdoor,Natural,51,Sunny
+44542,Ankle,Wide Receiver,outdoor,Natural,53,Clear
+45983,Ankle,Offensive Lineman,outdoor,Natural,71,Mostly Sunny
+45983,Ankle,Offensive Lineman,outdoor,Synthetic,65,Mostly Cloudy
+45983,Ankle,Offensive Lineman,outdoor,Natural,88,Sunny
+45983,Ankle,Offensive Lineman,outdoor,Synthetic,61,Clear
+45983,Ankle,Offensive Lineman,outdoor,Natural,78,Sunny
+45983,Ankle,Offensive Lineman,outdoor,Synthetic,50,Cloudy
+45983,Ankle,Offensive Lineman,outdoor,Synthetic,36,Rain
+45983,Ankle,Offensive Lineman,outdoor,Synthetic,45,Cloudy
+45983,Ankle,Offensive Lineman,outdoor,Natural,66,cloudy
+45983,Ankle,Offensive Lineman,outdoor,Synthetic,44,Cloudy
+45983,Ankle,Offensive Lineman,outdoor,Natural,54,Sunny
+45983,Ankle,Offensive Lineman,outdoor,Synthetic,47,Cloudy
+45983,Ankle,Offensive Lineman,outdoor,Synthetic,40,Sunny
+45983,Ankle,Offensive Lineman,outdoor,Natural,84,Sunny
+45983,Ankle,Offensive Lineman,outdoor,Natural,79,Clear
+45983,Ankle,Offensive Lineman,outdoor,Natural,52,Cloudy
+45983,Ankle,Offensive Lineman,outdoor,Natural,75,Sunny
+45983,Ankle,Offensive Lineman,outdoor,Natural,57,Partly Cloudy
+45983,Ankle,Offensive Lineman,outdoor,Synthetic,48,Cloudy
+45983,Ankle,Offensive Lineman,outdoor,Natural,61,Cloudy
+45983,Ankle,Offensive Lineman,outdoor,Synthetic,43,Cloudy
+33474,Knee,Safety,outdoor,Natural,67,Sunny
+33474,Knee,Safety,outdoor,Natural,68,Cloudy
+33474,Knee,Safety,outdoor,Natural,77,Showers
+33474,Knee,Safety,outdoor,Natural,72,Cloudy
+33474,Knee,Safety,outdoor,Natural,70,Cloudy
+33474,Knee,Safety,outdoor,Natural,67,Rain
+33474,Knee,Safety,outdoor,Natural,61,Cloudy
+33474,Knee,Safety,outdoor,Synthetic,54,Clear skies
+33474,Knee,Safety,outdoor,Natural,49,Sunny
+33474,Knee,Safety,outdoor,Synthetic,44,Cloudy
+33474,Knee,Safety,outdoor,Natural,83,Cloudy
+33474,Knee,Safety,outdoor,Natural,29,Partly Cloudy
+33474,Knee,Safety,outdoor,Natural,19,Sunny
+33474,Knee,Safety,outdoor,Natural,81,Cloudy
+33474,Knee,Safety,outdoor,Natural,91,Cloudy
+33474,Knee,Safety,outdoor,Natural,61,Rain
+33474,Knee,Safety,outdoor,Natural,80,Sunny
+33474,Knee,Safety,outdoor,Natural,79,Partly Cloudy
+33474,Knee,Safety,outdoor,Natural,38,Clear
+33474,Knee,Safety,retractable roof,Synthetic,68,Indoors
+33474,Knee,Safety,outdoor,Natural,56,Mostly Sunny
+33474,Knee,Safety,outdoor,Natural,36,Cloudy
+33474,Knee,Safety,outdoor,Natural,60,Cloudy
+33474,Knee,Safety,outdoor,Natural,44,Clear
+33474,Knee,Safety,outdoor,Natural,46,Sunny
+47287,Knee,Wide Receiver,outdoor,Natural,58,Rain
+47287,Knee,Wide Receiver,indoor,Synthetic,90,Clear
+47287,Knee,Wide Receiver,outdoor,Natural,83,Clear to Partly Cloudy
+47287,Knee,Wide Receiver,outdoor,Natural,71,Partly Cloudy
+47287,Knee,Wide Receiver,outdoor,Natural,72,Cloudy
+47287,Knee,Wide Receiver,outdoor,Natural,51,Sunny
+47287,Knee,Wide Receiver,outdoor,Natural,79,Clear
+47287,Knee,Wide Receiver,outdoor,Natural,47,Cloudy
+47287,Knee,Wide Receiver,outdoor,Natural,53,Sunny
+47287,Knee,Wide Receiver,outdoor,Natural,36,Sunny
+47287,Knee,Wide Receiver,outdoor,Synthetic,44,Cloudy
+47287,Knee,Wide Receiver,retractable roof,Synthetic,72,Sunny
+47287,Knee,Wide Receiver,outdoor,Natural,28,Sunny
+47287,Knee,Wide Receiver,outdoor,Natural,46,Partly Cloudy
+47287,Knee,Wide Receiver,outdoor,Natural,37,Cloudy
+47287,Knee,Wide Receiver,outdoor,Natural,48,Partly Cloudy
+47307,Knee,Cornerback,outdoor,Natural,81,Cloudy
+47307,Knee,Cornerback,outdoor,Natural,91,Cloudy
+47307,Knee,Cornerback,outdoor,Natural,61,Rain
+47307,Knee,Cornerback,outdoor,Natural,80,Sunny
+47307,Knee,Cornerback,outdoor,Natural,79,Partly Cloudy
+47307,Knee,Cornerback,outdoor,Natural,49,Partly Sunny
+47307,Knee,Cornerback,outdoor,Natural,48,Partly Cloudy
+47307,Knee,Cornerback,outdoor,Natural,38,Clear
+47307,Knee,Cornerback,retractable roof,Synthetic,68,Indoors
+47307,Knee,Cornerback,outdoor,Natural,60,Cloudy
+47307,Knee,Cornerback,outdoor,Natural,44,Clear
+47307,Knee,Cornerback,outdoor,Natural,46,Sunny
+47307,Ankle,Cornerback,outdoor,Natural,81,Cloudy
+47307,Ankle,Cornerback,outdoor,Natural,91,Cloudy
+47307,Ankle,Cornerback,outdoor,Natural,61,Rain
+47307,Ankle,Cornerback,outdoor,Natural,80,Sunny
+47307,Ankle,Cornerback,outdoor,Natural,79,Partly Cloudy
+47307,Ankle,Cornerback,outdoor,Natural,49,Partly Sunny
+47307,Ankle,Cornerback,outdoor,Natural,48,Partly Cloudy
+47307,Ankle,Cornerback,outdoor,Natural,38,Clear
+47307,Ankle,Cornerback,retractable roof,Synthetic,68,Indoors
+47307,Ankle,Cornerback,outdoor,Natural,60,Cloudy
+47307,Ankle,Cornerback,outdoor,Natural,44,Clear
+47307,Ankle,Cornerback,outdoor,Natural,46,Sunny
+43672,Knee,Defensive Lineman,retractable roof,Synthetic,80,Sunny
+43672,Knee,Defensive Lineman,outdoor,Synthetic,69,Mostly Coudy
+43672,Knee,Defensive Lineman,outdoor,Synthetic,84,Sunny
+43672,Knee,Defensive Lineman,retractable roof,Synthetic,87,Sunny
+43672,Knee,Defensive Lineman,retractable roof,Synthetic,89,Partly Cloudy
+43672,Knee,Defensive Lineman,retractable roof,Synthetic,85,Partly Cloudy
+43672,Knee,Defensive Lineman,outdoor,Synthetic,50,Cloudy
+43672,Knee,Defensive Lineman,outdoor,Synthetic,62,Cloudy and Cool
+43672,Knee,Defensive Lineman,retractable roof,Synthetic,78,Partly Cloudy
+43672,Knee,Defensive Lineman,retractable roof,Synthetic,66,Cloudy
+43672,Knee,Defensive Lineman,outdoor,Natural,53,Cloudy
+43672,Knee,Defensive Lineman,outdoor,Natural,48,Cloudy
+43672,Knee,Defensive Lineman,retractable roof,Synthetic,51,Clear
+43672,Knee,Defensive Lineman,retractable roof,Synthetic,72,Sunny
+43672,Knee,Defensive Lineman,retractable roof,Synthetic,46,Cloudy
+43672,Knee,Defensive Lineman,outdoor,Synthetic,51,Cloudy
+43672,Knee,Defensive Lineman,outdoor,Natural,44,Clear
+43672,Knee,Defensive Lineman,retractable roof,Synthetic,46,Rainy
+46316,Ankle,Defensive Lineman,outdoor,Natural,56,Partly Cloudy
+46316,Ankle,Defensive Lineman,indoor,Synthetic,-999,N/A (Indoors)
+46316,Ankle,Defensive Lineman,indoor,Synthetic,-999,N/A (Indoors)
+46316,Ankle,Defensive Lineman,outdoor,Natural,75,Clear
+46316,Ankle,Defensive Lineman,outdoor,Synthetic,46,Cloudy
+42418,Ankle,Offensive Lineman,indoor,Synthetic,68,Controlled Climate
+42418,Ankle,Offensive Lineman,indoor,Synthetic,-999,Indoor
+42418,Ankle,Offensive Lineman,indoor,Synthetic,84,Cloudy
+42418,Ankle,Offensive Lineman,outdoor,Natural,35,Cloudy
+42418,Ankle,Offensive Lineman,outdoor,Natural,33,Partly Cloudy
+42418,Ankle,Offensive Lineman,outdoor,Natural,55,Clear
+42418,Ankle,Offensive Lineman,outdoor,Synthetic,65,Sunny and warm
+42418,Ankle,Offensive Lineman,outdoor,Synthetic,87,Mostly Sunny
+42418,Ankle,Offensive Lineman,outdoor,Natural,89,Partly Cloudy
+42418,Ankle,Offensive Lineman,retractable roof,Synthetic,66,Cloudy
+42418,Ankle,Offensive Lineman,outdoor,Natural,87,Partly Sunny
+42418,Ankle,Offensive Lineman,outdoor,Natural,33,Cloudy
+42418,Ankle,Offensive Lineman,retractable roof,Synthetic,57,Mostly cloudy
+42418,Ankle,Offensive Lineman,outdoor,Natural,82,Mostly Cloudy
+42418,Ankle,Offensive Lineman,indoor,Synthetic,-999,N/A (Indoors)
+42418,Ankle,Offensive Lineman,outdoor,Natural,73,Sunny
+42418,Ankle,Offensive Lineman,outdoor,Synthetic,33,Cloudy
+46394,Knee,Tight End,indoor,Synthetic,85,Mostly Cloudy
+46394,Knee,Tight End,outdoor,Synthetic,84,Sunny
+46394,Knee,Tight End,outdoor,Synthetic,61,Sunny
+46394,Knee,Tight End,outdoor,Natural,76,Clear
+46394,Knee,Tight End,outdoor,Synthetic,73,Cloudy
+46394,Knee,Tight End,outdoor,Synthetic,56,"Cloudy, fog started developing in 2nd quarter"
+46394,Knee,Tight End,outdoor,Synthetic,62,Rain
+46394,Knee,Tight End,outdoor,Natural,48,Partly Cloudy
+46394,Knee,Tight End,outdoor,Natural,66,Sunny
+46394,Knee,Tight End,outdoor,Synthetic,47,Partly Cloudy
+46394,Knee,Tight End,outdoor,Synthetic,48,Mostly cloudy
+46394,Knee,Tight End,outdoor,Natural,55,Clear
+46394,Knee,Tight End,outdoor,Natural,42,Mostly Cloudy
+46394,Knee,Tight End,outdoor,Synthetic,35,Cloudy
+46394,Knee,Tight End,outdoor,Synthetic,13,Cloudy and cold
+46394,Knee,Tight End,outdoor,Natural,97,Rain Chance 40%
+46394,Knee,Tight End,outdoor,Synthetic,66,Mostly Cloudy
+46394,Knee,Tight End,outdoor,Synthetic,45,Cloudy
+46394,Knee,Tight End,outdoor,Natural,46,Sunny
+46394,Knee,Tight End,outdoor,Synthetic,54,Partly Cloudy
+46394,Knee,Tight End,outdoor,Synthetic,53,Cloudy
+46394,Knee,Tight End,outdoor,Natural,82,Mostly Cloudy
+46394,Knee,Tight End,outdoor,Synthetic,40,Clear and cold
+45187,Ankle,Wide Receiver,retractable roof,Synthetic,-999,Indoors
+45187,Ankle,Wide Receiver,outdoor,Synthetic,63,Rain
+45187,Ankle,Wide Receiver,outdoor,Synthetic,45,Cloudy
+45187,Ankle,Wide Receiver,retractable roof,Synthetic,-999,Cloudy
+45187,Ankle,Wide Receiver,outdoor,Natural,71,Clear
+45187,Ankle,Wide Receiver,indoor,Synthetic,56,Sunny
+45187,Ankle,Wide Receiver,outdoor,Natural,81,Cloudy
+45187,Ankle,Wide Receiver,outdoor,Natural,83,Sunny
+45187,Ankle,Wide Receiver,retractable roof,Synthetic,-999,Clear
+45187,Ankle,Wide Receiver,retractable roof,Synthetic,60,Partly clear
+45187,Ankle,Wide Receiver,outdoor,Natural,55,Sunny
+45187,Ankle,Wide Receiver,outdoor,Natural,36,Sunny
+45187,Ankle,Wide Receiver,retractable roof,Synthetic,59,Sunny
+45187,Ankle,Wide Receiver,retractable roof,Synthetic,53,Indoors
+45187,Ankle,Wide Receiver,retractable roof,Synthetic,67,Mostly cloudy
+45187,Ankle,Wide Receiver,outdoor,Natural,25,Cloudy
+45187,Ankle,Wide Receiver,outdoor,Natural,52,Sunny
+45187,Ankle,Wide Receiver,outdoor,Natural,80,Cloudy
+42448,Knee,Wide Receiver,retractable roof,Synthetic,80,Sunny
+42448,Knee,Wide Receiver,outdoor,Synthetic,84,Sunny
+42448,Knee,Wide Receiver,retractable roof,Synthetic,87,Sunny
+42448,Knee,Wide Receiver,retractable roof,Synthetic,89,Partly Cloudy
+42448,Knee,Wide Receiver,retractable roof,Synthetic,85,Partly Cloudy
+42448,Knee,Wide Receiver,outdoor,Synthetic,50,Cloudy
+42448,Knee,Wide Receiver,retractable roof,Synthetic,84,Mostly Cloudy
+42448,Knee,Wide Receiver,outdoor,Natural,68,Cloudy
+42448,Knee,Wide Receiver,retractable roof,Synthetic,60,Sunny
+42448,Knee,Wide Receiver,outdoor,Natural,50,Fair
+42448,Knee,Wide Receiver,outdoor,Natural,60,Sunny
+42448,Knee,Wide Receiver,outdoor,Synthetic,62,Cloudy and Cool
+42448,Knee,Wide Receiver,outdoor,Natural,81,Cloudy
+42448,Knee,Wide Receiver,retractable roof,Synthetic,78,Partly Cloudy
+42448,Knee,Wide Receiver,indoor,Synthetic,68,Controlled Climate
+42448,Knee,Wide Receiver,retractable roof,Natural,70,Sunny
+47334,Knee,Safety,outdoor,Natural,89,Scattered Showers
+47334,Knee,Safety,outdoor,Natural,81,Cloudy
+47334,Knee,Safety,outdoor,Natural,89,Heat Index 95
+47334,Knee,Safety,outdoor,Natural,80,Sunny
+47334,Knee,Safety,outdoor,Synthetic,62,Cloudy
+47334,Knee,Safety,outdoor,Natural,66,Rain
+47334,Knee,Safety,outdoor,Natural,66,Sunny
+47334,Knee,Safety,indoor,Synthetic,74,Clear skies
+47334,Knee,Safety,retractable roof,Synthetic,42,Cloudy
+47334,Knee,Safety,outdoor,Natural,51,Sunny
+47334,Knee,Safety,outdoor,Natural,53,Clear
+46134,Heel,Safety,indoor,Synthetic,68,Controlled Climate
+46134,Heel,Safety,retractable roof,Synthetic,78,Partly sunny
+46134,Heel,Safety,retractable roof,Natural,-999,Indoor
+46134,Heel,Safety,retractable roof,Natural,-999,Indoors
+46134,Heel,Safety,outdoor,Natural,77,Showers
+46134,Heel,Safety,outdoor,Natural,54,Rain
+46134,Heel,Safety,outdoor,Natural,61,Sunny
+46134,Heel,Safety,retractable roof,Synthetic,60,Sunny
+46134,Heel,Safety,retractable roof,Natural,-999,N/A Indoor
+46134,Heel,Safety,outdoor,Natural,86,Sunny
+46134,Heel,Safety,outdoor,Natural,79,Clear
+46134,Heel,Safety,indoor,Synthetic,-999,N/A (Indoors)
+46134,Heel,Safety,retractable roof,Natural,82,Clear
+46134,Heel,Safety,outdoor,Natural,43,Sunny and clear
+46134,Heel,Safety,outdoor,Natural,34,Snow
+46134,Heel,Safety,retractable roof,Natural,70,Sunny
+46134,Heel,Safety,retractable roof,Natural,72,Sunny
+46134,Heel,Safety,outdoor,Synthetic,45,Cloudy
+47196,Toes,Defensive Lineman,indoor,Synthetic,86,Partly Cloudy
+47196,Toes,Defensive Lineman,indoor,Synthetic,90,Clear
+47196,Toes,Defensive Lineman,indoor,Synthetic,84,Partly Cloudy
+47196,Toes,Defensive Lineman,outdoor,Natural,54,Partly Sunny
+47196,Toes,Defensive Lineman,indoor,Synthetic,-999,N/A (Indoors)
+47196,Toes,Defensive Lineman,retractable roof,Synthetic,53,Indoors
+47196,Toes,Defensive Lineman,indoor,Synthetic,70,Clear Skies
+47196,Toes,Defensive Lineman,outdoor,Natural,71,Cloudy
+47196,Toes,Defensive Lineman,outdoor,Natural,48,Clear Skies
+47196,Toes,Defensive Lineman,retractable roof,Synthetic,68,Indoors
+47196,Toes,Defensive Lineman,retractable roof,Synthetic,64,Indoors
+45975,Toes,Safety,outdoor,Natural,81,Sunny
+45975,Toes,Safety,outdoor,Natural,88,Clear
+45975,Toes,Safety,indoor,Synthetic,-999,Indoor
+45975,Toes,Safety,outdoor,Natural,91,Cloudy
+45975,Toes,Safety,outdoor,Natural,76,Clear
+45975,Toes,Safety,outdoor,Synthetic,74,Sunny
+45975,Toes,Safety,outdoor,Natural,63,Cloudy
+45975,Toes,Safety,indoor,Synthetic,79,Partly Cloudy
+45975,Toes,Safety,outdoor,Natural,79,Cloudy
+45975,Toes,Safety,outdoor,Natural,42,Cloudy
+45975,Toes,Safety,outdoor,Natural,55,Clear
+45975,Toes,Safety,outdoor,Natural,71,Clear
+45975,Toes,Safety,indoor,Synthetic,86,Partly Cloudy
+45975,Toes,Safety,outdoor,Natural,77,Cloudy
+45975,Toes,Safety,outdoor,Natural,66,Cloudy
+45975,Toes,Safety,retractable roof,Synthetic,-999,Clear
+45975,Toes,Safety,outdoor,Natural,79,Clear
+45975,Toes,Safety,outdoor,Synthetic,55,"Cloudy, 50% change of rain"
+45975,Toes,Safety,outdoor,Natural,62,Sunny
+45975,Toes,Safety,outdoor,Natural,82,Clear
+45975,Toes,Safety,outdoor,Natural,81,Cloudy
+47273,Toes,Wide Receiver,indoor,Synthetic,86,Partly Cloudy
+47273,Toes,Wide Receiver,indoor,Synthetic,90,Clear
+47273,Toes,Wide Receiver,indoor,Synthetic,84,Partly Cloudy
+47273,Toes,Wide Receiver,outdoor,Natural,54,Partly Sunny
+47273,Toes,Wide Receiver,indoor,Synthetic,-999,N/A (Indoors)
+47273,Toes,Wide Receiver,indoor,Synthetic,77,Cloudy
+47273,Toes,Wide Receiver,outdoor,Synthetic,39,Mostly Sunny
+47273,Toes,Wide Receiver,retractable roof,Synthetic,68,Indoors
+47273,Toes,Wide Receiver,indoor,Synthetic,70,Clear Skies
+47273,Toes,Wide Receiver,outdoor,Natural,71,Cloudy
+47273,Toes,Wide Receiver,outdoor,Natural,48,Clear Skies
+47273,Toes,Wide Receiver,retractable roof,Synthetic,68,Indoors
+47273,Toes,Wide Receiver,retractable roof,Synthetic,64,Indoors
+40405,Toes,Wide Receiver,outdoor,Natural,64,Sunny
+40405,Toes,Wide Receiver,outdoor,Natural,88,Clear
+40405,Toes,Wide Receiver,outdoor,Natural,89,"Sunny, highs to upper 80s"
+40405,Toes,Wide Receiver,outdoor,Natural,65,Cloudy
+40405,Toes,Wide Receiver,outdoor,Natural,70,Partly cloudy
+40405,Toes,Wide Receiver,outdoor,Synthetic,74,Sunny
+40405,Toes,Wide Receiver,outdoor,Synthetic,42,Rain
+40405,Toes,Wide Receiver,outdoor,Synthetic,68,Clear
+40405,Toes,Wide Receiver,outdoor,Synthetic,42,Cloudy
+40405,Toes,Wide Receiver,outdoor,Natural,62,Partly Cloudy
+40405,Toes,Wide Receiver,outdoor,Synthetic,48,Mostly cloudy
+40405,Toes,Wide Receiver,outdoor,Synthetic,32,Heavy lake effect snow
+40405,Toes,Wide Receiver,outdoor,Synthetic,22,Mostly cloudy
+40405,Toes,Wide Receiver,outdoor,Synthetic,35,Cloudy
+40405,Toes,Wide Receiver,outdoor,Natural,71,Clear
+40405,Toes,Wide Receiver,outdoor,Natural,81,Partly Cloudy
+40405,Toes,Wide Receiver,outdoor,Synthetic,61,Sunny
+40405,Toes,Wide Receiver,retractable roof,Synthetic,83,Partly Cloudy
+40405,Toes,Wide Receiver,outdoor,Natural,52,Sunny
+40405,Toes,Wide Receiver,indoor,Synthetic,74,Clear skies
+40405,Toes,Wide Receiver,outdoor,Synthetic,44,Cloudy
+40405,Toes,Wide Receiver,outdoor,Natural,86,Partly Cloudy
+40405,Toes,Wide Receiver,outdoor,Synthetic,31,Fair
+40405,Toes,Wide Receiver,outdoor,Synthetic,39,Rain shower
+40405,Toes,Wide Receiver,outdoor,Synthetic,40,Clear and cold
+44423,Knee,Wide Receiver,retractable roof,Synthetic,87,Sunny
+44423,Knee,Wide Receiver,retractable roof,Synthetic,89,Partly Cloudy
+44423,Knee,Wide Receiver,retractable roof,Synthetic,85,Partly Cloudy
+44423,Knee,Wide Receiver,outdoor,Synthetic,50,Cloudy
+44423,Knee,Wide Receiver,retractable roof,Synthetic,84,Mostly Cloudy
+44423,Knee,Wide Receiver,outdoor,Natural,68,Cloudy
+44423,Knee,Wide Receiver,retractable roof,Synthetic,-999,Sunny
+44423,Knee,Wide Receiver,retractable roof,Synthetic,51,Mostly Cloudy
+44423,Knee,Wide Receiver,retractable roof,Synthetic,9,Partly sunny
+44423,Knee,Wide Receiver,outdoor,Natural,81,Cloudy
+44423,Knee,Wide Receiver,retractable roof,Synthetic,78,Partly Cloudy
+44423,Knee,Wide Receiver,retractable roof,Synthetic,73,Mostly sunny
+44423,Knee,Wide Receiver,retractable roof,Synthetic,83,Partly Cloudy
+44423,Knee,Wide Receiver,retractable roof,Synthetic,87,Mostly Cloudy
+44423,Knee,Wide Receiver,retractable roof,Synthetic,66,Cloudy
+31933,Knee,Tight End,outdoor,Natural,67,Sunny
+31933,Knee,Tight End,outdoor,Natural,76,Cloudy
+31933,Knee,Tight End,outdoor,Natural,76,Clear
+31933,Knee,Tight End,outdoor,Natural,82,Clear
+31933,Knee,Tight End,outdoor,Natural,68,Cloudy
+31933,Knee,Tight End,outdoor,Natural,70,Cloudy
+31933,Knee,Tight End,outdoor,Natural,60,Rain
+31933,Knee,Tight End,outdoor,Synthetic,36,Rain
+31933,Knee,Tight End,outdoor,Natural,44,Cloudy
+31933,Knee,Tight End,indoor,Synthetic,57,Sunny
+31933,Knee,Tight End,outdoor,Natural,33,Clear
+31933,Knee,Tight End,outdoor,Natural,50,Cloudy
+31933,Knee,Tight End,outdoor,Natural,43,Cloudy
+31933,Knee,Tight End,retractable roof,Natural,-999,N/A Indoor
+31933,Knee,Tight End,outdoor,Natural,71,Cloudy
+31933,Knee,Tight End,outdoor,Natural,62,Rain
+31933,Knee,Tight End,indoor,Synthetic,84,Partly Cloudy
+31933,Knee,Tight End,outdoor,Natural,52,Cloudy
+31933,Knee,Tight End,outdoor,Natural,52,Sunny
+31933,Knee,Tight End,outdoor,Natural,55,Sunny
+31933,Knee,Tight End,outdoor,Natural,48,Cloudy
+31933,Knee,Tight End,outdoor,Natural,36,Cloudy
+31933,Knee,Tight End,outdoor,Natural,33,Cloudy
+31933,Knee,Tight End,retractable roof,Natural,64,Partly Cloudy
+47285,Knee,Wide Receiver,retractable roof,Synthetic,73,Mostly sunny
+47285,Knee,Wide Receiver,retractable roof,Synthetic,83,Partly Cloudy
+47285,Knee,Wide Receiver,retractable roof,Synthetic,87,Mostly Cloudy
+47285,Knee,Wide Receiver,outdoor,Natural,48,Cloudy
+47285,Knee,Wide Receiver,retractable roof,Synthetic,51,Clear
+37068,Knee,Linebacker,outdoor,Synthetic,63,Clear and warm
+37068,Knee,Linebacker,outdoor,Natural,68,Cloudy
+37068,Knee,Linebacker,outdoor,Natural,82,Clear
+37068,Knee,Linebacker,retractable roof,Synthetic,89,Partly Cloudy
+37068,Knee,Linebacker,outdoor,Natural,60,Sunny
+37068,Knee,Linebacker,outdoor,Natural,62,Cloudy
+37068,Knee,Linebacker,outdoor,Natural,44,Clear
+37068,Knee,Linebacker,outdoor,Natural,62,Partly Cloudy
+37068,Knee,Linebacker,outdoor,Synthetic,48,Cloudy
+37068,Knee,Linebacker,outdoor,Natural,46,Sunny
+37068,Knee,Linebacker,outdoor,Natural,53,Cloudy
+37068,Knee,Linebacker,outdoor,Natural,23,Cloudy
+37068,Knee,Linebacker,outdoor,Natural,17,Cloudy
+37068,Knee,Linebacker,outdoor,Synthetic,45,Cloudy
+37068,Knee,Linebacker,outdoor,Natural,59,Clear
+37068,Knee,Linebacker,outdoor,Natural,56,Clear and Sunny
+37068,Knee,Linebacker,outdoor,Natural,65,Cloudy
+37068,Knee,Linebacker,outdoor,Natural,57,Sunny Skies
+37068,Knee,Linebacker,outdoor,Natural,27,Sunny
+37068,Knee,Linebacker,outdoor,Synthetic,43,Cloudy
+37068,Knee,Linebacker,outdoor,Natural,45,Sunny
+36696,Knee,Cornerback,outdoor,Natural,64,Sunny
+36696,Knee,Cornerback,outdoor,Natural,88,Clear
+36696,Knee,Cornerback,outdoor,Natural,89,"Sunny, highs to upper 80s"
+36696,Knee,Cornerback,outdoor,Natural,65,Cloudy
+36696,Knee,Cornerback,outdoor,Natural,70,Partly cloudy
+36696,Knee,Cornerback,outdoor,Natural,69,Partly Sunny
+36696,Knee,Cornerback,outdoor,Natural,33,Partly Cloudy
+36696,Knee,Cornerback,outdoor,Natural,49,Sunny
+36696,Knee,Cornerback,outdoor,Natural,54,Sunny
+36696,Knee,Cornerback,outdoor,Synthetic,31,Partly Cloudy
+36696,Knee,Cornerback,indoor,Synthetic,68,Controlled Climate
+36696,Knee,Cornerback,outdoor,Natural,24,"Cloudy, light snow accumulating 1-3"""
+36696,Knee,Cornerback,indoor,Synthetic,-999,N/A (Indoors)
+36696,Knee,Cornerback,outdoor,Natural,62,Clear
+36696,Knee,Cornerback,outdoor,Natural,79,Clear
+36696,Knee,Cornerback,retractable roof,Natural,-999,N/A Indoor
+36696,Knee,Cornerback,outdoor,Natural,66,Cloudy
+36696,Knee,Cornerback,outdoor,Natural,89,Partly Cloudy
+36696,Knee,Cornerback,outdoor,Natural,44,Sunny
+36696,Knee,Cornerback,outdoor,Natural,48,cloudy
+36696,Knee,Cornerback,outdoor,Synthetic,49,Mostly sunny
+36696,Knee,Cornerback,outdoor,Natural,37,Mostly Cloudy
+36696,Knee,Cornerback,outdoor,Natural,29,Cloudy
+36696,Knee,Cornerback,outdoor,Natural,45,Fair
+36696,Knee,Cornerback,outdoor,Natural,50,Partly Cloudy

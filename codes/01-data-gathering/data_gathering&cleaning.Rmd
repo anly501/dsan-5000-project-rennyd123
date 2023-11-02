@@ -1,0 +1,172 @@
+---
+title: "data_gathering&cleaning"
+author: "Renee DeMaio"
+output: html_document
+date: "2023-10-11"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Injury Prevention Data Soccer
+
+```{r}
+library(readxl)
+install.packages("dplyr")
+install.packages("tidyverse")
+install.packages("tidyr")
+library(dplyr)
+library(tidyverse)
+library(tidyr)
+
+file_path <- "data/raw/Data_Injury_Prevention.xls"
+
+ip_soccer <- read_excel(file_path)
+head(ip_soccer)
+tail(ip_soccer)
+
+print(colnames(ip_soccer))
+
+for (col_name in names(ip_soccer)) {
+  if (grepl("\\(1=yes, 0=no\\)", col_name)) {
+    ip_soccer[[col_name]] <- ifelse(ip_soccer[[col_name]] == 1, "yes", "no")
+  }
+}
+
+for (col_name in names(ip_soccer)) {
+  if (grepl("\\(1= yes, 0=no\\)", col_name)) {
+    ip_soccer[[col_name]] <- ifelse(ip_soccer[[col_name]] == 1, "yes", "no")
+  }
+}
+
+for (col_name in names(ip_soccer)) {
+  if (grepl("\\(\\(1= yes, 0=no\\)", col_name)) {
+    ip_soccer[[col_name]] <- ifelse(ip_soccer[[col_name]] == 1, "yes", "no")
+  }
+}
+
+for (col_name in names(ip_soccer)) {
+  if (grepl("\\(1= yes, 2=no\\)", col_name)) {
+    ip_soccer[[col_name]] <- ifelse(ip_soccer[[col_name]] == 1, "yes", "no")
+  }
+}
+
+head(ip_soccer)
+
+for (col_name in names(ip_soccer)) {
+  if (grepl("\\(1=yes, 0=no\\)", col_name)) {
+    new_col_name <- gsub("\\(1=yes, 0=no\\)", "", col_name)
+    colnames(ip_soccer)[colnames(ip_soccer) == col_name] <- new_col_name
+  }
+}
+
+for (col_name in names(ip_soccer)) {
+  if (grepl("\\(1= yes, 0=no\\)", col_name)) {
+    new_col_name <- gsub("\\(1= yes, 0=no\\)", "", col_name)
+    colnames(ip_soccer)[colnames(ip_soccer) == col_name] <- new_col_name
+  }
+}
+
+for (col_name in names(ip_soccer)) {
+  if (grepl("\\(\\(1=yes, 0=no\\)", col_name) || grepl("\\(1=yes, 2=no\\)", col_name)) {
+    new_col_name <- gsub("\\(\\(1= yes, 0=no\\)|\\(1=yes, 2=no\\)", "", col_name)
+    colnames(ip_soccer)[colnames(ip_soccer) == col_name] <- new_col_name
+  }
+}
+
+colnames(ip_soccer)
+colnames(ip_soccer)[13] <- "Noncontact_Ankle_Injuries"
+colnames(ip_soccer)
+
+print(ip_soccer)
+
+getwd()
+file_path <- "../../data/01-modified-data/injury_prevention_data_soccer.csv"
+write_csv(ip_soccer, file = file_path)
+
+```
+
+## Sports Injury Data
+
+
+```{r}
+library(rvest)
+
+url <- "https://www.iii.org/fact-statistic/facts-statistics-sports-injuries"
+
+webpage <- read_html(url)
+
+data <- webpage %>% html_table(fill = TRUE)
+
+csv_filename <- "sports_injuries_data.csv"
+
+write.csv(data[[1]], csv_filename, row.names = FALSE)
+
+csv_url <- "https://raw.githubusercontent.com/anly501/dsan-5000-project-rennyd123/main/dsan-website/5000-website/data/raw/sports_injuries_data.csv"
+
+si_data <- read.csv(url(csv_url))
+head(si_data)
+```
+
+
+```{r, echo=FALSE}
+si_data <- si_data[-c(1:2, nrow(si_data)), ]
+colnames(si_data) <- c("Sport, activity or equipment", "Injuries (1)", "Younger than 5", "5 to 14", "15 to 24", "25 to 64", "65 and older")
+
+head(si_data)
+
+si_data <- si_data[-1, ]
+si_data <- si_data[, 1:7]
+head(si_data)
+
+file_path <- "../../data/01-modified-data/sports_injury_data.csv"
+write.csv(si_data, file = file_path, row.names = FALSE)
+```
+
+## NBA Player and Team Data
+
+```{r}
+#install.packages("readr")
+library(readr)
+library(dplyr)
+library(tidyverse)
+library(tidyr)
+getwd()
+
+players <- read_csv("../../data/00-raw-data/players.csv")
+head(players)
+
+ranking <- read_csv("../../data/00-raw-data/ranking.csv")
+head(ranking)
+colnames(ranking)
+ranking_subset <- ranking[, 1:10]
+
+teams <- read_csv("../../data/00-raw-data/teams.csv")
+head(teams)
+colnames(teams)
+```
+
+
+```{r}
+players_teams <- full_join(players, teams, by = "TEAM_ID")
+head(players_teams)
+colnames(players_teams)
+
+players_teams_rankings <- full_join(players_teams, ranking_subset, by = c("TEAM_ID", "LEAGUE_ID"))
+head(players_teams_rankings)
+
+players_teams_rankings <- na.omit(players_teams_rankings)
+tail(players_teams_rankings)
+
+most_recent_data <- players_teams_rankings %>%
+  group_by(PLAYER_NAME) %>%
+  filter(STANDINGSDATE == max(STANDINGSDATE)) %>%
+  ungroup()
+
+head(most_recent_data, 20)
+
+file_path <- "../../data/01-modified-data/nba_data.csv"
+write.csv(most_recent_data, file = file_path)
+```
+

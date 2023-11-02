@@ -2,36 +2,134 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "DSAN-5000: Introduction",
+    "title": "Homepage",
     "section": "",
-    "text": "See the following link for more information about the author: about me\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nHIGHLY RECOMMENDED\n\nIt is highly recommended that you build your website using .ipynb files and NOT .qmdfiles\nFunctionally the two formats are basically identical, i.e. they are just Markdown + Code\nHowever there is ONE MAJOR DIFFERENCE, i.e. .ipynb stores the code outputs in the meta-data of the file\n\nThis means you ONLY HAVE TO RUN THE CODE ONCE with .ipynb\n.qmd will run the code every time you build the website, which can be very slow\n\nThere are caching options for .qmd, however, they are “messier” that just using .ipynb\n\nNote: .qmd is fine if there is no code, in which case it is basically just a Markdown file\n\nConverting between the two\n\nYou can switch between the two formats using\nquarto convert clustering.qmd this will output a .ipynb version called clustering.ipynb\nquarto convert eda.ipynb this will output a .qmd version called eda.qmd\n\nYOU CAN RUN R CODE IN VSC WITH .ipynb, see the following link\n\nhttps://saturncloud.io/blog/how-to-use-jupyter-r-kernel-with-visual-studio-code/\n\nIt is possible, but NOT RECOMMENDED, to mix Python and R code in the same file\n\nIMPORTANT ASIDE\n\nA .ipynb file is simply a JSON file with a specialized structural format\nYou can see this by running more eda/eda.ipynb from the command line\nWhich will output the following;\n\n\nTIP FOR MAC USERS\n\ncommand+control+shift+4 is very useful on a mac.\n\nIt takes a screenshot and saves it to the clip-board\n\nThe following VSC extension allows you to paste images from the clip-board with alt+command+v.\n\ntab is your best friend when using the command line, since it does auto-completion\nopen ./path_to_file will open any file or directory from the command line"
+    "text": "Hello! My name is Renee DeMaio (jrd154) and this is the homepage for my DSAN 5000 website which will be home to my research project about injuries and injury prevention in sports. Feel free to click through the tabs to see more of my work.\nTo learn more about me, click here."
   },
   {
-    "objectID": "eda/eda.html",
-    "href": "eda/eda.html",
+    "objectID": "tabs/data_cleaning/data_cleaning.html",
+    "href": "tabs/data_cleaning/data_cleaning.html",
+    "title": "General Injury Data",
+    "section": "",
+    "text": "Injury & Injury Prevention Data Soccer\nIn order to clean this data set, I dropped all unnecessary columns, added binary values to columns that expressed binary data, and renamed columns appropriately.\nThe cleaned data can be found here and the cleaning code can be found here..\n\n\nInjury Data From Different Activites\nIn order to clean this data, I first had to reformat it into a tabular format and then had drop unnecessary columns.\nThe cleaned data can be found here and the cleaning code can be found here.\n\n\nNBA Data\n\nNBA Injury Data\nThe main cleaning that I had to do for this data set was subsetting to ensure that I had the columns that I needed. I dropped the “Acquired” column and then also split the “Notes” column into “Notes” and “Injury Status” which extracts information about the duration of the stint on the Injured List into a new column.\nThe link to my cleaned can be found here and the link my code can be found here.\n\n\nNBA Data\nThe cleaning done for this data set included joining all three data sets - the players, teams, and rankings data sets - together. I dropped unnecessary columns and filtered out NA values. The cleaned data set and associated code can be found below.\nThe cleaned data set can be found here and the cleaning code can be found here.\n\n\n\nNFL Data\n\nNFL Concussion Data\nThe cleaning done to this data set at this point has been minimal. I simply dropped unnecessary columns in order to make the dataset more suitable to my project.\nThe link to the cleaned data set is here and the link to the cleaning code is here.\n\n\nNFL Game Injury Data\nThe data cleaning for this data set involved merging two data sets together and dropping columns to make the data set more suitable for my project.\nThe link to the cleaned data can be found here and the link to the cleaning code can be found here."
+  },
+  {
+    "objectID": "tabs/arm/arm.html",
+    "href": "tabs/arm/arm.html",
+    "title": "DSAN-5000: Project",
+    "section": "",
+    "text": "1+1"
+  },
+  {
+    "objectID": "tabs/dimensionality_reduction/dimensionality_reduction.html",
+    "href": "tabs/dimensionality_reduction/dimensionality_reduction.html",
+    "title": "DSAN-5000: Project",
+    "section": "",
+    "text": "1+1"
+  },
+  {
+    "objectID": "tabs/code/code.html",
+    "href": "tabs/code/code.html",
+    "title": "DSAN-5000: Project",
+    "section": "",
+    "text": "You can access my github repo here."
+  },
+  {
+    "objectID": "tabs/decision_tree/classification.html",
+    "href": "tabs/decision_tree/classification.html",
+    "title": "DSAN-5000: Project",
+    "section": "",
+    "text": "1+1"
+  },
+  {
+    "objectID": "tabs/introduction/introduction.html",
+    "href": "tabs/introduction/introduction.html",
+    "title": "Introduction to sports injuries and injury prevention",
+    "section": "",
+    "text": "Injuries and injury prevention in sports is an increasingly important topic in sports as athletes continue to increase the ability to perform well. As the world continues to get more competitive and as sport remains an important part of our cultures and societies, keeping athletes healthy becomes more important. So far, the field has not had a lot of research conducted, with studies mainly focusing on how we can use machine learning and artificial intelligence to predict and prevent sports injuries. There are many different voices in this realm including voices discussing the machine learning and artificial intelligence side of things and how we can make those tools more efficient, as well as voices coming from the medical point of view striving to reduce the frequency of injuries. I would like to explore both the machine learning and artificial intelligence perspective and how we can apply those findings to athletes’ daily lives.\n\n10 questions I aim to answer\n\nIn what sports is machine learning and artificial intelligence most useful for predicting and prevention injuries?\nHow can we use machine learning and artificial intelligence to predict and prevent sports injuries?\nIs there a difference in the data between predicting injuries in male athletes versus predicting injuries in female athletes?\nHow can we make the results of many of these studies more useful to clinicians?\nHow can we more efficiently use machine learning to predict and prevent sports injuries?\nHow can we more efficiently use artificial intelligence to predict and prevent sports injuries?\nWhat does it look like on the day to day sports level when advice from machine learning findings are incorporated?\nWhat does using machine learning and artificial intelligence mean for the future of sports?\nWhat effect has machine learning and artificial intelligence had on predicting and preventing sports injuries so far?\nWhat are the goals of the field?\n\n\n\nSummary: The Severity of Sports Injuries by Willem van Mechelen\nThe severity of sports injuries can be broken down into “6 criteria: (i) nature of sports injury; (ii) duration and nature of treatment; (iii) sporting time lost; (iv) working time lost; (v) permanent damage; and (vi) monetary cost” (Mechelen 1997). Sports injuries can be divided into several broad categories based on type of injury. In more traditional and popular sports such as football and basketball, the most common sports injuries are in the contusions or sprains on the lower extremities, though other sports such as skiing, parachute jumping, horse riding, etc, see fractures more often. We can use “data on the duration and nature of treatment” to “determine the severity of an injury” and help us evaluate what medical treatments will be most effective. From there, we can evaluate how much, if any, permanent damage there will be following the injury. (Mechelen 1997). Time away from the sport can also have an effect on an athlete’s psychosocial wellness. Fortunately 50 to 60% of all sports injuries do not lead to a substantial loss of sporting time (Mechelen 1997). Additionally, there are many costs that come from sports injuries including financial, social and financial. The two main types of social costs can be subdivided into quantifiable and unquantifiable. Quantifiable costs include “insurance costs and legal expenses” whereas unquantifiable costs include any harm caused to the athlete’s psychosocial wellness. The two main types of financial costs of sports injuries include direct costs which includes “the cost of medical treatment” and indirect costs which are considered to be “expenditure incurred in connection with the loss of productivity due to increased morbidity and mortality levels” (Mechelen 1997). An integral part to preventing such costs and effects is implementing proper sports injury prevention techniques.\n\n\nSummary: Machine learning methods in sport injury prediction and prevention: a systematic review by Hans Van Eetvelde, Luciana D. Mendonça, Christophe Ley, Romain Seil, and Thomas Tischer\nSports injuries have a complex cause with the “interactions of multiple risk factors and inciting events making a comprehensive model necessary” and difficult due to the large number of factors that play a role in an injury (Van Eetvelde et al. 2021). The first half of Hans Van Eetvelde et. al article covers the way that they selected their sources. Their paper addresses the “currently used definition of ML as well as predominantly used MIL methods”, the “accuracy of the currently used ML methods to predict injury”, and evaluates “the used methods for sport injury prevention purposes” (Van Eetvelde et al. 2021). The inclusion criteria for this article required articles to be original in “investigating the role of machine learning for sport injury prediction” and prevention, in english, and published in a peer-reviewed journal (ibid). The exclusion criteria included articles “not being sport specific, not covering injury prevention or injury prediction, [and] meeting abstracts and proceedings” (ibid). These criteria and their narrowing process left the researchers with 11 studies. The study found that “the most promising results to predict injury risk were obtained in elite youth football players…and in professional soccer based on a pre-season screening evaluation (Van Eetvelde et al. 2021).” It also concluded that “ML methods may be used to identify athletes at high injury risk during sport participation and that it may be helpful to identify risk factors (Van Eetvelde et al. 2021).” However, “the methodological study quality was moderate to very low (ibid).” As the field is growing, the authors expect promising further developments with respect to artificial intelligence and machine learning methods.\n\n\n\n\n\nReferences\n\nMechelen, Willem van. 1997. “The Severity of Sports Injuries.” Sports Medicine 24: 176–80.\n\n\nVan Eetvelde, Hans, Luciana D Mendonça, Christophe Ley, Romain Seil, and Thomas Tischer. 2021. “Machine Learning Methods in Sport Injury Prediction and Prevention: A Systematic Review.” Journal of Experimental Orthopaedics 8: 1–15."
+  },
+  {
+    "objectID": "tabs/data_gathering/data_gathering.html",
+    "href": "tabs/data_gathering/data_gathering.html",
+    "title": "General Injury Data",
+    "section": "",
+    "text": "Injury & Injury Prevention Data Soccer\nThis data set focuses on the factors that may have influenced injuries that occured in soccer. The data collects information about the injury that occured, any history of injuries, and factors that may have affected the injury beforehand. This data will be useful to see what factors can influence injuries, such as warming up, previous injuries, etc.\nThe raw data and dataset can be found here.\n\n\nInjury Data From Different Activites\nThis data breaks down the how many injuries per age group come from different types of activities. While this data isn’t directly related to professional sports, it helps provide a basic understanding of what sports or physical activities produce the most injuries.\nThe data source can be found here.\n\n\nNBA Data\n\nNBA Injury Data\nThe first data set that I selected to use is a NBA Injury Data set. This data set records all of the roster moves related to injuries made by each NBA team in every season betwwen the 2010 and 2020 seasons. The raw data contains 5 features, including player name, team name, date of transaction, acquired players, relinquished players, and notes about the injury. I thought this data source would be useful to help gather information about what kinds of injuries are most common and how many injuries each team had per season.\nThe link to the raw data can be found here and the link to the data source can be found here.\n\n\nNBA Data\nThese three data sets are derived from Kaggle and are all related to the NBA. One is a players data set which contains information about players in the NBA including player name, team ID, and the season. Next is the rankings data set which includes information about each team’s record in each season and well as information about their conference. Last is the teams data which includes information about each team and where they play. These datasets combined would provide me with information about the NBA records for each season.\nThe link to raw data and data source can be found here\n\n\n\nNFL Data\n\nNFL Concussion Data\nThis data sources is a list of all the concussion or head injuries in the NFL during the 2012-2014. The data set has information about the time of the injury within the season, the severity of the injury, and the aftermath of the injury. This information is helpful to provide injury context for the NFL seasons.\nThe link to the raw data and data source can be found here\n\n\nNFL Game Injury Data\nThis data set provides anonymous information about NFL injuries and the situation in which the injury occured, such as the stadium type, the field type, and the temperature. This data will be useful for seeing how the weather and game circumstances can influence injuries.\nThe link to the raw data and data source can be found here."
+  },
+  {
+    "objectID": "tabs/eda/eda.html",
+    "href": "tabs/eda/eda.html",
     "title": "Data Exploration",
     "section": "",
     "text": "Build out your website tab for exploratory data analysis"
   },
   {
-    "objectID": "eda/eda.html#quick-look-at-the-data",
-    "href": "eda/eda.html#quick-look-at-the-data",
+    "objectID": "tabs/eda/eda.html#quick-look-at-the-data",
+    "href": "tabs/eda/eda.html#quick-look-at-the-data",
     "title": "Data Exploration",
     "section": "Quick look at the data",
     "text": "Quick look at the data\n\n# Import seaborn\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Apply the default theme\nsns.set_theme(style=\"whitegrid\", palette=\"pastel\")\n\n# Load an example dataset\ntips = sns.load_dataset(\"tips\")\nprint(tips)\n\n     total_bill   tip     sex smoker   day    time  size\n0         16.99  1.01  Female     No   Sun  Dinner     2\n1         10.34  1.66    Male     No   Sun  Dinner     3\n2         21.01  3.50    Male     No   Sun  Dinner     3\n3         23.68  3.31    Male     No   Sun  Dinner     2\n4         24.59  3.61  Female     No   Sun  Dinner     4\n..          ...   ...     ...    ...   ...     ...   ...\n239       29.03  5.92    Male     No   Sat  Dinner     3\n240       27.18  2.00  Female    Yes   Sat  Dinner     2\n241       22.67  2.00    Male    Yes   Sat  Dinner     2\n242       17.82  1.75    Male     No   Sat  Dinner     2\n243       18.78  3.00  Female     No  Thur  Dinner     2\n\n[244 rows x 7 columns]"
   },
   {
-    "objectID": "eda/eda.html#basic-visualization",
-    "href": "eda/eda.html#basic-visualization",
+    "objectID": "tabs/eda/eda.html#basic-visualization",
+    "href": "tabs/eda/eda.html#basic-visualization",
     "title": "Data Exploration",
     "section": "Basic visualization",
     "text": "Basic visualization\n\n\n# Create a visualization\nsns.relplot(\n    data=tips,\n    x=\"total_bill\", y=\"tip\", col=\"time\",\n    hue=\"smoker\", style=\"smoker\", size=\"size\",\n)\n\nplt.show()"
   },
   {
-    "objectID": "clustering/clustering.html",
-    "href": "clustering/clustering.html",
+    "objectID": "tabs/decision_tree/regression.html",
+    "href": "tabs/decision_tree/regression.html",
+    "title": "DSAN-5000: Project",
+    "section": "",
+    "text": "1+1"
+  },
+  {
+    "objectID": "tabs/clustering/clustering.html",
+    "href": "tabs/clustering/clustering.html",
     "title": "Clustering",
     "section": "",
     "text": "Build out your website tab for “clustering”"
+  },
+  {
+    "objectID": "tabs/about/about.html",
+    "href": "tabs/about/about.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Renee DeMaio (she/her) is a fourth year undergraduate and first year graduate student at Georgetown University. Her undergraduate degree is in Chinese with a minor in mathematics. Her graduate degree is in Data Science and Analytics. She is from Hong Kong, and spent all of her adolecent life in Hong Kong and Singapore. At the age of 18, she moved to the United States for the first time to attend university. Her academic interests include how LGBTQ+ identities exist and flourish within a rigid Chinese social and familial structure, as well as artificial intelligence and machine learning. She hopes to further explore the latter two throughout the duration of her masters. Outside of school, her hobbies include dance, running, cooking, and reading.\n\nFavourite Books:\n\nCrying at H Mart by Michelle Zauner\nSidelined: Sports, Culture, and Being a Woman in America by Julie Dicaro\nKillers of a Certain Age by Deanna Raybourn\nJoan is Okay by Weike Wang\nIf He Had Been with Me by Laura Nowlin\nHappy Place by Emily Henry\n\n     \n\n\nRecent Personal Accomplishments\n\n2023: Acceptance into the DSAN Masters Programme\n2021 & 2022: Completing the National Women’s Half Marathon\n2020: Becoming a Lead Coach at Splash Foundation Hong Kong, an organization that teaches foreign domestic helpers water safety skills and how to swim."
+  },
+  {
+    "objectID": "tabs/naive_bayes/naive_bayes.html",
+    "href": "tabs/naive_bayes/naive_bayes.html",
+    "title": "Introduction to Naive Bayes",
+    "section": "",
+    "text": "The Naive Bayes classifier is a supervised machine learning algorithm that is used for classification tasks, such as text classification. The goal of the Naive Bayes classifier is to classify data points into predefined categories, also called classes, by estimating the probability of the data point having each class using a predetermined set of features. At the core of Naive Bayes classifier is Bayes Theorem, a statistical tool that describes the probability of an event with knowledge of conditions that might influence the outcome of the event. When applied in Naive Bayes, it predicts the probability of a given object having a specific class, based on the observed features. The ‘naive’ aspect of Naive Bayes comes from the classifier’s assumption that all the data is independent.\nThere are different versions of Naive Bayes including Gaussian Naive Bayes, Multinomial Naive Bayes, and Bernoulli Naive Bayes. The differences between each version is that they are all defined to accommodate different types of data and be used in different scenarios, so it is important to select the variant that best suits your data. Gaussian Naive Bayes is best suited for continuous data whose features are assumed to follow a normal distribution. This variant is best suited for data that consists of continuous, numeric features. Multinomial Naive Bayes is best suited for text or data represented as counts. It is commonly used in text classification, for example in sentiment analysis. Finally, Bernoulli Naive Bayes works best with binary data whose features are binary variables. It is often used in document classification tasks such as spam detection."
+  },
+  {
+    "objectID": "tabs/naive_bayes/naive_bayes.html#preparing-data-for-naive-bayes",
+    "href": "tabs/naive_bayes/naive_bayes.html#preparing-data-for-naive-bayes",
+    "title": "Introduction to Naive Bayes",
+    "section": "Preparing Data for Naive Bayes",
+    "text": "Preparing Data for Naive Bayes\nIn order to carry out Naive Bayes, it is important that we preprocess our data. The data cleaning process has happened already and can be found within the data cleaning tab. Since our data is now prepared and cleaned, we need to separate it into training, validation, and testing sets. Training data is typically 80% of a data set and is the data that we give to the model so it can learn the existing releationships and methods that desired outcomes are predicted. The validation set is typically 10% of the data, and is given to the model to help fine tune the model’s hyperparameters and prevent overfitting. Finally, the remaining 10% of the data constitutes the test data, which is the data set given to the model to evaluate the model’s accuracy and performance. It is used to evaluate how well the model performs on unseen data."
+  },
+  {
+    "objectID": "tabs/naive_bayes/naive_bayes.html#feature-selection-for-record-data",
+    "href": "tabs/naive_bayes/naive_bayes.html#feature-selection-for-record-data",
+    "title": "Introduction to Naive Bayes",
+    "section": "Feature Selection for Record Data",
+    "text": "Feature Selection for Record Data"
+  },
+  {
+    "objectID": "tabs/conclusion/conclusion.html",
+    "href": "tabs/conclusion/conclusion.html",
+    "title": "DSAN-5000: Project",
+    "section": "",
+    "text": "1+1"
+  },
+  {
+    "objectID": "tabs/data/data.html",
+    "href": "tabs/data/data.html",
+    "title": "Basketball Injury Data from 2010-2018",
+    "section": "",
+    "text": "This data comes from this website\n\nimport requests\nimport pandas as pd\nimport requests\n\ncsv_url = \"https://raw.githubusercontent.com/anly501/dsan-5000-project-rennyd123/main/dsan-website/5000-website/data/raw/injuries_2010-2020.csv\"\n\n\nbball_injury_data = pd.read_csv(csv_url)\nprint(bball_injury_data.head())\n\n         Date     Team Acquired   Relinquished  \\\n0  2010-10-03    Bulls      NaN  Carlos Boozer   \n1  2010-10-06  Pistons      NaN  Jonas Jerebko   \n2  2010-10-06  Pistons      NaN  Terrico White   \n3  2010-10-08  Blazers      NaN     Jeff Ayres   \n4  2010-10-08     Nets      NaN    Troy Murphy   \n\n                                               Notes  \n0  fractured bone in right pinky finger (out inde...  \n1      torn right Achilles tendon (out indefinitely)  \n2  broken fifth metatarsal in right foot (out ind...  \n3          torn ACL in right knee (out indefinitely)  \n4             strained lower back (out indefinitely)"
   }
 ]

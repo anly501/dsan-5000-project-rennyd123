@@ -5,12 +5,41 @@ website:
   title: "DSAN-5000: Project"
   navbar:
     left:
-      - href: index.qmd
+      - href: index.ipynb
         text: Home
-      - href: clustering/clustering.qmd
+      - href: tabs/about/about.ipynb
+        text: About Me
+      - href: tabs/introduction/introduction.ipynb
+        text: Introduction
+      - href: tabs/code/code.ipynb
+        text: Code
+      - text: Data
+        menu: 
+          - href: tabs/data/data.ipynb
+            text: Data
+          - href: tabs/eda/eda.ipynb
+            text: Data Exploration
+          - href: tabs/data_cleaning/data_cleaning.ipynb
+            text: Data Cleaning
+          - href: tabs/data_gathering/data_gathering.ipynb
+            text: Data Gathering
+      - href: tabs/arm/arm.ipynb
+        text: ARM
+      - href: tabs/clustering/clustering.qmd
         text: Clustering
-      - href: eda/eda.ipynb
-        text: Data Exploration
+      - href: tabs/dimensionality_reduction/dimensionality_reduction.ipynb
+        text: Dimensionality Reduction
+      - href: tabs/naive_bayes/naive_bayes.ipynb
+        text: Naive Bayes 
+      - text: Decision Tree
+        menu: 
+          - href: tabs/decision_tree/classification.ipynb
+            text: Classification 
+          - href: tabs/decision_tree/regression.ipynb
+            text: Regression
+
+bibliography: SI-references.bib
+
 format:
   html:
     theme: cosmo
