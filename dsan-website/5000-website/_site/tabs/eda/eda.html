@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>DSAN-5000: Project - Data Exploration</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">DSAN-5000: Project</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tabs/about/about.html" rel="" target="">
+ <span class="menu-text">About Me</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tabs/introduction/introduction.html" rel="" target="">
+ <span class="menu-text">Introduction</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tabs/code/code.html" rel="" target="">
+ <span class="menu-text">Code</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-data" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Data</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-data">    
+        <li>
+    <a class="dropdown-item" href="../../tabs/data/data.html" rel="" target="">
+ <span class="dropdown-text">Data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tabs/eda/eda.html" rel="" target="">
+ <span class="dropdown-text">Data Exploration</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tabs/data_cleaning/data_cleaning.html" rel="" target="">
+ <span class="dropdown-text">Data Cleaning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tabs/data_gathering/data_gathering.html" rel="" target="">
+ <span class="dropdown-text">Data Gathering</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../tabs/arm/arm.html" rel="" target="">
+ <span class="menu-text">ARM</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tabs/clustering/clustering.html" rel="" target="">
+ <span class="menu-text">Clustering</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tabs/dimensionality_reduction/dimensionality_reduction.html" rel="" target="">
+ <span class="menu-text">Dimensionality Reduction</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tabs/naive_bayes/naive_bayes.html" rel="" target="">
+ <span class="menu-text">Naive Bayes</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-decision-tree" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Decision Tree</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-decision-tree">    
+        <li>
+    <a class="dropdown-item" href="../../tabs/decision_tree/classification.html" rel="" target="">
+ <span class="dropdown-text">Classification</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tabs/decision_tree/regression.html" rel="" target="">
+ <span class="dropdown-text">Regression</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#text-data" id="toc-text-data" class="nav-link active" data-scroll-target="#text-data">Text Data</a>
+  <ul class="collapse">
+  <li><a href="#news-api" id="toc-news-api" class="nav-link" data-scroll-target="#news-api">News API</a></li>
+  </ul></li>
+  <li><a href="#tabular-data" id="toc-tabular-data" class="nav-link" data-scroll-target="#tabular-data">Tabular Data</a>
+  <ul class="collapse">
+  <li><a href="#basketball-injury-data" id="toc-basketball-injury-data" class="nav-link" data-scroll-target="#basketball-injury-data">Basketball Injury Data</a></li>
+  <li><a href="#nfl-concussion-data" id="toc-nfl-concussion-data" class="nav-link" data-scroll-target="#nfl-concussion-data">NFL Concussion Data</a></li>
+  <li><a href="#nfl-game-injury-data" id="toc-nfl-game-injury-data" class="nav-link" data-scroll-target="#nfl-game-injury-data">NFL Game Injury Data</a></li>
+  <li><a href="#injury-prevention-data-soccer" id="toc-injury-prevention-data-soccer" class="nav-link" data-scroll-target="#injury-prevention-data-soccer">Injury Prevention Data Soccer</a></li>
+  <li><a href="#sports-injury-data" id="toc-sports-injury-data" class="nav-link" data-scroll-target="#sports-injury-data">Sports Injury Data</a></li>
+  <li><a href="#nba-player-and-team-data" id="toc-nba-player-and-team-data" class="nav-link" data-scroll-target="#nba-player-and-team-data">NBA Player and Team Data</a></li>
+  </ul></li>
+  <li><a href="#hypothesis-refinement" id="toc-hypothesis-refinement" class="nav-link" data-scroll-target="#hypothesis-refinement">Hypothesis Refinement</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Data Exploration</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>In order to explore my data, I plan to use summary statistics, a variety of graph types including a word cloud, bar graphs, line graphs, pie charts, etc. More specifically, I will use Pandas, Matplotlib, and Seaborn. I hope that through this exploration I can learn more about my data and the relationships that exist within it.</p>
+<section id="text-data" class="level2">
+<h2 class="anchored" data-anchor-id="text-data">Text Data</h2>
+<section id="news-api" class="level3">
+<h3 class="anchored" data-anchor-id="news-api">News API</h3>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">"../../../../data/01-modified-data/cleaned.csv"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(file_path)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">source</th>
+<th data-quarto-table-cell-role="th">author</th>
+<th data-quarto-table-cell-role="th">publish_date</th>
+<th data-quarto-table-cell-role="th">combined</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>cnet</td>
+<td>adam oram</td>
+<td>2023-09-30T12:02:09Z</td>
+<td>man united vs crystal palace livestream: how t...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>cnet</td>
+<td>adam oram</td>
+<td>2023-09-23T12:00:09Z</td>
+<td>man city vs nottingham forest livestream: how ...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>huffpost</td>
+<td>ap</td>
+<td>2023-09-19T11:28:10Z</td>
+<td>spanish soccer star accuses federation of thre...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>slate magazine</td>
+<td>josh levin and stefan fatsis</td>
+<td>2023-09-18T21:43:37Z</td>
+<td>is there any part of aaron rodgers first game ...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>deadspin</td>
+<td>sam fels</td>
+<td>2023-10-03T11:27:00Z</td>
+<td>mls is playing pretty fast and loose with lion...</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<section id="stop-word-removal" class="level4">
+<h4 class="anchored" data-anchor-id="stop-word-removal">Stop Word Removal</h4>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>all_text <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> row <span class="kw">in</span> df[<span class="st">"combined"</span>]:</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    all_text <span class="op">=</span> all_text <span class="op">+</span> <span class="st">" "</span> <span class="op">+</span> row </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>all_text <span class="op">=</span> <span class="st">" "</span>.join(<span class="bu">list</span>(df[<span class="st">"combined"</span>].values))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> nltk</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.corpus <span class="im">import</span> stopwords</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>nltk.download(<span class="st">'stopwords'</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>words <span class="op">=</span> all_text.split()</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>stop_words <span class="op">=</span> <span class="bu">set</span>(stopwords.words(<span class="st">'english'</span>))</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>filtered_words <span class="op">=</span> [word <span class="cf">for</span> word <span class="kw">in</span> words <span class="cf">if</span> word.lower() <span class="kw">not</span> <span class="kw">in</span> stop_words]</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>filtered_text <span class="op">=</span> <span class="st">' '</span>.join(filtered_words)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>[nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/reneedemaio/nltk_data...
+[nltk_data]   Unzipping corpora/stopwords.zip.</code></pre>
+</div>
+</div>
+</section>
+<section id="word-cloud" class="level4">
+<h4 class="anchored" data-anchor-id="word-cloud">Word Cloud</h4>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> generate_word_cloud(my_text): </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="im">from</span> wordcloud <span class="im">import</span> WordCloud, STOPWORDS</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> plot_cloud(wordcloud):</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        plt.figure(figsize<span class="op">=</span>(<span class="dv">40</span>, <span class="dv">30</span>))</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        plt.imshow(wordcloud)</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>        plt.axis(<span class="st">"off"</span>)<span class="op">;</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    wordcloud <span class="op">=</span> WordCloud(</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        width <span class="op">=</span> <span class="dv">3000</span>, </span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        height <span class="op">=</span> <span class="dv">2000</span>,</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        random_state<span class="op">=</span><span class="dv">1</span>, </span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>        background_color<span class="op">=</span><span class="st">'lavender'</span>,</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>        colormap<span class="op">=</span> <span class="st">"rainbow"</span>,</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>        collocations<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>        stopwords <span class="op">=</span> STOPWORDS).generate(my_text)</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    plot_cloud(wordcloud)</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>generate_word_cloud(filtered_text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-7-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="bar-chart" class="level4">
+<h4 class="anchored" data-anchor-id="bar-chart">Bar Chart</h4>
+<div class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> Counter</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>words <span class="op">=</span> filtered_text.split()</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>word_freq <span class="op">=</span> Counter(words)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>frequency_threshold <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>common_words <span class="op">=</span> [(word, freq) <span class="cf">for</span> word, freq <span class="kw">in</span> word_freq.items() <span class="cf">if</span> freq <span class="op">&gt;</span> frequency_threshold]</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>common_words.sort(key<span class="op">=</span><span class="kw">lambda</span> x: x[<span class="dv">1</span>], reverse<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>words, frequencies <span class="op">=</span> <span class="bu">zip</span>(<span class="op">*</span>common_words)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>plt.bar(words, frequencies)</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Words"</span>)</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Frequency"</span>)</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Word Frequency Bar Chart"</span>)</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>plt.show</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="19">
+<pre><code>&lt;function matplotlib.pyplot.show(close=None, block=None)&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-9-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>most_common_words <span class="op">=</span> word_freq.most_common(<span class="dv">10</span>)  </span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>words, frequencies <span class="op">=</span> <span class="bu">zip</span>(<span class="op">*</span>most_common_words)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>plt.bar(words, frequencies)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Words'</span>)</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Frequency'</span>)</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Word Frequency Bar Chart'</span>)</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)  </span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The data exploration for this data was successful and revealed that the majority of the topics discussed in the news relating to soccer are about specific players or competitions, and less about injuries. While some information of injuries are present, based on the lack of words that could relate to discussion of injury, it appears that these mentions are surface level.</p>
+</section>
+</section>
+</section>
+<section id="tabular-data" class="level2">
+<h2 class="anchored" data-anchor-id="tabular-data">Tabular Data</h2>
+<section id="basketball-injury-data" class="level3">
+<h3 class="anchored" data-anchor-id="basketball-injury-data">Basketball Injury Data</h3>
+<div class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd </span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> gdown</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co"># the csv url is: https://drive.google.com/file/d/1tdKeSFi492daHWh8Laqb7e3_68o3kaqD/view?usp=share_link</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>file_id <span class="op">=</span> <span class="st">"1tdKeSFi492daHWh8Laqb7e3_68o3kaqD"</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="ss">f"https://drive.google.com/uc?id=</span><span class="sc">{</span>file_id<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>output <span class="op">=</span> <span class="st">"basketball_injuries.csv"</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>gdown.download(url, output, quiet<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Downloading...
+From: https://drive.google.com/uc?id=1tdKeSFi492daHWh8Laqb7e3_68o3kaqD
+To: /Users/reneedemaio/Desktop/git_repo/dsan-5000-project-rennyd123/dsan-website/5000-website/tabs/eda/basketball_injuries.csv
+100%|██████████| 1.57M/1.57M [00:00&lt;00:00, 5.38MB/s]</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="22">
+<pre><code>'basketball_injuries.csv'</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">"../../../../data/01-modified-data/basketball_injury_data.csv"</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>bball_injury_data <span class="op">=</span> pd.read_csv(file_path)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(bball_injury_data.head())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>         Date     Team   Relinquished  \
+0  2010-10-03    Bulls  Carlos Boozer   
+1  2010-10-06  Pistons  Jonas Jerebko   
+2  2010-10-06  Pistons  Terrico White   
+3  2010-10-08  Blazers     Jeff Ayres   
+4  2010-10-08     Nets    Troy Murphy   
+
+                                               Notes      InjuryStatus  
+0  fractured bone in right pinky finger (out inde...  out indefinitely  
+1      torn right Achilles tendon (out indefinitely)  out indefinitely  
+2  broken fifth metatarsal in right foot (out ind...  out indefinitely  
+3          torn ACL in right knee (out indefinitely)  out indefinitely  
+4             strained lower back (out indefinitely)  out indefinitely  </code></pre>
+</div>
+</div>
+<section id="injury-status-bar-chart" class="level4">
+<h4 class="anchored" data-anchor-id="injury-status-bar-chart">Injury Status Bar Chart</h4>
+<div class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>injury_counts <span class="op">=</span> bball_injury_data[<span class="st">"InjuryStatus"</span>].value_counts()</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>top_5_injury_counts <span class="op">=</span> injury_counts.head(<span class="dv">5</span>)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>plt.bar(top_5_injury_counts.index, top_5_injury_counts.values, color<span class="op">=</span><span class="st">'pink'</span>)</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Injury Status'</span>)</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Count'</span>)</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Top 5 Injury Status Bar Chart'</span>)</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-13-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="injuries-per-team" class="level4">
+<h4 class="anchored" data-anchor-id="injuries-per-team">Injuries Per Team</h4>
+<div class="cell" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>team_counts <span class="op">=</span> bball_injury_data[<span class="st">"Team"</span>].value_counts()</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>team_names <span class="op">=</span> bball_injury_data[<span class="st">"Team"</span>].unique()</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">8</span>))</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>plt.pie(team_counts, labels<span class="op">=</span>team_names, autopct<span class="op">=</span><span class="st">'</span><span class="sc">%1.1f%%</span><span class="st">'</span>, startangle<span class="op">=</span><span class="dv">140</span>, shadow<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">"equal"</span>)</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Injury Count per Team"</span>)</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-14-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="injuries-by-dates" class="level4">
+<h4 class="anchored" data-anchor-id="injuries-by-dates">Injuries by Dates</h4>
+<div class="cell" data-execution_count="37">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>bball_injury_data[<span class="st">'Date'</span>] <span class="op">=</span> pd.to_datetime(bball_injury_data[<span class="st">'Date'</span>])</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>date_counts_2010 <span class="op">=</span> bball_injury_data[bball_injury_data[<span class="st">'Date'</span>].dt.year <span class="op">==</span> <span class="dv">2010</span>]</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>date_counts_2010 <span class="op">=</span> date_counts_2010[<span class="st">'Date'</span>].value_counts().sort_index()</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>plt.plot(date_counts_2010.index, date_counts_2010.values, marker<span class="op">=</span><span class="st">'o'</span>, linestyle<span class="op">=</span><span class="st">'-'</span>, color<span class="op">=</span><span class="st">"green"</span>)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Date"</span>)</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Injury Count"</span>)</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Injury Counts by Day in 2010"</span>)</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-15-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>The first graph created for this data set reveals that the most common reason given for an athlete’s absence from an NBA game is simply that they did not play. This can be for any variety of reasons from personal reasons, issues with the coach, or injury as well. The next most common is did not dress, which could imply that the athlete is injuries, but doesn’t specifically state that. The next graph shows that most teams in the NBA had relatively similar rates of injury with most of the hovering around 3%. Finally, the last graph shows one interesting spike in injuries in late October of 2010. There is nothing notable in NBA history that day that would cause so many more athletes to be out, so this can be considered an outlier. Outside of that, the average number of injuries across all teams per day hovers between 0-15.</p>
+</section>
+</section>
+<section id="nfl-concussion-data" class="level3">
+<h3 class="anchored" data-anchor-id="nfl-concussion-data">NFL Concussion Data</h3>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">"../../../../data/01-modified-data/nfl_concussions.csv"</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>concussion_data <span class="op">=</span> pd.read_csv(file_path)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(concussion_data.head())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>             Player                  Team        Date         Opposing Team  \
+0  Aldrick Robinson   Washington Redskins  30/09/2012  Tampa Bay Buccaneers   
+1       D.J. Fluker    San Diego Chargers  22/09/2013      Tennessee Titans   
+2  Marquise Goodwin         Buffalo Bills  28/09/2014        Houston Texans   
+3       Bryan Stork  New England Patriots  12/10/2014         Buffalo Bills   
+4    Lorenzo Booker         Chicago Bears   9/09/2012    Indianapolis Colts   
+
+           Position Pre-Season Injury? Winning Team?  Week of Injury  \
+0     Wide Receiver                 No           Yes               4   
+1  Offensive Tackle                 No            No               3   
+2     Wide Receiver                 No            No               4   
+3            Center                 No           Yes               6   
+4      Running Back                Yes           Yes               1   
+
+      Season  Weeks Injured  Games Missed Unknown Injury?  \
+0  2012/2013              1           1.0              No   
+1  2013/2014              1           1.0              No   
+2  2014/2015              1           1.0              No   
+3  2014/2015              1           1.0              No   
+4  2012/2013              0           NaN              No   
+
+  Reported Injury Type  Total Snaps      Play Time After Injury  \
+0                 Head            0                    14 downs   
+1           Concussion            0                    78 downs   
+2           Concussion            0                    25 downs   
+3                 Head            0                    82 downs   
+4                 Head            0  Did not return from injury   
+
+  Average Playtime Before Injury  
+0                    37.00 downs  
+1                    73.50 downs  
+2                    17.50 downs  
+3                    41.50 downs  
+4                            NaN  </code></pre>
+</div>
+</div>
+<section id="injury-count-by-team" class="level4">
+<h4 class="anchored" data-anchor-id="injury-count-by-team">Injury Count by Team</h4>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>injuries_by_team <span class="op">=</span> concussion_data[<span class="st">'Team'</span>].value_counts()</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">6</span>))</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>plt.bar(injuries_by_team.index, injuries_by_team.values, color<span class="op">=</span><span class="st">"skyblue"</span>)</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Team Name"</span>)</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Injury Count"</span>)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Injury Count by Team"</span>)</span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">60</span>)</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-17-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="type-of-injury" class="level4">
+<h4 class="anchored" data-anchor-id="type-of-injury">Type of Injury</h4>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>injury_type <span class="op">=</span> concussion_data[<span class="st">"Reported Injury Type"</span>].value_counts()</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>injury_name <span class="op">=</span> injury_type.index</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>pastel_colors <span class="op">=</span> [<span class="st">'#FF9999'</span>, <span class="st">'#66B2FF'</span>, <span class="st">'#99FF99'</span>, <span class="st">'#FFCC99'</span>, <span class="st">'#c2c2f0'</span>, <span class="st">'#ffb3e6'</span>, <span class="st">'#c2f0c2'</span>]</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">8</span>))</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>plt.pie(injury_type, labels<span class="op">=</span>injury_name, autopct<span class="op">=</span><span class="st">'</span><span class="sc">%1.1f%%</span><span class="st">'</span>, startangle<span class="op">=</span><span class="dv">140</span>, shadow<span class="op">=</span><span class="va">False</span>, colors<span class="op">=</span>pastel_colors)</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">"equal"</span>)</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Injury Count by Type of Injury"</span>)</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>plt.legend(injury_name, title<span class="op">=</span><span class="st">"Injury Types"</span>, loc<span class="op">=</span><span class="st">"best"</span>)</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-18-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="injuries-by-position" class="level4">
+<h4 class="anchored" data-anchor-id="injuries-by-position">Injuries by Position</h4>
+<div class="cell" data-execution_count="49">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>injuries_by_pos <span class="op">=</span> concussion_data[<span class="st">'Position'</span>].value_counts()</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">6</span>))</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>plt.bar(injuries_by_pos.index, injuries_by_pos.values, color<span class="op">=</span><span class="st">"orange"</span>)</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Position"</span>)</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Injury Count"</span>)</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Injury Count by Position"</span>)</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">60</span>)</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-19-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="correlation-between-week-of-injury-and-total-snaps" class="level4">
+<h4 class="anchored" data-anchor-id="correlation-between-week-of-injury-and-total-snaps">Correlation Between Week of Injury and Total Snaps</h4>
+<div class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np </span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd </span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns </span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt </span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>subset <span class="op">=</span> [<span class="st">"Week of Injury"</span>, <span class="st">"Total Snaps"</span>]</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>concussion_data_subset <span class="op">=</span> concussion_data[subset]</span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>corr_matrix <span class="op">=</span> concussion_data_subset.corr()</span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>sns.heatmap(corr_matrix, </span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>            annot<span class="op">=</span><span class="va">True</span>, </span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>            cmap<span class="op">=</span><span class="st">"coolwarm"</span>)</span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Correlation Map between Week of Injury and Total Snaps"</span>)</span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-20-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>The graphs made from the NFL concussion data reveal that the Cincinatti Bengals and the Cleveland Browns had the most concussions on their team. The majority of head injuries are concussions (81.7%), but there are also a fair share of non-concussion head injuries (18.0%). Next, the position that sees the most amount of concussion injuries is cornerback, closely followed by wide receiver and safety. Finally, there was a 12% positive correlation between the week of injury and the total number of snaps a player had.</p>
+</section>
+</section>
+<section id="nfl-game-injury-data" class="level3">
+<h3 class="anchored" data-anchor-id="nfl-game-injury-data">NFL Game Injury Data</h3>
+<div class="cell" data-execution_count="75">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">"../../../../data/01-modified-data/nfl_injuries.csv"</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>nfl_injuries <span class="op">=</span> pd.read_csv(file_path)</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nfl_injuries.head())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   PlayerKey BodyPart RosterPosition       StadiumType  FieldType  \
+0      39873     Knee     Linebacker            indoor  Synthetic   
+1      39873     Knee     Linebacker           outdoor    Natural   
+2      39873     Knee     Linebacker            indoor  Synthetic   
+3      39873     Knee     Linebacker  retractable roof  Synthetic   
+4      39873     Knee     Linebacker           outdoor    Natural   
+
+   Temperature        Weather  
+0           85  Mostly Cloudy  
+1           82          Sunny  
+2           84         Cloudy  
+3           78  Partly Cloudy  
+4           80         Cloudy  </code></pre>
+</div>
+</div>
+<section id="injury-count-by-stadium-type" class="level5">
+<h5 class="anchored" data-anchor-id="injury-count-by-stadium-type">Injury Count by Stadium Type</h5>
+<div class="cell" data-execution_count="65">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>stadium_type <span class="op">=</span> nfl_injuries[<span class="st">"StadiumType"</span>].value_counts()</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> plt.cm.viridis(np.linspace(<span class="dv">0</span>, <span class="dv">1</span>, <span class="bu">len</span>(stadium_type)))</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">6</span>))</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>plt.bar(stadium_type.index, stadium_type.values, color<span class="op">=</span>colors)</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Stadium Type"</span>)</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Injury Count"</span>)</span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Injury Count by Stadium Types"</span>)</span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation <span class="op">=</span> <span class="dv">60</span>)</span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-22-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="injury-count-by-body-part-injured" class="level5">
+<h5 class="anchored" data-anchor-id="injury-count-by-body-part-injured">Injury Count by Body Part Injured</h5>
+<div class="cell" data-execution_count="82">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>injury_frequency <span class="op">=</span> nfl_injuries[<span class="st">"BodyPart"</span>].value_counts()</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>injury_place <span class="op">=</span> nfl_injuries[<span class="st">"BodyPart"</span>].unique()</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(injury_frequency)</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>pastel_colors <span class="op">=</span> [<span class="st">'#FF9999'</span>, <span class="st">'#66B2FF'</span>, <span class="st">'#99FF99'</span>, <span class="st">'#FFCC99'</span>, <span class="st">'#c2c2f0'</span>, <span class="st">'#ffb3e6'</span>, <span class="st">'#c2f0c2'</span>]</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">8</span>))</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>plt.pie(injury_frequency, labels<span class="op">=</span>injury_place, autopct<span class="op">=</span><span class="st">'</span><span class="sc">%1.1f%%</span><span class="st">'</span>, startangle<span class="op">=</span><span class="dv">140</span>, shadow<span class="op">=</span><span class="va">False</span>, colors<span class="op">=</span>pastel_colors)</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">"equal"</span>)</span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Injury Count by Type of Injury"</span>)</span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>BodyPart
+Knee     825
+Ankle    720
+Toes     144
+Foot      96
+Heel      18
+Name: count, dtype: int64</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-23-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="injury-count-vs-temperature" class="level5">
+<h5 class="anchored" data-anchor-id="injury-count-vs-temperature">Injury Count vs Temperature</h5>
+<div class="cell" data-execution_count="89">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>nfl_injuries[<span class="st">"Temperature"</span>] <span class="op">=</span> pd.to_numeric(nfl_injuries[<span class="st">"Temperature"</span>], errors<span class="op">=</span><span class="st">'coerce'</span>)</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>nfl_injuries <span class="op">=</span> nfl_injuries[nfl_injuries[<span class="st">"Temperature"</span>] <span class="op">&gt;=</span> <span class="dv">0</span>]</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>nfl_injuries <span class="op">=</span> nfl_injuries.dropna(subset<span class="op">=</span>[<span class="st">"Temperature"</span>])</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>temperature_counts <span class="op">=</span> nfl_injuries[<span class="st">"Temperature"</span>].value_counts()</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>plt.plot(temperature_counts.values, temperature_counts.index, marker<span class="op">=</span><span class="st">'o'</span>, linestyle<span class="op">=</span><span class="st">'-'</span>, color<span class="op">=</span><span class="st">"green"</span>)</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Temperature"</span>)</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Injury Count"</span>)</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Injury Counts by Temperature"</span>)</span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-24-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>This dataset reveals that the majority of NFL injuries occur in stadiums that are outdoors. Most of the injuries are knee or ankle injuires which makese sense due to the nature of American Football. Finally, there doesn’t seem to be a huge correlation between temperature and number of injuries. Spikes in injuries occur during many points in the year.</p>
+</section>
+</section>
+<section id="injury-prevention-data-soccer" class="level3">
+<h3 class="anchored" data-anchor-id="injury-prevention-data-soccer">Injury Prevention Data Soccer</h3>
+<div class="cell" data-execution_count="90">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">"../../../../data/01-modified-data/injury_prevention_data_soccer.csv"</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>injury_prevention <span class="op">=</span> pd.read_csv(file_path)</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(injury_prevention.head())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    ID  Age  Height  Mass  Team  Position  Years of Football Experience  \
+0  146   19   173.0  67.6     1         3                             1   
+1  155   22   179.5  71.0     1         3                             1   
+2  160   22   175.5  71.8     1         3                             1   
+3  164   23   190.0  80.5     1         4                             1   
+4  145   19   173.5  68.7     1         3                             1   
+
+  Previous Injuries   Number of Injuries Ankle Injuries   ...  \
+0                yes                   6             yes  ...   
+1                yes                   2              no  ...   
+2                yes                   7             yes  ...   
+3                yes                   1              no  ...   
+4                yes                   2             yes  ...   
+
+   Importance Injury Prevention Knowledgeability   \
+0                             2                 1   
+1                             1                 1   
+2                             1                 1   
+3                             1                 1   
+4                             1                 2   
+
+  Prevention Measure Stretching  Prevention Measure Warm Up   \
+0                            yes                          no   
+1                            yes                         yes   
+2                            yes                          no   
+3                            yes                         yes   
+4                            yes                         yes   
+
+   Prevention Measure Specific Strength Exercises   \
+0                                              yes   
+1                                               no   
+2                                               no   
+3                                              yes   
+4                                               no   
+
+  Prevention Measure Bracing  Prevention Measure Taping   \
+0                          no                         no   
+1                          no                         no   
+2                          no                         no   
+3                          no                         no   
+4                          no                        yes   
+
+  Prevention Measure Shoe Insoles   Prevention Measure Face Masks   \
+0                               no                              no   
+1                               no                              no   
+2                              yes                              no   
+3                               no                              no   
+4                               no                              no   
+
+  Prevention Measure Medical Corset   
+0                                 no  
+1                                 no  
+2                                 no  
+3                                 no  
+4                                 no  
+
+[5 rows x 41 columns]</code></pre>
+</div>
+</div>
+<section id="summary-statistics-on-personal-information" class="level5">
+<h5 class="anchored" data-anchor-id="summary-statistics-on-personal-information">Summary Statistics on Personal Information</h5>
+<div class="cell" data-execution_count="96">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>injury_prevention.columns</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(injury_prevention.dtypes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>ID                                                   int64
+Age                                                  int64
+Height                                             float64
+Mass                                               float64
+Team                                                 int64
+Position                                             int64
+Years of Football Experience                         int64
+Previous Injuries                                   object
+Number of Injuries                                   int64
+Ankle Injuries                                      object
+Number of Ankle Injuries                             int64
+Severe_Ankle_Injuries                               object
+Noncontact_Ankle_Injuries                           object
+Knee Injuries                                       object
+Number of Knee Injuries                              int64
+Severe_Knee_Injuries                                object
+Noncontact_Knee_Injuries                            object
+Thigh_Injuries                                      object
+Number of Thigh Injuries                             int64
+Severe_Thigh_Injuries                               object
+Noncontact_Thigh_Injuries                           object
+Risk Factor Condition                               object
+Risk Factor Coordination                            object
+Risk Factor Muscle Impairments                      object
+Risk Factor Fatigue                                 object
+Risk Factor Previous Injury                         object
+Risk Factor Attentiveness                           object
+Risk Factor Other Player                            object
+Risk Factor Equipment                               object
+Risk Factor Climatic Condition                      object
+Risk Factor Diet                                    object
+Importance Injury Prevention                         int64
+Knowledgeability                                     int64
+Prevention Measure Stretching                       object
+Prevention Measure Warm Up                          object
+Prevention Measure Specific Strength Exercises      object
+Prevention Measure Bracing                          object
+Prevention Measure Taping                           object
+Prevention Measure Shoe Insoles                     object
+Prevention Measure Face Masks                       object
+Prevention Measure Medical Corset                   object
+dtype: object</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="97">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>injury_prevention[<span class="st">"Height"</span>] <span class="op">=</span> injury_prevention[<span class="st">"Height"</span>].astype(<span class="bu">int</span>)</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>injury_prevention[<span class="st">"Mass"</span>] <span class="op">=</span> injury_prevention[<span class="st">"Mass"</span>].astype(<span class="bu">int</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="99">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(injury_prevention.dtypes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>ID                                                  int64
+Age                                                 int64
+Height                                              int64
+Mass                                                int64
+Team                                                int64
+Position                                            int64
+Years of Football Experience                        int64
+Previous Injuries                                  object
+Number of Injuries                                  int64
+Ankle Injuries                                     object
+Number of Ankle Injuries                            int64
+Severe_Ankle_Injuries                              object
+Noncontact_Ankle_Injuries                          object
+Knee Injuries                                      object
+Number of Knee Injuries                             int64
+Severe_Knee_Injuries                               object
+Noncontact_Knee_Injuries                           object
+Thigh_Injuries                                     object
+Number of Thigh Injuries                            int64
+Severe_Thigh_Injuries                              object
+Noncontact_Thigh_Injuries                          object
+Risk Factor Condition                              object
+Risk Factor Coordination                           object
+Risk Factor Muscle Impairments                     object
+Risk Factor Fatigue                                object
+Risk Factor Previous Injury                        object
+Risk Factor Attentiveness                          object
+Risk Factor Other Player                           object
+Risk Factor Equipment                              object
+Risk Factor Climatic Condition                     object
+Risk Factor Diet                                   object
+Importance Injury Prevention                        int64
+Knowledgeability                                    int64
+Prevention Measure Stretching                      object
+Prevention Measure Warm Up                         object
+Prevention Measure Specific Strength Exercises     object
+Prevention Measure Bracing                         object
+Prevention Measure Taping                          object
+Prevention Measure Shoe Insoles                    object
+Prevention Measure Face Masks                      object
+Prevention Measure Medical Corset                  object
+dtype: object</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="102">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>numerical_columns <span class="op">=</span> injury_prevention.select_dtypes(include<span class="op">=</span><span class="st">'int64'</span>)</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>numerical_columns <span class="op">=</span> injury_prevention.drop(columns<span class="op">=</span><span class="st">"ID"</span>)</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>numerical_columns.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="102">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Age</th>
+<th data-quarto-table-cell-role="th">Height</th>
+<th data-quarto-table-cell-role="th">Mass</th>
+<th data-quarto-table-cell-role="th">Team</th>
+<th data-quarto-table-cell-role="th">Position</th>
+<th data-quarto-table-cell-role="th">Years of Football Experience</th>
+<th data-quarto-table-cell-role="th">Number of Injuries</th>
+<th data-quarto-table-cell-role="th">Number of Ankle Injuries</th>
+<th data-quarto-table-cell-role="th">Number of Knee Injuries</th>
+<th data-quarto-table-cell-role="th">Number of Thigh Injuries</th>
+<th data-quarto-table-cell-role="th">Importance Injury Prevention</th>
+<th data-quarto-table-cell-role="th">Knowledgeability</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">count</td>
+<td>139.000000</td>
+<td>139.000000</td>
+<td>139.000000</td>
+<td>139.000000</td>
+<td>139.000000</td>
+<td>139.000000</td>
+<td>139.000000</td>
+<td>139.000000</td>
+<td>139.000000</td>
+<td>139.000000</td>
+<td>139.000000</td>
+<td>139.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">mean</td>
+<td>17.597122</td>
+<td>177.043165</td>
+<td>68.417266</td>
+<td>3.690647</td>
+<td>2.546763</td>
+<td>1.733813</td>
+<td>1.906475</td>
+<td>0.683453</td>
+<td>0.517986</td>
+<td>0.726619</td>
+<td>1.345324</td>
+<td>0.827338</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">std</td>
+<td>4.601070</td>
+<td>9.416198</td>
+<td>11.781156</td>
+<td>1.825142</td>
+<td>0.853153</td>
+<td>0.913470</td>
+<td>1.614661</td>
+<td>0.932784</td>
+<td>0.684746</td>
+<td>0.778383</td>
+<td>0.586221</td>
+<td>0.415777</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">min</td>
+<td>13.000000</td>
+<td>141.000000</td>
+<td>31.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">25%</td>
+<td>14.000000</td>
+<td>172.500000</td>
+<td>61.000000</td>
+<td>2.000000</td>
+<td>2.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">50%</td>
+<td>16.000000</td>
+<td>178.000000</td>
+<td>70.000000</td>
+<td>4.000000</td>
+<td>3.000000</td>
+<td>2.000000</td>
+<td>2.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">75%</td>
+<td>19.000000</td>
+<td>184.000000</td>
+<td>76.000000</td>
+<td>5.500000</td>
+<td>3.000000</td>
+<td>2.000000</td>
+<td>2.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+<td>2.000000</td>
+<td>1.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">max</td>
+<td>35.000000</td>
+<td>196.000000</td>
+<td>101.000000</td>
+<td>6.000000</td>
+<td>4.000000</td>
+<td>4.000000</td>
+<td>10.000000</td>
+<td>4.000000</td>
+<td>3.000000</td>
+<td>3.000000</td>
+<td>4.000000</td>
+<td>2.000000</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="112">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>object_columns <span class="op">=</span> injury_prevention.select_dtypes(include<span class="op">=</span><span class="st">'object'</span>)</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> column <span class="kw">in</span> object_columns:</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>    plt.figure(figsize<span class="op">=</span>(<span class="dv">4</span>, <span class="dv">4</span>))</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>    sns.countplot(data<span class="op">=</span>injury_prevention, x<span class="op">=</span>column, order<span class="op">=</span>[<span class="st">'yes'</span>, <span class="st">'no'</span>], palette<span class="op">=</span>[<span class="st">'pink'</span>, <span class="st">'lightblue'</span>])</span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>    plt.title(<span class="ss">f'</span><span class="sc">{</span>column<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>    plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-2.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-3.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-4.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-5.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-6.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-7.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-8.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-9.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-10.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-11.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-12.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-13.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-14.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-15.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-16.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-17.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-18.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-19.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-20.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-21.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-22.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-23.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-24.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-25.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-26.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-27.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-30-output-28.png" class="img-fluid"></p>
+</div>
+</div>
+<p>This set of graphs show counts of how many athletes used each prevention method, how many athletes had each time of injury, and what risk factors are present.</p>
+</section>
+</section>
+<section id="sports-injury-data" class="level3">
+<h3 class="anchored" data-anchor-id="sports-injury-data">Sports Injury Data</h3>
+<div class="cell" data-execution_count="128">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">"../../../../data/01-modified-data/sports_injury_data.csv"</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>sports_injuries <span class="op">=</span> pd.read_csv(file_path)</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sports_injuries.head())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     Sport, activity or equipment Injuries (1) Younger than 5  5 to 14  \
+0    Exercise, exercise equipment      445,642          6,662   36,769   
+1        Bicycles and accessories      405,411         13,297   91,089   
+2                      Basketball      313,924          1,216  109,696   
+3                        Football      265,747            581  145,499   
+4  ATV's, mopeds, minibikes, etc.      242,347          3,688   42,069   
+
+  15 to 24 25 to 64 65 and older  
+0   91,013  229,640       81,558  
+1   50,863  195,030       55,132  
+2  143,773   57,413        1,825  
+3  100,760   18,527          381  
+4   61,065  122,941       12,584  </code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="129">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>sports_injuries_subset <span class="op">=</span> sports_injuries[[<span class="st">'Injuries (1)'</span>, <span class="st">'Younger than 5'</span>,</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>       <span class="st">'5 to 14'</span>, <span class="st">'15 to 24'</span>, <span class="st">'25 to 64'</span>, <span class="st">'65 and older'</span>]]</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>activity_type <span class="op">=</span> sports_injuries[<span class="st">"Sport, activity or equipment"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="130">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>sports_injuries.dtypes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="130">
+<pre><code>Sport, activity or equipment    object
+Injuries (1)                    object
+Younger than 5                  object
+5 to 14                         object
+15 to 24                        object
+25 to 64                        object
+65 and older                    object
+dtype: object</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="134">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>sports_injuries[<span class="st">"Injuries (1)"</span>] <span class="op">=</span> sports_injuries[<span class="st">"Injuries (1)"</span>].<span class="bu">str</span>.replace(<span class="st">','</span>, <span class="st">''</span>).astype(<span class="bu">float</span>)</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>sports_injuries[<span class="st">"Younger than 5"</span>] <span class="op">=</span> sports_injuries[<span class="st">"Younger than 5"</span>].<span class="bu">str</span>.replace(<span class="st">','</span>, <span class="st">''</span>).astype(<span class="bu">float</span>)</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>sports_injuries[<span class="st">"5 to 14"</span>] <span class="op">=</span> sports_injuries[<span class="st">"5 to 14"</span>].<span class="bu">str</span>.replace(<span class="st">','</span>, <span class="st">''</span>).astype(<span class="bu">float</span>)</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>sports_injuries[<span class="st">"15 to 24"</span>] <span class="op">=</span> sports_injuries[<span class="st">"15 to 24"</span>].<span class="bu">str</span>.replace(<span class="st">','</span>, <span class="st">''</span>).astype(<span class="bu">float</span>)</span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>sports_injuries[<span class="st">"25 to 64"</span>] <span class="op">=</span> sports_injuries[<span class="st">"25 to 64"</span>].<span class="bu">str</span>.replace(<span class="st">','</span>, <span class="st">''</span>).astype(<span class="bu">float</span>)</span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>sports_injuries[<span class="st">"65 and older"</span>] <span class="op">=</span> sports_injuries[<span class="st">"65 and older"</span>].<span class="bu">str</span>.replace(<span class="st">','</span>, <span class="st">''</span>).astype(<span class="bu">float</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="136">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sports_injuries.head())</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sports_injuries.dtypes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     Sport, activity or equipment  Injuries (1)  Younger than 5   5 to 14  \
+0    Exercise, exercise equipment      445642.0          6662.0   36769.0   
+1        Bicycles and accessories      405411.0         13297.0   91089.0   
+2                      Basketball      313924.0          1216.0  109696.0   
+3                        Football      265747.0           581.0  145499.0   
+4  ATV's, mopeds, minibikes, etc.      242347.0          3688.0   42069.0   
+
+   15 to 24  25 to 64  65 and older  
+0   91013.0  229640.0       81558.0  
+1   50863.0  195030.0       55132.0  
+2  143773.0   57413.0        1825.0  
+3  100760.0   18527.0         381.0  
+4   61065.0  122941.0       12584.0  
+Sport, activity or equipment     object
+Injuries (1)                    float64
+Younger than 5                  float64
+5 to 14                         float64
+15 to 24                        float64
+25 to 64                        float64
+65 and older                    float64
+dtype: object</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="138">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>subsetted_sports_injuries <span class="op">=</span> sports_injuries.head(<span class="dv">5</span>)</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>melted_df <span class="op">=</span> pd.melt(subsetted_sports_injuries, id_vars<span class="op">=</span>[<span class="st">'Sport, activity or equipment'</span>], var_name<span class="op">=</span><span class="st">'Age group'</span>, value_name<span class="op">=</span><span class="st">'Injuries'</span>)</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>sns.barplot(data<span class="op">=</span>melted_df, x<span class="op">=</span><span class="st">'Sport, activity or equipment'</span>, y<span class="op">=</span><span class="st">'Injuries'</span>, hue<span class="op">=</span><span class="st">'Age group'</span>)</span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Injuries by Age Group for Different Activities'</span>)</span>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Sport, activity or equipment'</span>)</span>
+<span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb49-8"><a href="#cb49-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-36-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="139">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>subsetted_sports_injuries <span class="op">=</span> sports_injuries.tail(<span class="dv">5</span>)</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>melted_df <span class="op">=</span> pd.melt(subsetted_sports_injuries, id_vars<span class="op">=</span>[<span class="st">'Sport, activity or equipment'</span>], var_name<span class="op">=</span><span class="st">'Age group'</span>, value_name<span class="op">=</span><span class="st">'Injuries'</span>)</span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>sns.barplot(data<span class="op">=</span>melted_df, x<span class="op">=</span><span class="st">'Sport, activity or equipment'</span>, y<span class="op">=</span><span class="st">'Injuries'</span>, hue<span class="op">=</span><span class="st">'Age group'</span>)</span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Injuries by Age Group for Different Activities'</span>)</span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Sport, activity or equipment'</span>)</span>
+<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-37-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>This set of graphs shows a count of how many injuries each sport or type of active activity causes by age group.</p>
+</section>
+<section id="nba-player-and-team-data" class="level3">
+<h3 class="anchored" data-anchor-id="nba-player-and-team-data">NBA Player and Team Data</h3>
+<div class="cell" data-execution_count="144">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">"../../../../data/01-modified-data/nba_data.csv"</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>nba <span class="op">=</span> pd.read_csv(file_path)</span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nba.head())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Unnamed: 0       PLAYER_NAME     TEAM_ID  PLAYER_ID  SEASON  LEAGUE_ID  \
+0           1     Royce O'Neale  1610612762    1626220    2019          0   
+1           2  Bojan Bogdanovic  1610612762     202711    2019          0   
+2           3       Rudy Gobert  1610612762     203497    2019          0   
+3           4  Donovan Mitchell  1610612762    1628378    2019          0   
+4           5       Mike Conley  1610612762     201144    2019          0   
+
+   MIN_YEAR  MAX_YEAR ABBREVIATION NICKNAME  ...    HEADCOACH  \
+0      1974      2019          UTA     Jazz  ...  Quin Snyder   
+1      1974      2019          UTA     Jazz  ...  Quin Snyder   
+2      1974      2019          UTA     Jazz  ...  Quin Snyder   
+3      1974      2019          UTA     Jazz  ...  Quin Snyder   
+4      1974      2019          UTA     Jazz  ...  Quin Snyder   
+
+     DLEAGUEAFFILIATION SEASON_ID  STANDINGSDATE CONFERENCE  TEAM   G   W   L  \
+0  Salt Lake City Stars     22022     2022-12-22       West  Utah  35  19  16   
+1  Salt Lake City Stars     22022     2022-12-22       West  Utah  35  19  16   
+2  Salt Lake City Stars     22022     2022-12-22       West  Utah  35  19  16   
+3  Salt Lake City Stars     22022     2022-12-22       West  Utah  35  19  16   
+4  Salt Lake City Stars     22022     2022-12-22       West  Utah  35  19  16   
+
+   W_PCT  
+0  0.543  
+1  0.543  
+2  0.543  
+3  0.543  
+4  0.543  
+
+[5 rows x 26 columns]</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="148">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>nba.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="148">
+<pre><code>Index(['Unnamed: 0', 'PLAYER_NAME', 'TEAM_ID', 'PLAYER_ID', 'SEASON',
+       'LEAGUE_ID', 'MIN_YEAR', 'MAX_YEAR', 'ABBREVIATION', 'NICKNAME',
+       'YEARFOUNDED', 'CITY', 'ARENA', 'ARENACAPACITY', 'OWNER',
+       'GENERALMANAGER', 'HEADCOACH', 'DLEAGUEAFFILIATION', 'SEASON_ID',
+       'STANDINGSDATE', 'CONFERENCE', 'TEAM', 'G', 'W', 'L', 'W_PCT'],
+      dtype='object')</code></pre>
+</div>
+</div>
+<section id="win-percentage-by-team" class="level4">
+<h4 class="anchored" data-anchor-id="win-percentage-by-team">Win Percentage by Team</h4>
+<div class="cell" data-execution_count="147">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>team <span class="op">=</span> nba[<span class="st">"TEAM"</span>]</span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>win_pct <span class="op">=</span> nba[<span class="st">"W_PCT"</span>]</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>plt.bar(team, win_pct)</span>
+<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'2019 Win Percentage by Team in the NBA'</span>)</span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Team'</span>)</span>
+<span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Win Percentage'</span>)</span>
+<span id="cb55-9"><a href="#cb55-9" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb55-10"><a href="#cb55-10" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-40-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="wins-vs-arena-capacity" class="level4">
+<h4 class="anchored" data-anchor-id="wins-vs-arena-capacity">Wins vs Arena Capacity</h4>
+<div class="cell" data-execution_count="153">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>heatmap_data <span class="op">=</span> nba.pivot_table(index<span class="op">=</span><span class="st">'ARENACAPACITY'</span>, values<span class="op">=</span><span class="st">'W_PCT'</span>, aggfunc<span class="op">=</span><span class="st">'mean'</span>)</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">8</span>))</span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>sns.heatmap(heatmap_data, cmap<span class="op">=</span><span class="st">'YlGnBu'</span>, annot<span class="op">=</span><span class="va">True</span>, fmt<span class="op">=</span><span class="st">'.2f'</span>, cbar<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Heatmap: ARENACAPACITY vs. W_PCT'</span>)</span>
+<span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'W_PCT (Win Percentage)'</span>)</span>
+<span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'ARENACAPACITY (Arena Capacity)'</span>)</span>
+<span id="cb56-8"><a href="#cb56-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-41-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Finally, these graphs show two different representations of win percentage in the 2019 NBA season. The first graph shows win percentage by team, and the second shows a correlation between arena capacity and win percentage. It appears that win percentage and arena capacity are not strongly positively correlated.</p>
+</section>
+</section>
+</section>
+<section id="hypothesis-refinement" class="level2">
+<h2 class="anchored" data-anchor-id="hypothesis-refinement">Hypothesis Refinement</h2>
+<p>Based off of the exploratory data analysis process, it is necessary that I refine my original hypotheses and identify next steps. Firstly, I think that it is important to continue to further explore that factors can affect an athletes susceptibility to injury to understand confounding variables in sport. That will be involved in my next steps with this project. Secondly, I would refine my hypothesis to include more sport specific hypotheses to create more specific hypotheses for soccer, American football, and basketball. In order to do so, I will need to collect more data.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -14,3 +14,5 @@
 # OBVIOUSLY YOU WILL NEED TO UPDATE THIS WITH INFORMATION FOR YOUR GU SERVER 
 # YOU CAN ALSO RUN THIS COMMAND BY PASTING IT INTO THE TERMINAL
 rsync -alvr dsan-website INSERT_USER_NAME@gtownX.reclaimhosting.com:/home/INSERT_USER_NAME/public_html/
+
+rsync -alvr _site/* reneedem@gtown3.reclaimhosting.com:/home/reneedem/public_html/
