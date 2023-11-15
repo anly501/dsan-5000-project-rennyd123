@@ -25,7 +25,7 @@ website:
             text: Data Gathering
       - href: tabs/arm/arm.ipynb
         text: ARM
-      - href: tabs/clustering/clustering.qmd
+      - href: tabs/clustering/clustering.ipynb
         text: Clustering
       - href: tabs/dimensionality_reduction/dimensionality_reduction.ipynb
         text: Dimensionality Reduction
