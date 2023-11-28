@@ -1,0 +1,28 @@
+/*-- scss:defaults --*/
+
+// Import fonts 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+// Colors 
+$dark-green: #344E41;
+$forest_green: #3A5A40;
+$light_green:  #588157;
+$sage_green: #A3B18A;
+$beige: #DAD7CD;
+$purple: #9158A2;
+
+// Base Document Colors 
+$navbar-bg: $sage_green; // navbar 
+$navbar-fg: $dark-green; // navbar foreground elements 
+$navbar-hl: $light_green; // highlight color when hovering over navbar links 
+$body-bg: $beige; // page background 
+$body-color: $forest_green; // page text 
+$footer-bg: $beige; // footer 
+$link_color: $light_green; // hyperlinks 
+
+// Inline Code 
+$code-bg: $beige; // inline code background colors 
+$code-color: $purple; // inline code text color 
+
+// Code Blocks 
+$code-block-bg: $beige; // code block background color

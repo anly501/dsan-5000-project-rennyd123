@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "DSAN-5000: Project"
+  title: "Renee DeMaio: DSAN 5000 Portfolio"
   navbar:
     left:
       - href: index.ipynb
@@ -37,6 +37,13 @@ website:
             text: Classification 
           - href: tabs/decision_tree/regression.ipynb
             text: Regression
+  page-footer:
+    background: light 
+    left: 
+      - "Copyright 2023, Renee DeMaio"
+    right: 
+      - icon: github 
+        href: https://github.com/anly501/dsan-5000-project-rennyd123
 
 bibliography: SI-references.bib
 
@@ -44,8 +51,8 @@ format:
   html:
     smooth-scroll: true
     theme: 
-          light: spacelab
-          dark: united
+        - styles.scss
+    mainfont: Playfair Display
     toc: true
     link-external-newwindow: true 
     citations-hover: true
