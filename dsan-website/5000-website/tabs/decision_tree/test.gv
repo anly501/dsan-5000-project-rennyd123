@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Number of Injuries &le; 1.5<br/>gini = 0.781<br/>samples = 111<br/>value = [20, 29, 35, 11, 10, 3, 1, 1, 1]<br/>class = Prevention Measure Specific Strength Exercises>, fillcolor="#f4fdf1"] ;
+1 [label=<Number of Injuries &le; 0.5<br/>gini = 0.483<br/>samples = 49<br/>value = [20, 29, 0, 0, 0, 0, 0, 0, 0]<br/>class = Prevention Measure Warm Up>, fillcolor="#f3f7c2"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<gini = 0.0<br/>samples = 20<br/>value = [20, 0, 0, 0, 0, 0, 0, 0, 0]<br/>class = Prevention Measure Stretching>, fillcolor="#e58139"] ;
+1 -> 2 ;
+3 [label=<gini = 0.0<br/>samples = 29<br/>value = [0, 29, 0, 0, 0, 0, 0, 0, 0]<br/>class = Prevention Measure Warm Up>, fillcolor="#d7e539"] ;
+1 -> 3 ;
+4 [label=<Number of Injuries &le; 2.5<br/>gini = 0.621<br/>samples = 62<br/>value = [0, 0, 35, 11, 10, 3, 1, 1, 1]<br/>class = Prevention Measure Specific Strength Exercises>, fillcolor="#b6f3a2"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label=<gini = 0.0<br/>samples = 35<br/>value = [0, 0, 35, 0, 0, 0, 0, 0, 0]<br/>class = Prevention Measure Specific Strength Exercises>, fillcolor="#64e539"] ;
+4 -> 5 ;
+6 [label=<Number of Injuries &le; 3.5<br/>gini = 0.68<br/>samples = 27<br/>value = [0, 0, 0, 11, 10, 3, 1, 1, 1]<br/>class = Prevention Measure Bracing>, fillcolor="#f3fdf8"] ;
+4 -> 6 ;
+7 [label=<gini = 0.0<br/>samples = 11<br/>value = [0, 0, 0, 11, 0, 0, 0, 0, 0]<br/>class = Prevention Measure Bracing>, fillcolor="#39e581"] ;
+6 -> 7 ;
+8 [label=<Number of Injuries &le; 4.5<br/>gini = 0.562<br/>samples = 16<br/>value = [0, 0, 0, 0, 10, 3, 1, 1, 1]<br/>class = Prevention Measure Taping>, fillcolor="#94e9f1"] ;
+6 -> 8 ;
+9 [label=<gini = 0.0<br/>samples = 10<br/>value = [0, 0, 0, 0, 10, 0, 0, 0, 0]<br/>class = Prevention Measure Taping>, fillcolor="#39d7e5"] ;
+8 -> 9 ;
+10 [label=<Prevention Measure Bracing &le; 1.5<br/>gini = 0.667<br/>samples = 6<br/>value = [0, 0, 0, 0, 0, 3, 1, 1, 1]<br/>class = Prevention Measure Shoe Insoles>, fillcolor="#b0c1f5"] ;
+8 -> 10 ;
+11 [label=<gini = 0.0<br/>samples = 3<br/>value = [0, 0, 0, 0, 0, 3, 0, 0, 0]<br/>class = Prevention Measure Shoe Insoles>, fillcolor="#3964e5"] ;
+10 -> 11 ;
+12 [label=<gini = 0.667<br/>samples = 3<br/>value = [0, 0, 0, 0, 0, 0, 1, 1, 1]<br/>class = Prevention Measure Face Masks>, fillcolor="#ffffff"] ;
+10 -> 12 ;
+}

@@ -52,7 +52,7 @@ format:
     smooth-scroll: true
     theme: 
         - styles.scss
-    mainfont: Playfair Display
+    mainfont: DM Serif Display
     toc: true
     link-external-newwindow: true 
     citations-hover: true
