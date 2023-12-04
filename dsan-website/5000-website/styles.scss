@@ -1,31 +1,33 @@
 /*-- scss:defaults --*/
 
 // Import fonts 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Gilda+Display&family=Playfair+Display&display=swap');
 
 // Font Size 
 
 
 // Colors 
-$dark-green: #313232;
-$forest_green: #3A5A40;
-$light_green:  #588157;
-$sage_green: #b7cda7;
-$beige: #f0ede3;
+$dark-blue: #161A30;
+$lighter_blue: #31304D;
+$lightest_blue:  #B6BBC4;
+$sage_green: #CEDEBD;
+$beige: #F0ECE5;
 $purple: #9158A2;
 
 // Base Document Colors 
-$navbar-bg: $sage_green; // navbar 
-$navbar-fg: $forest-green; // navbar foreground elements 
-$navbar-hl: $light_green; // highlight color when hovering over navbar links 
+$navbar-bg: $dark_blue; // navbar 
+$navbar-fg: $lightest_blue; // navbar foreground elements 
+$navbar-hl: $lighter_blue; // highlight color when hovering over navbar links 
 $body-bg: $beige; // page background 
-$body-color: $forest_green; // page text 
+$body-color: $dark_blue; // page text 
 $footer-bg: $beige; // footer 
-$link_color: $light_green; // hyperlinks 
+$link_color: $lighter_blue; // hyperlinks 
 
 // Inline Code 
 $code-bg: $beige; // inline code background colors 
 $code-color: $purple; // inline code text color 
 
 // Code Blocks 
-$code-block-bg: $beige; // code block background color
+$code-block-bg: $sage_green; // code block background color
+
+/*-- scss:rules --*/
