@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Renee DeMaio - Introduction</title>
+<title>Renee DeMaio - Clustering</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,6 +83,7 @@ div.csl-indent {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../images/website_logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -150,7 +151,7 @@ div.csl-indent {
  <span class="menu-text">Introduction</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../tabs/code/code.html" rel="" target="">
+    <a class="nav-link" href="https://github.com/anly501/dsan-5000-project-rennyd123" rel="" target="">
  <span class="menu-text">Code</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -159,26 +160,30 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-data">    
         <li>
-    <a class="dropdown-item" href="../../tabs/data/data.html" rel="" target="">
+    <a class="dropdown-item" href="https://github.com/anly501/dsan-5000-project-rennyd123/tree/main/data" rel="" target="">
  <span class="dropdown-text">Data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../tabs/eda/eda.html" rel="" target="">
- <span class="dropdown-text">Data Exploration</span></a>
+    <a class="dropdown-item" href="../../tabs/data_gathering/data_gathering.html" rel="" target="">
+ <span class="dropdown-text">Data Gathering</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../tabs/data_cleaning/data_cleaning.html" rel="" target="">
  <span class="dropdown-text">Data Cleaning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../tabs/data_gathering/data_gathering.html" rel="" target="">
- <span class="dropdown-text">Data Gathering</span></a>
+    <a class="dropdown-item" href="../../tabs/eda/eda.html" rel="" target="">
+ <span class="dropdown-text">Data Exploration</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../tabs/arm/arm.html" rel="" target="">
- <span class="menu-text">ARM</span></a>
+    <a class="nav-link" href="../../tabs/decision_tree/classification.html" rel="" target="">
+ <span class="menu-text">Decision Trees</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tabs/naive_bayes/naive_bayes.html" rel="" target="">
+ <span class="menu-text">Naive Bayes</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../../tabs/clustering/clustering.html" rel="" target="" aria-current="page">
@@ -189,12 +194,8 @@ div.csl-indent {
  <span class="menu-text">Dimensionality Reduction</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../tabs/naive_bayes/naive_bayes.html" rel="" target="">
- <span class="menu-text">Naive Bayes</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../tabs/decision_tree/classification.html" rel="" target="">
- <span class="menu-text">Decision Tree</span></a>
+    <a class="nav-link" href="../../tabs/conclusion/conclusion.html" rel="" target="">
+ <span class="menu-text">Conclusions</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -212,7 +213,7 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#theory" id="toc-theory" class="nav-link active" data-scroll-target="#theory">Theory</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
   <ul class="collapse">
   <li><a href="#kmeans" id="toc-kmeans" class="nav-link" data-scroll-target="#kmeans">KMEANS</a></li>
   <li><a href="#dbscan" id="toc-dbscan" class="nav-link" data-scroll-target="#dbscan">DBSCAN</a></li>
@@ -221,6 +222,7 @@ div.csl-indent {
   <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
   <ul class="collapse">
   <li><a href="#data-selection" id="toc-data-selection" class="nav-link" data-scroll-target="#data-selection">Data Selection</a></li>
+  <li><a href="#feature-selection" id="toc-feature-selection" class="nav-link" data-scroll-target="#feature-selection">Feature Selection</a></li>
   </ul></li>
   <li><a href="#hyper-parameter-tuning" id="toc-hyper-parameter-tuning" class="nav-link" data-scroll-target="#hyper-parameter-tuning">Hyper-Parameter Tuning</a>
   <ul class="collapse">
@@ -240,7 +242,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Introduction</h1>
+<h1 class="title">Clustering</h1>
 </div>
 
 
@@ -255,19 +257,16 @@ div.csl-indent {
 
 </header>
 
-<section id="theory" class="level2">
-<h2 class="anchored" data-anchor-id="theory">Theory</h2>
-<p>In this section, I will give a brief overview of three clustering methods: KMeans, DBSCAN, and Hierarchical Clustering.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Clustering is a set of useful machine learning models that is used to build groups of data points that have similar features. While there are a variety of different clustering methods, I will give a brief overview of three clustering methods: KMeans, DBSCAN, and Hierarchical Clustering.</p>
 <section id="kmeans" class="level3">
 <h3 class="anchored" data-anchor-id="kmeans">KMEANS</h3>
 <p>The K-Means clustering method is an unsupervised machine lerning algorithm. The goal of K-Means to group points that are similar together into cluseters in an attempt to reveal any underlying patterns. K-Means works only with numerical data, and each data point must be able to be described using numerical coordinates <span class="citation" data-cites="burkardt2009k">(<a href="#ref-burkardt2009k" role="doc-biblioref">Burkardt 2009</a>)</span>.</p>
-<p>In order to return clusters of your selected input data, K-Means will create k numbers of clusters, based on a value of k that you select. One way that we can choose an optimal values of k is by using the elbow method, which plots the sum of the squared distances between each cluster as the value of k increases. When we look at the plot, there is a point where “increasing the size of the cluster provides minimal gain to the error function <span class="citation" data-cites="Artley_2022">(<a href="#ref-Artley_2022" role="doc-biblioref">Artley 2022</a>)</span>.” This can be seen in the image below.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/elbow_method.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><span class="citation" data-cites="Artley_2022">Artley (<a href="#ref-Artley_2022" role="doc-biblioref">2022</a>)</span></figcaption>
-</figure>
-</div>
+<p align="right">
+<img src="../../images/elbow_method.png" height="240" width="340," alt="Your Image" style="float:right; margin-left:15px;">
+</p>
+<p>In order to return clusters of your selected input data, K-Means will create k numbers of clusters, based on a value of k that you select. One way that we can choose an optimal values of k is by using the elbow method, which plots the sum of the squared distances between each cluster as the value of k increases. When we look at the plot, there is a point where “increasing the size of the cluster provides minimal gain to the error function <span class="citation" data-cites="Artley_2022">(<a href="#ref-Artley_2022" role="doc-biblioref">Artley 2022</a>)</span>.” This can be seen in the image to the right.</p>
 <p>After we choose our value for k, K-Means will assign each data point to a cluster using the euclidian distance to each centroid. After all the data points are assinged, the centroids of each cluster will be updated by taking the mean of the data points and assigning it to be the new center of the cluster. This reassigning points to clusters and recalcuating the centroids will occur until the centroids values don’t change anymore <span class="citation" data-cites="Artley_2022">(<a href="#ref-Artley_2022" role="doc-biblioref">Artley 2022</a>)</span>.</p>
 </section>
 <section id="dbscan" class="level3">
@@ -277,19 +276,27 @@ div.csl-indent {
 </section>
 <section id="hierarchical-clustering" class="level3">
 <h3 class="anchored" data-anchor-id="hierarchical-clustering">Hierarchical Clustering</h3>
+<p align="right">
+<img src="../../images/hierarchical-clustering.png" height="250" width="250," alt="Your Image" style="float:right; margin-left:15px;">
+</p>
 <p>Hierarchical clustering is an unsupervised clustering method. It has a nested structure that is somewhat organized like a tree, and does not assume a value of k. Hierarchical clustering can be further subdivided into two types: agglomerative (bottom up) and divisive (top down) hierarchical clustering. We can visualize this technique using a dendrogram.</p>
-<p><img src="../../images/hierarchical-clustering.png" class="img-fluid"></p>
+<p align="left">
+<img src="../../images/agglomerative-clustering.png" height="240" width="340," alt="Your Image" style="float:left; margin-right:15px;">
+</p>
 <p>In agglomerative hierarchical clustering, “each observation starts in its own cluster, and pairs of clusters are merged as one moves up the hierarchy [how to cite the slide].” The basic algorithm of agglomerative hierarchical clustering includes computing the proximity matrix, letting each data point be its own cluster, and then repreating to merge the two closest clusters and update the proximity matrix, until only one cluster remains <span class="citation" data-cites="Patlolla_2018">(<a href="#ref-Patlolla_2018" role="doc-biblioref">Patlolla 2018</a>)</span>.</p>
-<p><img src="../../images/agglomerative-clustering.png" class="img-fluid"></p>
-<p>Divisive hierarchical clustering is the opposite of agglomerative hierarchical clustering. In divisive hierarchical clustering, “all observations start in one cluster, and splits are performed recursively as one moves down the hierarchy [cite the slides].”</p>
+<p>Divisive hierarchical clustering is the opposite of agglomerative hierarchical clustering. In divisive hierarchical clustering, all of the observations start in one cluster, and then the splits are performed as one cluster moves down in the hierarchy.</p>
 </section>
 </section>
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
 <section id="data-selection" class="level3">
 <h3 class="anchored" data-anchor-id="data-selection">Data Selection</h3>
-<p>I’ve chosen to use the same data set that I used for my Naive Bayes tab but I hope to use a different target. I will not be performing feature selection as I already performed it previously and this is the optimal subset. I’ve included the subsetting process in my code below.</p>
-<div class="cell" data-execution_count="6">
+<p>I’ve decided to use the injury prevention factors data set for clustering because I am curious how different clustering methods would cluster the data based on the different injury prevention method that the athletes used. The goal of the clustering is to predict how many injuries an athlete would have and see what injury prevention methods are most common for athletes who have a certain number of injuries.</p>
+</section>
+<section id="feature-selection" class="level3">
+<h3 class="anchored" data-anchor-id="feature-selection">Feature Selection</h3>
+<p>In the Decision Trees tab, I found that the optimal features are the following six: Prevention Measure Stretching, Prevention Measure Warm Up, Prevention Measure Specific Strength Exercises, Prevention Measure Bracing, Prevention Measure Taping, and Prevention Measure Shoe Insoles. Two features were deamed not important, which were medical corsets and face masks, which makes sense as they had very small sample sizes. I will not perform feature selection again as I have already done it, but will instead use this subset.</p>
+<div class="cell" data-execution_count="9">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
@@ -304,7 +311,7 @@ div.csl-indent {
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>soccer_injury <span class="op">=</span> soccer_injury.replace({<span class="st">"yes"</span>: <span class="dv">1</span>, <span class="st">"no"</span>: <span class="dv">0</span>})</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>soccer_injury.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="6">
+<div class="cell-output cell-output-display" data-execution_count="9">
 <div>
 
 
@@ -463,19 +470,18 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="7">
+<div class="cell" data-execution_count="10">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x_vars <span class="op">=</span> [<span class="st">'Prevention Measure Stretching'</span>, <span class="st">'Prevention Measure Warm Up'</span>,</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Prevention Measure Specific Strength Exercises'</span>,</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Prevention Measure Bracing'</span>, <span class="st">'Prevention Measure Taping'</span>,</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Prevention Measure Shoe Insoles'</span>, <span class="st">'Prevention Measure Face Masks'</span>,</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Prevention Measure Medical Corset'</span>]</span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>important_features <span class="op">=</span> [<span class="st">"Prevention Measure Stretching"</span>, <span class="st">"Prevention Measure Warm Up"</span>, <span class="st">"Prevention Measure Specific Strength Exercises"</span>, <span class="st">"Prevention Measure Bracing"</span>, <span class="st">"Prevention Measure Taping"</span>, <span class="st">"Prevention Measure Shoe Insoles"</span>]</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> soccer_injury[important_features]</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>X_norm <span class="op">=</span> StandardScaler().fit_transform(X)</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>si_subset <span class="op">=</span> soccer_injury[x_vars]</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>si_subset.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>X.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="7">
+<div class="cell-output cell-output-display" data-execution_count="10">
 <div>
 
 
@@ -489,8 +495,6 @@ div.csl-indent {
 <th data-quarto-table-cell-role="th">Prevention Measure Bracing</th>
 <th data-quarto-table-cell-role="th">Prevention Measure Taping</th>
 <th data-quarto-table-cell-role="th">Prevention Measure Shoe Insoles</th>
-<th data-quarto-table-cell-role="th">Prevention Measure Face Masks</th>
-<th data-quarto-table-cell-role="th">Prevention Measure Medical Corset</th>
 </tr>
 </thead>
 <tbody>
@@ -502,15 +506,11 @@ div.csl-indent {
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
 <td>1</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -524,16 +524,12 @@ div.csl-indent {
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -546,8 +542,6 @@ div.csl-indent {
 <td>0</td>
 <td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
 </tr>
 </tbody>
 </table>
@@ -555,99 +549,86 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="8">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> si_subset.copy()</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>X_norm <span class="op">=</span> StandardScaler().fit_transform(X)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
 </section>
 </section>
 <section id="hyper-parameter-tuning" class="level2">
 <h2 class="anchored" data-anchor-id="hyper-parameter-tuning">Hyper-Parameter Tuning</h2>
-<ul>
-<li>For each of the three clustering algorithms, perform any relevant parameter tuning in an attempt to achieve the optimal clustering results</li>
-<li>e.g.&nbsp;For k-means, Use Elbow and Silhouette methods to illustrate the ideal number of clusters. Visualize your results.</li>
-<li>Also, when relevant, explore different choices of distance metric for the algorithm. Which distance metric seems to works best in which cases and why?</li>
-</ul>
+<p>Hyper-parameter tuning is the process of finding the best and most effective set of parameters for each tuning method. As explained above, two ways we can find the optimal number of clusters are using the elbow method and the silhouette scores.</p>
 <section id="k-means-elbow-method" class="level3">
 <h3 class="anchored" data-anchor-id="k-means-elbow-method">K-Means: Elbow Method</h3>
-<div class="cell" data-execution_count="37">
+<div class="cell" data-execution_count="11">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> KMeans</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> AgglomerativeClustering</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> MeanShift</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> Birch</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> DBSCAN</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np </span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>num_clusters <span class="op">=</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">15</span>)</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>kmeans_values <span class="op">=</span> []</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>inertia_values <span class="op">=</span> []</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>distortion_values <span class="op">=</span> []</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k <span class="kw">in</span> num_clusters:</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    kmeans <span class="op">=</span> KMeans(n_clusters<span class="op">=</span>k, n_init<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    kmeans.fit(X_norm) </span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    centroids <span class="op">=</span> kmeans.cluster_centers_</span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    labels <span class="op">=</span> kmeans.labels_</span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    distortion <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(X_norm)):</span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>        cluster_idx <span class="op">=</span> labels[i]</span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>        distortion <span class="op">+=</span> np.linalg.norm(X_norm[i] <span class="op">-</span> centroids[cluster_idx])<span class="op">**</span><span class="dv">2</span></span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>    distortion <span class="op">/=</span> <span class="bu">len</span>(X_norm) </span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>    distortion_values.append(distortion)</span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>    inertia <span class="op">=</span> kmeans.inertia_</span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>    kmeans_values.append(k)</span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>    inertia_values.append(inertia) </span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">"Number of Clusters"</span>: kmeans_values, <span class="st">"Inertia"</span>: inertia_values, <span class="st">"Distortion"</span>: distortion_values})</span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>df.head()</span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>second_derivative <span class="op">=</span> np.diff(np.diff(inertia_values))</span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>elbow_index <span class="op">=</span> np.argmax(second_derivative) <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The 'Elbow' of the graph is: </span><span class="sc">{</span>elbow_index<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">6</span>))</span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>plt.scatter(data<span class="op">=</span>df, x<span class="op">=</span><span class="st">"Number of Clusters"</span>, y<span class="op">=</span><span class="st">"Inertia"</span>)</span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Number of Clusters vs Inertia"</span>)</span>
-<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Number of Clusters"</span>)</span>
-<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Inertia"</span>)</span>
-<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>plt.axvline(x<span class="op">=</span><span class="dv">5</span>, color<span class="op">=</span><span class="st">'r'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, label<span class="op">=</span><span class="st">'Elbow Point'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> KMeans</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> AgglomerativeClustering</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> MeanShift</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> Birch</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> DBSCAN</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np </span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>num_clusters <span class="op">=</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">15</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>kmeans_values <span class="op">=</span> []</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>inertia_values <span class="op">=</span> []</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>distortion_values <span class="op">=</span> []</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k <span class="kw">in</span> num_clusters:</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    kmeans <span class="op">=</span> KMeans(n_clusters<span class="op">=</span>k, n_init<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    kmeans.fit(X_norm) </span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    centroids <span class="op">=</span> kmeans.cluster_centers_</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    labels <span class="op">=</span> kmeans.labels_</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    distortion <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(X_norm)):</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>        cluster_idx <span class="op">=</span> labels[i]</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>        distortion <span class="op">+=</span> np.linalg.norm(X_norm[i] <span class="op">-</span> centroids[cluster_idx])<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    distortion <span class="op">/=</span> <span class="bu">len</span>(X_norm) </span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>    distortion_values.append(distortion)</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>    inertia <span class="op">=</span> kmeans.inertia_</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>    kmeans_values.append(k)</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>    inertia_values.append(inertia) </span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">"Number of Clusters"</span>: kmeans_values, <span class="st">"Inertia"</span>: inertia_values, <span class="st">"Distortion"</span>: distortion_values})</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>df.head()</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>second_derivative <span class="op">=</span> np.diff(np.diff(inertia_values))</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>elbow_index <span class="op">=</span> np.argmax(second_derivative) <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The 'Elbow' of the graph is: </span><span class="sc">{</span>elbow_index<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">6</span>))</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>plt.scatter(data<span class="op">=</span>df, x<span class="op">=</span><span class="st">"Number of Clusters"</span>, y<span class="op">=</span><span class="st">"Inertia"</span>)</span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Number of Clusters vs Inertia"</span>)</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Number of Clusters"</span>)</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Inertia"</span>)</span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>plt.axvline(x<span class="op">=</span><span class="dv">5</span>, color<span class="op">=</span><span class="st">'r'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, label<span class="op">=</span><span class="st">'Elbow Point'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>The 'Elbow' of the graph is: 5</code></pre>
+<pre><code>The 'Elbow' of the graph is: 3</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="37">
-<pre><code>&lt;matplotlib.lines.Line2D at 0x167aa0a50&gt;</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="11">
+<pre><code>&lt;matplotlib.lines.Line2D at 0x11bf53f90&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering_files/figure-html/cell-5-output-3.png" class="img-fluid"></p>
+<p><img src="clustering_files/figure-html/cell-4-output-3.png" class="img-fluid"></p>
 </div>
 </div>
-<div class="cell" data-execution_count="38">
+<div class="cell" data-execution_count="12">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">4</span>, <span class="fl">1.5</span>))</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>sns.lineplot(df, x<span class="op">=</span><span class="st">"Number of Clusters"</span>, y<span class="op">=</span><span class="st">"Inertia"</span>, color<span class="op">=</span><span class="st">"orange"</span>)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Inertia"</span>)</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Number of Clusters"</span>)</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">4</span>, <span class="fl">1.5</span>))</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>sns.lineplot(df, x<span class="op">=</span><span class="st">"Number of Clusters"</span>, y<span class="op">=</span><span class="st">"Distortion"</span>, color<span class="op">=</span><span class="st">"green"</span>)</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Distortion"</span>)</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Number of Clusters"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">4</span>, <span class="fl">1.5</span>))</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>sns.lineplot(df, x<span class="op">=</span><span class="st">"Number of Clusters"</span>, y<span class="op">=</span><span class="st">"Inertia"</span>, color<span class="op">=</span><span class="st">"orange"</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Inertia"</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Number of Clusters"</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">4</span>, <span class="fl">1.5</span>))</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>sns.lineplot(df, x<span class="op">=</span><span class="st">"Number of Clusters"</span>, y<span class="op">=</span><span class="st">"Distortion"</span>, color<span class="op">=</span><span class="st">"green"</span>)</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Distortion"</span>)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Number of Clusters"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stderr">
 <pre><code>/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/seaborn/_oldcore.py:1498: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
@@ -667,295 +648,231 @@ div.csl-indent {
 /Users/reneedemaio/anaconda3/lib/python3.11/site-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
   with pd.option_context('mode.use_inf_as_na', True):</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="38">
+<div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>Text(0.5, 0, 'Number of Clusters')</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering_files/figure-html/cell-6-output-3.png" class="img-fluid"></p>
+<p><img src="clustering_files/figure-html/cell-5-output-3.png" class="img-fluid"></p>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering_files/figure-html/cell-6-output-4.png" class="img-fluid"></p>
+<p><img src="clustering_files/figure-html/cell-5-output-4.png" class="img-fluid"></p>
 </div>
 </div>
 <p>Based on the graphs above, we can determine that the optimal number of clusters to use is 5.</p>
 </section>
 <section id="k-means-silhouette-score" class="level3">
 <h3 class="anchored" data-anchor-id="k-means-silhouette-score">K-Means Silhouette Score</h3>
-<div class="cell" data-execution_count="69">
+<div class="cell" data-execution_count="13">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sklearn.cluster</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> maximize_silhouette(X,algo<span class="op">=</span><span class="st">"birch"</span>,nmax<span class="op">=</span><span class="dv">20</span>,i_plot<span class="op">=</span><span class="va">False</span>):</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    i_print<span class="op">=</span><span class="va">False</span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    X<span class="op">=</span>np.ascontiguousarray(X) </span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    params<span class="op">=</span>[]<span class="op">;</span> sil_scores<span class="op">=</span>[]</span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    sil_max<span class="op">=-</span><span class="dv">10</span></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> param <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>,nmax<span class="op">+</span><span class="dv">1</span>):</span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(algo<span class="op">==</span><span class="st">"birch"</span>):</span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>            model <span class="op">=</span> sklearn.cluster.Birch(n_clusters<span class="op">=</span>param).fit(X)</span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>            labels<span class="op">=</span>model.predict(X)</span>
-<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(algo<span class="op">==</span><span class="st">"ag"</span>):</span>
-<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>            model <span class="op">=</span> sklearn.cluster.AgglomerativeClustering(n_clusters<span class="op">=</span>param).fit(X)</span>
-<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>            labels<span class="op">=</span>model.labels_</span>
-<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(algo<span class="op">==</span><span class="st">"dbscan"</span>):</span>
-<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>            param<span class="op">=</span><span class="fl">0.5</span><span class="op">*</span>(param<span class="op">-</span><span class="dv">1</span>)</span>
-<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>            model <span class="op">=</span> sklearn.cluster.DBSCAN(eps<span class="op">=</span>param).fit(X)</span>
-<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>            labels<span class="op">=</span>model.labels_</span>
-<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(algo<span class="op">==</span><span class="st">"kmeans"</span>):</span>
-<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>            model <span class="op">=</span> sklearn.cluster.KMeans(n_clusters<span class="op">=</span>param).fit(X)</span>
-<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>            labels<span class="op">=</span>model.predict(X)</span>
-<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
-<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>            sil_scores.append(sklearn.metrics.silhouette_score(X,labels))</span>
-<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a>            params.append(param)</span>
-<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span>:</span>
-<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span> </span>
-<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(i_print): <span class="bu">print</span>(param,sil_scores[<span class="op">-</span><span class="dv">1</span>])</span>
-<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(sil_scores[<span class="op">-</span><span class="dv">1</span>]<span class="op">&gt;</span>sil_max):</span>
-<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a>             opt_param<span class="op">=</span>param</span>
-<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a>             sil_max<span class="op">=</span>sil_scores[<span class="op">-</span><span class="dv">1</span>]</span>
-<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a>             opt_labels<span class="op">=</span>labels</span>
-<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"-----------------"</span>)</span>
-<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"OPTIMAL PARAMETER ="</span>,opt_param)</span>
-<span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"-----------------"</span>)</span>
-<span id="cb10-45"><a href="#cb10-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-46"><a href="#cb10-46" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(i_plot):</span>
-<span id="cb10-47"><a href="#cb10-47" aria-hidden="true" tabindex="-1"></a>        fig, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb10-48"><a href="#cb10-48" aria-hidden="true" tabindex="-1"></a>        ax.plot(params, sil_scores, <span class="st">"-o"</span>)  </span>
-<span id="cb10-49"><a href="#cb10-49" aria-hidden="true" tabindex="-1"></a>        ax.<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Hyper-parameter'</span>, ylabel<span class="op">=</span><span class="st">'Silhouette'</span>)</span>
-<span id="cb10-50"><a href="#cb10-50" aria-hidden="true" tabindex="-1"></a>        plt.show()</span>
-<span id="cb10-51"><a href="#cb10-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-52"><a href="#cb10-52" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> opt_labels</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sklearn.cluster</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> maximize_silhouette(X,algo<span class="op">=</span><span class="st">"birch"</span>,nmax<span class="op">=</span><span class="dv">20</span>,i_plot<span class="op">=</span><span class="va">False</span>):</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    i_print<span class="op">=</span><span class="va">False</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    X<span class="op">=</span>np.ascontiguousarray(X) </span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    params<span class="op">=</span>[]<span class="op">;</span> sil_scores<span class="op">=</span>[]</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    sil_max<span class="op">=-</span><span class="dv">10</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> param <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>,nmax<span class="op">+</span><span class="dv">1</span>):</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(algo<span class="op">==</span><span class="st">"birch"</span>):</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>            model <span class="op">=</span> sklearn.cluster.Birch(n_clusters<span class="op">=</span>param).fit(X)</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>            labels<span class="op">=</span>model.predict(X)</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(algo<span class="op">==</span><span class="st">"ag"</span>):</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>            model <span class="op">=</span> sklearn.cluster.AgglomerativeClustering(n_clusters<span class="op">=</span>param).fit(X)</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>            labels<span class="op">=</span>model.labels_</span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(algo<span class="op">==</span><span class="st">"dbscan"</span>):</span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>            param<span class="op">=</span><span class="fl">0.5</span><span class="op">*</span>(param<span class="op">-</span><span class="dv">1</span>)</span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>            model <span class="op">=</span> sklearn.cluster.DBSCAN(eps<span class="op">=</span>param).fit(X)</span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>            labels<span class="op">=</span>model.labels_</span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(algo<span class="op">==</span><span class="st">"kmeans"</span>):</span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>            model <span class="op">=</span> sklearn.cluster.KMeans(n_clusters<span class="op">=</span>param).fit(X)</span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>            labels<span class="op">=</span>model.predict(X)</span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>            sil_scores.append(sklearn.metrics.silhouette_score(X,labels))</span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>            params.append(param)</span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span>:</span>
+<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span> </span>
+<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(i_print): <span class="bu">print</span>(param,sil_scores[<span class="op">-</span><span class="dv">1</span>])</span>
+<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(sil_scores[<span class="op">-</span><span class="dv">1</span>]<span class="op">&gt;</span>sil_max):</span>
+<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>             opt_param<span class="op">=</span>param</span>
+<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>             sil_max<span class="op">=</span>sil_scores[<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>             opt_labels<span class="op">=</span>labels</span>
+<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"-----------------"</span>)</span>
+<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"OPTIMAL PARAMETER ="</span>,opt_param)</span>
+<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"-----------------"</span>)</span>
+<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(i_plot):</span>
+<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>        fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a>        ax.plot(params, sil_scores, <span class="st">"-o"</span>)  </span>
+<span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a>        ax.<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Hyper-parameter'</span>, ylabel<span class="op">=</span><span class="st">'Silhouette'</span>)</span>
+<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a>        plt.show()</span>
+<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> opt_labels</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div class="cell" data-execution_count="70">
+<div class="cell" data-execution_count="14">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot(X,color_vector):</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    fig, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    jitter <span class="op">=</span> <span class="fl">0.01</span> <span class="op">*</span> np.random.randn(<span class="op">*</span>X.shape)</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    X <span class="op">+=</span> jitter </span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    ax.scatter(X.iloc[:,<span class="dv">0</span>], X.iloc[:,<span class="dv">1</span>],c<span class="op">=</span>color_vector, cmap<span class="op">=</span><span class="st">"viridis"</span>)</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    ax.<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Feature-1 (x_1)'</span>, ylabel<span class="op">=</span><span class="st">'Feature-2 (x_2)'</span>,</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">'Cluster data'</span>)</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    ax.grid()</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot(X,color_vector):</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    jitter <span class="op">=</span> <span class="fl">0.01</span> <span class="op">*</span> np.random.randn(<span class="op">*</span>X.shape)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    X <span class="op">+=</span> jitter </span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    ax.scatter(X.iloc[:,<span class="dv">0</span>], X.iloc[:,<span class="dv">1</span>],c<span class="op">=</span>color_vector, cmap<span class="op">=</span><span class="st">"viridis"</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    ax.<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Feature-1 (x_1)'</span>, ylabel<span class="op">=</span><span class="st">'Feature-2 (x_2)'</span>,</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">'Cluster data'</span>)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    ax.grid()</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div class="cell" data-execution_count="80">
+<div class="cell" data-execution_count="15">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sklearn.cluster</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>opt_labels<span class="op">=</span>maximize_silhouette(X,algo<span class="op">=</span><span class="st">"kmeans"</span>,nmax<span class="op">=</span><span class="dv">50</span>, i_plot<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>plot(X,opt_labels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sklearn.cluster</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>opt_labels<span class="op">=</span>maximize_silhouette(X,algo<span class="op">=</span><span class="st">"kmeans"</span>,nmax<span class="op">=</span><span class="dv">50</span>, i_plot<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>plot(X,opt_labels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stderr">
-<pre><code>/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-</code></pre>
+<pre><code>/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (33) found smaller than n_clusters (34). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (33) found smaller than n_clusters (35). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (33) found smaller than n_clusters (36). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (33) found smaller than n_clusters (37). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (33) found smaller than n_clusters (38). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (33) found smaller than n_clusters (39). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (33) found smaller than n_clusters (40). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (33) found smaller than n_clusters (41). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (33) found smaller than n_clusters (42). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (33) found smaller than n_clusters (43). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (33) found smaller than n_clusters (44). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (33) found smaller than n_clusters (45). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (33) found smaller than n_clusters (46). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (33) found smaller than n_clusters (47). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (33) found smaller than n_clusters (48). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (33) found smaller than n_clusters (49). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (33) found smaller than n_clusters (50). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>-----------------
@@ -963,24 +880,45 @@ OPTIMAL PARAMETER = 31
 -----------------</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering_files/figure-html/cell-9-output-3.png" class="img-fluid"></p>
+<p><img src="clustering_files/figure-html/cell-8-output-3.png" class="img-fluid"></p>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering_files/figure-html/cell-9-output-4.png" class="img-fluid"></p>
+<p><img src="clustering_files/figure-html/cell-8-output-4.png" class="img-fluid"></p>
 </div>
 </div>
 </section>
 <section id="dbscan-1" class="level3">
 <h3 class="anchored" data-anchor-id="dbscan-1">DBSCAN</h3>
-<div class="cell" data-execution_count="72">
+<div class="cell" data-execution_count="16">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>opt_labels<span class="op">=</span>maximize_silhouette(X,algo<span class="op">=</span><span class="st">"dbscan"</span>,nmax<span class="op">=</span><span class="dv">15</span>, i_plot<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>plot(X,opt_labels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>opt_labels<span class="op">=</span>maximize_silhouette(X,algo<span class="op">=</span><span class="st">"dbscan"</span>,nmax<span class="op">=</span><span class="dv">15</span>, i_plot<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>plot(X,opt_labels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>-----------------
-OPTIMAL PARAMETER = 1.0
+OPTIMAL PARAMETER = 0.5
+-----------------</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="clustering_files/figure-html/cell-9-output-2.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="clustering_files/figure-html/cell-9-output-3.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="agglomerative-clustering" class="level3">
+<h3 class="anchored" data-anchor-id="agglomerative-clustering">Agglomerative Clustering</h3>
+<div class="cell" data-execution_count="17">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>opt_labels<span class="op">=</span>maximize_silhouette(X,algo<span class="op">=</span><span class="st">"ag"</span>,nmax<span class="op">=</span><span class="dv">50</span>, i_plot<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>plot(X,opt_labels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>-----------------
+OPTIMAL PARAMETER = 29
 -----------------</code></pre>
 </div>
 <div class="cell-output cell-output-display">
@@ -990,151 +928,139 @@ OPTIMAL PARAMETER = 1.0
 <p><img src="clustering_files/figure-html/cell-10-output-3.png" class="img-fluid"></p>
 </div>
 </div>
-</section>
-<section id="agglomerative-clustering" class="level3">
-<h3 class="anchored" data-anchor-id="agglomerative-clustering">Agglomerative Clustering</h3>
-<div class="cell" data-execution_count="96">
+<div class="cell" data-execution_count="18">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>opt_labels<span class="op">=</span>maximize_silhouette(X,algo<span class="op">=</span><span class="st">"ag"</span>,nmax<span class="op">=</span><span class="dv">50</span>, i_plot<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>plot(X,opt_labels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.cluster.hierarchy <span class="im">import</span> dendrogram, linkage</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>linkage_matrix <span class="op">=</span> linkage(X_norm, method<span class="op">=</span><span class="st">"ward"</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>dendrogram(linkage_matrix)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Dendrogram'</span>)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stdout">
-<pre><code>-----------------
-OPTIMAL PARAMETER = 31
------------------</code></pre>
-</div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering_files/figure-html/cell-11-output-2.png" class="img-fluid"></p>
-</div>
-</div>
-<div class="cell" data-execution_count="95">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.cluster.hierarchy <span class="im">import</span> dendrogram, linkage</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>linkage_matrix <span class="op">=</span> linkage(X_norm, method<span class="op">=</span><span class="st">"ward"</span>)</span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>dendrogram(linkage_matrix)</span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Dendrogram'</span>)</span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<p><img src="clustering_files/figure-html/cell-12-output-1.png" class="img-fluid"></p>
+<p><img src="clustering_files/figure-html/cell-11-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 </section>
 <section id="final-results" class="level3">
 <h3 class="anchored" data-anchor-id="final-results">Final Results</h3>
-<div class="cell" data-execution_count="88">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sklearn.cluster</span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> maximize_silhouette(X, algo<span class="op">=</span><span class="st">"birch"</span>, nmax<span class="op">=</span><span class="dv">20</span>, i_plot<span class="op">=</span><span class="va">False</span>):</span>
-<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>    X <span class="op">=</span> np.ascontiguousarray(X)</span>
-<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>    opt_param <span class="op">=</span> <span class="dv">31</span></span>
-<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> algo <span class="op">==</span> <span class="st">"birch"</span>:</span>
-<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>        model <span class="op">=</span> sklearn.cluster.Birch(n_clusters<span class="op">=</span>opt_param).fit(X)</span>
-<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>        labels <span class="op">=</span> model.predict(X)</span>
-<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> algo <span class="op">==</span> <span class="st">"ag"</span>:</span>
-<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>        model <span class="op">=</span> sklearn.cluster.AgglomerativeClustering(n_clusters<span class="op">=</span>opt_param).fit(X)</span>
-<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>        labels <span class="op">=</span> model.labels_</span>
-<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> algo <span class="op">==</span> <span class="st">"dbscan"</span>:</span>
-<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>        param <span class="op">=</span> <span class="fl">0.5</span> <span class="op">*</span> (opt_param <span class="op">-</span> <span class="dv">1</span>)</span>
-<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a>        model <span class="op">=</span> sklearn.cluster.DBSCAN(eps<span class="op">=</span>param).fit(X)</span>
-<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a>        labels <span class="op">=</span> model.labels_</span>
-<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> algo <span class="op">==</span> <span class="st">"kmeans"</span>:</span>
-<span id="cb20-23"><a href="#cb20-23" aria-hidden="true" tabindex="-1"></a>        model <span class="op">=</span> sklearn.cluster.KMeans(n_clusters<span class="op">=</span>opt_param).fit(X)</span>
-<span id="cb20-24"><a href="#cb20-24" aria-hidden="true" tabindex="-1"></a>        labels <span class="op">=</span> model.predict(X)</span>
-<span id="cb20-25"><a href="#cb20-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-26"><a href="#cb20-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
-<span id="cb20-27"><a href="#cb20-27" aria-hidden="true" tabindex="-1"></a>        sil_score <span class="op">=</span> sklearn.metrics.silhouette_score(X, labels)</span>
-<span id="cb20-28"><a href="#cb20-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span>:</span>
-<span id="cb20-29"><a href="#cb20-29" aria-hidden="true" tabindex="-1"></a>        sil_score <span class="op">=</span> <span class="va">None</span></span>
-<span id="cb20-30"><a href="#cb20-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-31"><a href="#cb20-31" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"-----------------"</span>)</span>
-<span id="cb20-32"><a href="#cb20-32" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"OPTIMAL PARAMETER ="</span>, opt_param)</span>
-<span id="cb20-33"><a href="#cb20-33" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"-----------------"</span>)</span>
-<span id="cb20-34"><a href="#cb20-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-35"><a href="#cb20-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-36"><a href="#cb20-36" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> labels</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell" data-execution_count="97">
+<div class="cell" data-execution_count="19">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>agg_cluster <span class="op">=</span> AgglomerativeClustering(n_clusters<span class="op">=</span><span class="dv">5</span>)</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>agg_labels <span class="op">=</span> agg_cluster.fit_predict(X_norm)</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>plt.scatter(X_norm[:, <span class="dv">0</span>], X_norm[:, <span class="dv">1</span>], c<span class="op">=</span>agg_labels, cmap<span class="op">=</span><span class="st">"viridis"</span>, edgecolors<span class="op">=</span><span class="st">"k"</span>)</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Agglomerative Clustering"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sklearn.cluster</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> maximize_silhouette(X, algo<span class="op">=</span><span class="st">"birch"</span>, nmax<span class="op">=</span><span class="dv">20</span>, i_plot<span class="op">=</span><span class="va">False</span>):</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>    X <span class="op">=</span> np.ascontiguousarray(X)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>    opt_param <span class="op">=</span> <span class="dv">31</span></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> algo <span class="op">==</span> <span class="st">"birch"</span>:</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>        model <span class="op">=</span> sklearn.cluster.Birch(n_clusters<span class="op">=</span>opt_param).fit(X)</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>        labels <span class="op">=</span> model.predict(X)</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> algo <span class="op">==</span> <span class="st">"ag"</span>:</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>        model <span class="op">=</span> sklearn.cluster.AgglomerativeClustering(n_clusters<span class="op">=</span>opt_param).fit(X)</span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>        labels <span class="op">=</span> model.labels_</span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> algo <span class="op">==</span> <span class="st">"dbscan"</span>:</span>
+<span id="cb19-18"><a href="#cb19-18" aria-hidden="true" tabindex="-1"></a>        param <span class="op">=</span> <span class="fl">0.5</span> <span class="op">*</span> (opt_param <span class="op">-</span> <span class="dv">1</span>)</span>
+<span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a>        model <span class="op">=</span> sklearn.cluster.DBSCAN(eps<span class="op">=</span>param).fit(X)</span>
+<span id="cb19-20"><a href="#cb19-20" aria-hidden="true" tabindex="-1"></a>        labels <span class="op">=</span> model.labels_</span>
+<span id="cb19-21"><a href="#cb19-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-22"><a href="#cb19-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> algo <span class="op">==</span> <span class="st">"kmeans"</span>:</span>
+<span id="cb19-23"><a href="#cb19-23" aria-hidden="true" tabindex="-1"></a>        model <span class="op">=</span> sklearn.cluster.KMeans(n_clusters<span class="op">=</span>opt_param).fit(X)</span>
+<span id="cb19-24"><a href="#cb19-24" aria-hidden="true" tabindex="-1"></a>        labels <span class="op">=</span> model.predict(X)</span>
+<span id="cb19-25"><a href="#cb19-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-26"><a href="#cb19-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb19-27"><a href="#cb19-27" aria-hidden="true" tabindex="-1"></a>        sil_score <span class="op">=</span> sklearn.metrics.silhouette_score(X, labels)</span>
+<span id="cb19-28"><a href="#cb19-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span>:</span>
+<span id="cb19-29"><a href="#cb19-29" aria-hidden="true" tabindex="-1"></a>        sil_score <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb19-30"><a href="#cb19-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-31"><a href="#cb19-31" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"-----------------"</span>)</span>
+<span id="cb19-32"><a href="#cb19-32" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"OPTIMAL PARAMETER ="</span>, opt_param)</span>
+<span id="cb19-33"><a href="#cb19-33" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"-----------------"</span>)</span>
+<span id="cb19-34"><a href="#cb19-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-35"><a href="#cb19-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-36"><a href="#cb19-36" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> labels</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="97">
+</div>
+<div class="cell" data-execution_count="20">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>agg_cluster <span class="op">=</span> AgglomerativeClustering(n_clusters<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>agg_labels <span class="op">=</span> agg_cluster.fit_predict(X_norm)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>plt.scatter(X_norm[:, <span class="dv">0</span>], X_norm[:, <span class="dv">1</span>], c<span class="op">=</span>agg_labels, cmap<span class="op">=</span><span class="st">"viridis"</span>, edgecolors<span class="op">=</span><span class="st">"k"</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Agglomerative Clustering"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="20">
 <pre><code>Text(0.5, 1.0, 'Agglomerative Clustering')</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering_files/figure-html/cell-14-output-2.png" class="img-fluid"></p>
+<p><img src="clustering_files/figure-html/cell-13-output-2.png" class="img-fluid"></p>
 </div>
 </div>
-<div class="cell" data-execution_count="98">
+<div class="cell" data-execution_count="21">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.cluster.hierarchy <span class="im">import</span> dendrogram, linkage</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>linkage_matrix <span class="op">=</span> linkage(X_norm, method<span class="op">=</span><span class="st">"ward"</span>)</span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>dendrogram(linkage_matrix)</span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Dendrogram'</span>)</span>
-<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.cluster.hierarchy <span class="im">import</span> dendrogram, linkage</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>linkage_matrix <span class="op">=</span> linkage(X_norm, method<span class="op">=</span><span class="st">"ward"</span>)</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>dendrogram(linkage_matrix)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Dendrogram'</span>)</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="clustering_files/figure-html/cell-15-output-1.png" class="img-fluid"></p>
+<p><img src="clustering_files/figure-html/cell-14-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <section id="kmeans-1" class="level4">
 <h4 class="anchored" data-anchor-id="kmeans-1">KMeans</h4>
-<div class="cell" data-execution_count="100">
+<div class="cell" data-execution_count="22">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>k<span class="op">=</span><span class="dv">5</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>kmeans <span class="op">=</span> KMeans(n_clusters<span class="op">=</span>k)</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>kmeans.fit(X)</span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> kmeans.labels_</span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>centroids <span class="op">=</span> kmeans.cluster_centers_</span>
-<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>plt.scatter(X.iloc[:, <span class="dv">0</span>], X.iloc[:, <span class="dv">1</span>], c<span class="op">=</span>labels, cmap<span class="op">=</span><span class="st">'viridis'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>plt.scatter(centroids[:, <span class="dv">0</span>], centroids[:, <span class="dv">1</span>], c<span class="op">=</span><span class="st">'red'</span>, marker<span class="op">=</span><span class="st">'X'</span>, s<span class="op">=</span><span class="dv">200</span>)</span>
-<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'K-Means Clustering'</span>)</span>
-<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Feature 1'</span>)</span>
-<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Feature 2'</span>)</span>
-<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>k<span class="op">=</span><span class="dv">5</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>kmeans <span class="op">=</span> KMeans(n_clusters<span class="op">=</span>k)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>kmeans.fit(X)</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> kmeans.labels_</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>centroids <span class="op">=</span> kmeans.cluster_centers_</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>plt.scatter(X.iloc[:, <span class="dv">0</span>], X.iloc[:, <span class="dv">1</span>], c<span class="op">=</span>labels, cmap<span class="op">=</span><span class="st">'viridis'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>plt.scatter(centroids[:, <span class="dv">0</span>], centroids[:, <span class="dv">1</span>], c<span class="op">=</span><span class="st">'red'</span>, marker<span class="op">=</span><span class="st">'X'</span>, s<span class="op">=</span><span class="dv">200</span>)</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'K-Means Clustering'</span>)</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Feature 1'</span>)</span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Feature 2'</span>)</span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stderr">
-<pre><code>/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning:
-
-The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
-</code></pre>
+<pre><code>/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering_files/figure-html/cell-16-output-2.png" class="img-fluid"></p>
+<p><img src="clustering_files/figure-html/cell-15-output-2.png" class="img-fluid"></p>
 </div>
 </div>
 </section>
 <section id="dbscan-2" class="level4">
 <h4 class="anchored" data-anchor-id="dbscan-2">DBSCAN</h4>
-<div class="cell" data-execution_count="101">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>dbscan <span class="op">=</span> DBSCAN(eps<span class="op">=</span><span class="fl">0.5</span>, min_samples<span class="op">=</span><span class="dv">5</span>)</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> dbscan.fit_predict(X)</span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>plt.scatter(X.iloc[:, <span class="dv">0</span>], X.iloc[:, <span class="dv">1</span>], c<span class="op">=</span>labels, cmap<span class="op">=</span><span class="st">'viridis'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'DBSCAN Clustering'</span>)</span>
-<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Feature 1'</span>)</span>
-<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Feature 2'</span>)</span>
-<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-execution_count="23">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>dbscan <span class="op">=</span> DBSCAN(eps<span class="op">=</span><span class="fl">0.5</span>, min_samples<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> dbscan.fit_predict(X)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>plt.scatter(X.iloc[:, <span class="dv">0</span>], X.iloc[:, <span class="dv">1</span>], c<span class="op">=</span>labels, cmap<span class="op">=</span><span class="st">'viridis'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'DBSCAN Clustering'</span>)</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Feature 1'</span>)</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Feature 2'</span>)</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-display">
-<p><img src="clustering_files/figure-html/cell-17-output-1.png" class="img-fluid"></p>
+<p><img src="clustering_files/figure-html/cell-16-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 </section>
@@ -1144,38 +1070,32 @@ The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the valu
 <h2 class="anchored" data-anchor-id="results">Results</h2>
 <p>Agglomerative Clustering was the most successful clustering methods as it produced distinct clusters. K-Means and DBSCAN were somewhat successful but the clusters weren’t well defined and the graphs were hard to read. All methods were easy to implement but for this data, agglometative clustering is definitely the best option. I would say that based on the agglomerative clustering results, we can learn that clusters are based off of injury prevention methods that athletes took. Points within similar clusters represent athletes who took similar measures.</p>
 <p>The optimal number of clusters was determined to be 5. This makes sense based on the nature of the features. There were 5 prevention measures that were very commonly used, which is illustrated in the plot below. I think we can perhaps make a connection between the optimal number of clusters and the years of football experience that an athlete has, though, as there are many labels in the dataset, it is hard to be definitive about this.</p>
-<div class="cell" data-execution_count="107">
+<div class="cell" data-execution_count="24">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>pm_counts <span class="op">=</span> si_subset.<span class="bu">sum</span>()</span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>pm_counts <span class="op">=</span> pm_counts.sort_values(ascending<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span>pm_counts.index, y<span class="op">=</span>pm_counts.values, color<span class="op">=</span><span class="st">'skyblue'</span>)</span>
-<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Prevention Measures Counts'</span>)</span>
-<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Prevention Measures'</span>)</span>
-<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Count'</span>)</span>
-<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">'right'</span>)  </span>
-<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>pm_counts <span class="op">=</span> X.<span class="bu">sum</span>()</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>pm_counts <span class="op">=</span> pm_counts.sort_values(ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span>pm_counts.index, y<span class="op">=</span>pm_counts.values, color<span class="op">=</span><span class="st">'skyblue'</span>)</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Prevention Measures Counts'</span>)</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Prevention Measures'</span>)</span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Count'</span>)</span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">'right'</span>)  </span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stderr">
-<pre><code>/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/seaborn/_oldcore.py:1498: FutureWarning:
-
-is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/seaborn/_oldcore.py:1498: FutureWarning:
-
-is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
-
-/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/seaborn/_oldcore.py:1498: FutureWarning:
-
-is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
-</code></pre>
+<pre><code>/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/seaborn/_oldcore.py:1498: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+  if pd.api.types.is_categorical_dtype(vector):
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/seaborn/_oldcore.py:1498: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+  if pd.api.types.is_categorical_dtype(vector):
+/Users/reneedemaio/anaconda3/lib/python3.11/site-packages/seaborn/_oldcore.py:1498: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+  if pd.api.types.is_categorical_dtype(vector):</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering_files/figure-html/cell-18-output-2.png" class="img-fluid"></p>
+<p><img src="clustering_files/figure-html/cell-17-output-2.png" class="img-fluid"></p>
 </div>
 </div>
 </section>

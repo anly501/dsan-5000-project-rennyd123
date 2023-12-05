@@ -2,6 +2,7 @@ project:
   type: website
 
 website:
+  favicon: images/website_logo.png
   title: "Renee DeMaio"
   navbar:
     left:
@@ -17,20 +18,20 @@ website:
         menu: 
           - href: https://github.com/anly501/dsan-5000-project-rennyd123/tree/main/data
             text: Data
-          - href: tabs/data_gathering/data.ipynb
+          - href: tabs/data_gathering/data_gathering.ipynb
             text: Data Gathering
           - href: tabs/data_cleaning/data_cleaning.ipynb
             text: Data Cleaning
           - href: tabs/eda/eda.ipynb
             text: Data Exploration
+      - href: tabs/decision_tree/classification.ipynb
+        text: Decision Trees
+      - href: tabs/naive_bayes/naive_bayes.ipynb
+        text: Naive Bayes 
       - href: tabs/clustering/clustering.ipynb
         text: Clustering
       - href: tabs/dimensionality_reduction/dimensionality_reduction.ipynb
         text: Dimensionality Reduction
-      - href: tabs/naive_bayes/naive_bayes.ipynb
-        text: Naive Bayes 
-      - href: tabs/decision_tree/classification.ipynb
-        text: Decision Trees
       - href: tabs/conclusion/conclusion.ipynb
         text: Conclusions
 
@@ -42,6 +43,13 @@ website:
       - icon: github 
         href: https://github.com/anly501/dsan-5000-project-rennyd123
 
+html:
+  before: |
+    <div style="text-align: center;">
+      <img src="images/website_logo.png" alt="Website Logo" class="logo" style="max-width: 100px;">
+    </div>
+    <h1 style="text-align: center;">Renee DeMaio</h1>
+      
 bibliography: SI-references.bib
 
 format:

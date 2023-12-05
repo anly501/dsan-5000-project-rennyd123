@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Renee DeMaio - Introduction</title>
+<title>Renee DeMaio - Data Cleaning</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,6 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../images/website_logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -144,7 +145,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="dropdown-text">Data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../tabs/data_gathering/data.html" rel="" target="">
+    <a class="dropdown-item" href="../../tabs/data_gathering/data_gathering.html" rel="" target="">
  <span class="dropdown-text">Data Gathering</span></a>
   </li>  
         <li>
@@ -158,20 +159,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../tabs/clustering/clustering.html" rel="" target="">
- <span class="menu-text">Clustering</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../tabs/dimensionality_reduction/dimensionality_reduction.html" rel="" target="">
- <span class="menu-text">Dimensionality Reduction</span></a>
+    <a class="nav-link" href="../../tabs/decision_tree/classification.html" rel="" target="">
+ <span class="menu-text">Decision Trees</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../tabs/naive_bayes/naive_bayes.html" rel="" target="">
  <span class="menu-text">Naive Bayes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../tabs/decision_tree/classification.html" rel="" target="">
- <span class="menu-text">Decision Trees</span></a>
+    <a class="nav-link" href="../../tabs/clustering/clustering.html" rel="" target="">
+ <span class="menu-text">Clustering</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tabs/dimensionality_reduction/dimensionality_reduction.html" rel="" target="">
+ <span class="menu-text">Dimensionality Reduction</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../tabs/conclusion/conclusion.html" rel="" target="">
@@ -193,7 +194,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#record-data-cleaning" id="toc-record-data-cleaning" class="nav-link active" data-scroll-target="#record-data-cleaning">Record Data Cleaning</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#record-data-cleaning" id="toc-record-data-cleaning" class="nav-link" data-scroll-target="#record-data-cleaning">Record Data Cleaning</a>
   <ul class="collapse">
   <li><a href="#injury-prevention-factors" id="toc-injury-prevention-factors" class="nav-link" data-scroll-target="#injury-prevention-factors">Injury Prevention Factors</a></li>
   <li><a href="#injuries-from-different-activities-data-set" id="toc-injuries-from-different-activities-data-set" class="nav-link" data-scroll-target="#injuries-from-different-activities-data-set">Injuries from Different Activities Data Set</a></li>
@@ -214,7 +216,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Introduction</h1>
+<h1 class="title">Data Cleaning</h1>
 </div>
 
 
@@ -229,11 +231,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>A lot of the time when we look for data on the internet, it is not going to be in the format that we need it to be in, in order to analyse it properly for our goals. Othertimes, the data set is incomplete including missing data points, has inconsistent formatting, or is in a format that does not work for smooth analysis. That is there data cleaning comes in. Cleaning our “dirty” data helps us ensure that the data is ready to be analyzed and that the data we do analyze is accurate and reliable.</p>
 <p>Common data cleaning tasks for tabular data include deciding how to deal with missing values, duplicate rows or entries, incorrect values, special characters, etc. Additionally, it involves accounting for inconsistent casting (having inconsistent instances of upper and lowercase letters), spelling errors, human errors, inconsistent units, and more.</p>
 <p>We will know that a tabular data set is clean when every column is a variable, every row is an observation,and every call is a value.</p>
 <p>When we clean text data, we often us Natural Language Processing, or NLP. Common cleaning tasks include removing punctuation, dealing with special characters, tokenization, vectorization, stop word removal, lemmatization or stemming, spell check, removing URLs, and more.</p>
 <p>To help us clean data, we can use R packages such as Tidyverse, dplyr, forcats, tidyr, etc. For Python, we can use packages such as Pandas, RegEx, and NLTK. I utilize Pandas quite a bit in the data cleaning process. I use both R and Python to clean my data.</p>
+</section>
 <section id="record-data-cleaning" class="level2">
 <h2 class="anchored" data-anchor-id="record-data-cleaning">Record Data Cleaning</h2>
 <p>The process of cleaning my record data varied from data set to data set. Some of them were very simple to clean and some required some more time and effort. It all depends on the state of the data set when I found it and what I am desiring it to do.</p>

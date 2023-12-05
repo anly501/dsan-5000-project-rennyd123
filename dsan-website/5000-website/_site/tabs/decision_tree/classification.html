@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Renee DeMaio - Methods</title>
+<title>Renee DeMaio - Decision Trees</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,6 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../images/website_logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -131,7 +132,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Introduction</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../tabs/code/code.html" rel="" target="">
+    <a class="nav-link" href="https://github.com/anly501/dsan-5000-project-rennyd123" rel="" target="">
  <span class="menu-text">Code</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -140,26 +141,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-data">    
         <li>
-    <a class="dropdown-item" href="../../tabs/data/data.html" rel="" target="">
+    <a class="dropdown-item" href="https://github.com/anly501/dsan-5000-project-rennyd123/tree/main/data" rel="" target="">
  <span class="dropdown-text">Data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../tabs/eda/eda.html" rel="" target="">
- <span class="dropdown-text">Data Exploration</span></a>
+    <a class="dropdown-item" href="../../tabs/data_gathering/data_gathering.html" rel="" target="">
+ <span class="dropdown-text">Data Gathering</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../tabs/data_cleaning/data_cleaning.html" rel="" target="">
  <span class="dropdown-text">Data Cleaning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../tabs/data_gathering/data_gathering.html" rel="" target="">
- <span class="dropdown-text">Data Gathering</span></a>
+    <a class="dropdown-item" href="../../tabs/eda/eda.html" rel="" target="">
+ <span class="dropdown-text">Data Exploration</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../tabs/arm/arm.html" rel="" target="">
- <span class="menu-text">ARM</span></a>
+    <a class="nav-link active" href="../../tabs/decision_tree/classification.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Decision Trees</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tabs/naive_bayes/naive_bayes.html" rel="" target="">
+ <span class="menu-text">Naive Bayes</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../tabs/clustering/clustering.html" rel="" target="">
@@ -170,12 +175,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Dimensionality Reduction</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../tabs/naive_bayes/naive_bayes.html" rel="" target="">
- <span class="menu-text">Naive Bayes</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../../tabs/decision_tree/classification.html" rel="" target="" aria-current="page">
- <span class="menu-text">Decision Tree</span></a>
+    <a class="nav-link" href="../../tabs/conclusion/conclusion.html" rel="" target="">
+ <span class="menu-text">Conclusions</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -193,7 +194,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#class-distribution" id="toc-class-distribution" class="nav-link active" data-scroll-target="#class-distribution">Class distribution</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#class-distribution" id="toc-class-distribution" class="nav-link" data-scroll-target="#class-distribution">Class distribution</a></li>
   <li><a href="#baseline-model-for-comparison" id="toc-baseline-model-for-comparison" class="nav-link" data-scroll-target="#baseline-model-for-comparison">Baseline model for comparison</a></li>
   <li><a href="#feature-selection" id="toc-feature-selection" class="nav-link" data-scroll-target="#feature-selection">Feature selection</a></li>
   <li><a href="#final-results" id="toc-final-results" class="nav-link" data-scroll-target="#final-results">Final results</a></li>
@@ -206,7 +208,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Methods</h1>
+<h1 class="title">Decision Trees</h1>
 </div>
 
 
@@ -221,11 +223,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Decision trees are a non-parametric supervised learning model that can take two forms: classification and regression trees. Which one you select depends on your type of data. Classification is more suited towards categorical data, whereas regression is better for discrete data. Because I am working with categorical data, I will be using a classification decision tree.</p>
+<p align="right">
+<img src="cdt.png" height="211.2," width="279," alt="Your Image" style="float:right; margin-left:15px;">
+</p>
 <p>Classification decision trees are a great tool for helping you figure out information about a topic. Let’s use the game 20 questions as an example. Say I ask you to guess what food I am thinking of. The food I’ve selected is gummy worms. We can use a series of yes or no questions to figure out what I’ve selected. You could ask if it is a healthy food, to which my answer would be no. You could ask if it was protein, I’d say no. You could ask if it was a carb, I’d say yes. You could ask if it was sweet, I’d say yes. You could ask if there is dairy in it, I’d say no. You can ask if it was a candy, I’d say yes. And so on until you finally ask if I selected gummy worms, to which I’d say yes.</p>
 <p>The appeal of decision trees is their ability to make the identification process very simple. Each question you ask helps to narrow down the number of possibilities. We can think of it as a visual flowchart that categorizes items based on their features. Going back to our previous example, we can classify foods based on their flavour profile or nutritional category. As we ask more questions, we will eventually get to our gummy worms.</p>
 <p>Making an effective decision tree involves initially posing questions that will reveal the most amount of information about the object’s group. We want to figure out distinctive information as fast as possible, so we can distinguish between the groups. Decision trees have applications in many different fields, ranging from sorting out spam emails to diagnosing medical conditions. They are a tool that streamlines intricate decision-making by breaking it down into a sequence of straightforward choices.</p>
+</section>
 <section id="class-distribution" class="level2">
 <h2 class="anchored" data-anchor-id="class-distribution">Class distribution</h2>
+<p>Before we go any further, I’d like to look at the distribution of the label. If the distribution is skewed, it may affect the model’s performance.</p>
 <div class="cell" data-execution_count="63">
 <details>
 <summary>Code</summary>
@@ -332,6 +342,7 @@ Name: count, dtype: int64</code></pre>
 </section>
 <section id="baseline-model-for-comparison" class="level2">
 <h2 class="anchored" data-anchor-id="baseline-model-for-comparison">Baseline model for comparison</h2>
+<p>Before I get into the classification decision tree, I want to first see how well a random guessing model does at correctly predicting the number of injuries an athlete may have. This will give us a baseline for measuring how effective the decision tree is.</p>
 <div class="cell" data-execution_count="157">
 <details>
 <summary>Code</summary>
