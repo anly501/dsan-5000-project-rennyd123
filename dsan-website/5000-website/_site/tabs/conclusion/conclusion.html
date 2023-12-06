@@ -153,7 +153,15 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  <li><a href="#future-considerations" id="toc-future-considerations" class="nav-link" data-scroll-target="#future-considerations">Future Considerations</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -175,9 +183,38 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Throughout the course of this project</p>
+<section id="summary" class="level3">
+<h3 class="anchored" data-anchor-id="summary">Summary</h3>
+<p>When I started on this project, my goal was to understand more about how athletes sustain injuries and what we can do to keep athletes safe. Taking a data approach to a topic that is heavily influenced by a person’s nature can make analysis difficult. However, through the different machine learning methods I tried out, I was able to have some success.</p>
+<p>I first started this project by gathering and cleaning data. I found that it was hard to find data sets only about injury prevention methods so I felt very lucky to find one within the injury prevention methods data set. I decided to collect the other data sets to paint the bigger picture of injuries in athletes before diving deep into how we can prevent them. I used a mix of record data and text data, but due to the numerical nature of sports data, record data was more common. I found six record data sets and one text data set. Through these data sets, I was able to explore topics such as the number of injuries per activity by age group, National Basketball Association (NBA) data, National Football League (NFL) concussion data, as well as data on what the conditions were when the NFL injuries were experienced. My text data focused on the news, which was a little less relevant due to the nature of the news cycle and recent soccer-related injuries.</p>
+<p>I then went on to explore many different machine learning methods, including decision trees, Naive Bayes, clustering, and dimensionality reduction. I found that decision trees weren’t the most successful method for predicting how many injuries each athlete had. The accuracy rate was a mere 17.86%, which was just above a random classifier, and just below a random classifier that had been weighted according to the distribution of the number of injuries each athlete had. Naive Bayes, on the other hand, was a relatively successful method for predicting how many injuries an athlete has had. When combined with feature selection and using SelectPercentile, the accuracy rate was 25%! The model was very good at predicting the number of injuries for athletes who had 0, 1, or 2 previous injuries, but less so if the athlete had any more. We were also able to discover that stretching, warming up, and specific strength exercises were the most successful at preventing injuries.</p>
+<p>In the clustering tab, I learned that agglomerative clustering was the most successful of the clustering methods as it was able to make distinct clusters. K-Means clustering and DBSCAN were successful but didn’t make as well-defined clusters so they didn’t live up to the standards that agglomerative clustering set. The optimal number of clusters was found to be 5 which makes sense since 5 prevention methods were commonly used: stretching, warming up, taping, strength exercises, and shoe insoles.</p>
+<p>Finally, the dimensionality reduction process helped me determine that the optimal number of principal components to retain is 5. PCA helped to reveal a few outliers that were quite evident from both the 2D and 3D plots. PCA’s visualizations were quite accurate and were conducive to an interactive nature.</p>
+</section>
+<section id="reflection" class="level3">
+<h3 class="anchored" data-anchor-id="reflection">Reflection</h3>
+<p>When it comes to the research questions that I posed at the beginning of the project, I think I can answer quite a few of them. The questions I posed were:</p>
+<ol type="1">
+<li>What information about injuries can be discovered with machine learning?</li>
+<li>How can we use machine learning and artificial intelligence to predict and prevent sports injuries?</li>
+<li>Is there a difference in the data between predicting injuries in male athletes versus predicting injuries in female athletes?</li>
+<li>How can we make the results of many of these studies more useful to clinicians?</li>
+<li>How can we more efficiently use machine learning to predict and prevent sports injuries?</li>
+<li>How can we more efficiently use artificial intelligence to predict and prevent sports injuries?</li>
+<li>What does it look like on the day-to-day sports level when advice from machine learning findings are incorporated?</li>
+<li>What does using machine learning and artificial intelligence mean for the future of sports?</li>
+<li>What effect has machine learning and artificial intelligence had on predicting and preventing sports injuries so far?</li>
+<li>How can we use machine learning to achieve the goals of the injury prevention field?</li>
+</ol>
+<p>As shown throughout this project, we can learn a lot about injuries that athletes sustain as well as what measures athletes should be taking to prevent injuries. The types of injuries that athletes will sustain vary from sport to sport but the prevention methods are relatively standard across the board. As I learnt, machine learning can help to evaluate which injury prevention methods are the most effective, and what injury prevention athletes with fewer injuries take. Were the findings of this study to be implemented, it would take the form of more athletes partaking in stretching and warming up before activities, and regularly completing specific strength exercises.</p>
+</section>
+<section id="future-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="future-considerations">Future Considerations</h3>
+<p>However, because there hasn’t been much exploration into this topic as it is very specific, there is a lot that I was limited by and a lot that I would still like to explore. First, I would love to explore more into how female athletes versus male athletes tend to be injured and what prevention methods are best for athletes who compete in different ways. I’d also like to look more at other injury prevention methods such as physical therapy or sports medicine treatments, but I know that that data would be hard to come by because of how niche it is. Additionally, I would like to spend more time focusing on artificial intelligence and learning how it can be beneficial to athletes, but due to the scope of the project, I was not able to focus on it this time.</p>
+<p>Injuries in athletes are not only really common but also can be very severe. Because sports are such a big part of many countries’ cultures and many people look up to these athletes, athletes must take care of themselves. This project not only taught me a lot about injury prevention but also a lot about data science and I am excited to do more like this in the future.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
